@@ -1,0 +1,15 @@
+[I]01:37:29.131 ================================================================================
+[I]01:37:29.138                                    SGFDebuger                                   
+[I]01:37:29.141 --------------------------------------------------------------------------------
+[I]01:37:29.143 Time:	01:37:29.129 
+[I]01:37:29.144 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/DebugerLog/
+[I]01:37:29.144 ================================================================================
+[I]01:37:29.148 > ServerDemo::Init() 
+[I]01:37:29.152 > NetManager::Init() port:4540
+[I]01:37:29.158 > Gateway::Init() port:4540
+[I]01:37:29.160 > Gateway::Start() 
+[I]01:37:29.184 > NetManager::AddListener() cmd:1, listener:ServerDemo.OnLoginReq
+[I]01:37:29.191 > RPCManagerBase::RegisterListener() ServerDemo
+[I]01:37:41.057 > ServerDemo::OnLoginReq() id:123, name:slicol
+[I]01:37:41.058 > NetManager::Send() index:1, cmd:2
+[W]01:37:44.640 > NetManager::HandleRPCMessage() RPC不存在！

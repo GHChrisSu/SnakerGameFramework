@@ -1,0 +1,279 @@
+[I]00:29:40.577 ================================================================================
+[I]00:29:40.584                                    SGFDebuger                                   
+[I]00:29:40.584 --------------------------------------------------------------------------------
+[I]00:29:40.584 Time:	00:29:40.577 
+[I]00:29:40.584 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/DebugerLog/
+[I]00:29:40.585 ================================================================================
+[I]00:29:40.589 > NetManager::Init() port:4540
+[I]00:29:40.591 > Gateway::Init() port:4540
+[I]00:29:40.593 > Gateway::Start() 
+[I]00:29:40.617 > NetManager::AddListener() cmd:1, listener:ServerDemo.OnLoginRequest
+[I]00:29:53.751 > ServerDemo::OnLoginRequest() id:123, name:我就是我
+[I]00:29:53.752 > NetManager::Send() index:0, cmd:2
+[W]00:29:53.792 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:29:53.866 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:29:54.169 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:29:54.590 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:30:04.113 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:30:04.128 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:30:04.269 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:30:04.654 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:30:05.228 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:30:05.632 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:30:05.986 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:30:06.393 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:30:06.777 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:30:06.946 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:30:07.232 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:30:07.350 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:30:08.091 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:30:08.109 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:30:08.934 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:30:09.069 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:30:09.423 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:30:10.215 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:30:10.737 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:30:10.939 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:30:11.547 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:30:12.685 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 119
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 103
+[W]00:30:14.635 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 119
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 103
+[I]00:30:16.680 > ServerDemo::OnLoginRequest() id:123, name:我就是我
+[I]00:30:16.682 > NetManager::Send() index:0, cmd:2
+[W]00:30:16.702 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:30:16.895 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:30:17.182 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:30:17.587 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:30:18.091 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:30:18.681 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:30:19.390 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:30:20.198 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:30:21.090 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:30:22.101 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:30:23.197 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:30:24.411 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:30:25.707 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:30:27.106 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:30:28.622 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:30:30.223 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:30:31.925 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:30:33.728 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:30:35.621 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 119
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 103
+[W]00:30:37.620 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 119
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 103
+[W]00:30:39.721 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 119
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 103
+[W]00:30:41.921 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 119
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 103
+[W]00:30:44.221 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 119
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 103
+[W]00:30:46.630 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 119
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 103
+[W]00:30:49.132 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 119
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 103
+[W]00:30:51.784 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:30:54.435 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:30:59.414 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:30:59.625 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:30:59.928 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:31:00.333 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:31:00.838 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:31:01.445 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:31:02.153 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:31:02.961 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:31:03.871 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:31:04.882 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:31:05.994 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:31:07.207 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:31:08.521 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:31:09.937 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:31:11.437 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:31:13.037 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:31:14.739 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:31:16.541 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:31:18.445 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:31:20.450 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:31:22.557 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:31:24.764 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:31:27.073 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:31:29.482 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:31:31.992 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:31:34.604 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:31:37.316 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:31:37.522 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:31:37.721 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:31:38.024 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:31:38.429 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:31:38.935 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:31:39.541 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:31:40.130 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[W]00:31:40.249 > Gateway::DoReceiveInThread() 无效的包! sid:33554432
+[I]00:31:46.845 > ServerDemo::OnLoginRequest() id:123, name:我就是我
+[I]00:31:46.849 > NetManager::Send() index:0, cmd:2
+[W]00:31:46.862 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:31:47.056 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:31:47.359 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:31:47.748 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:31:48.252 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:31:48.858 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:31:49.567 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:31:50.392 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:31:51.285 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:31:52.279 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:31:53.391 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:31:54.587 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:31:55.884 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:31:57.300 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:31:58.800 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:00.400 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:02.102 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:03.905 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:05.808 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:07.797 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:09.903 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:12.111 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:14.419 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:16.812 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:19.322 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:21.917 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:24.629 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:30.700 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:30.732 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:30.783 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:30.850 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:30.934 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:31.035 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:31.153 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:31.288 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:31.440 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:31.591 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:31.760 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:31.946 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:32.031 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:32.064 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:32.114 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:32.148 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:32.181 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:32.265 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:32.367 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:32.485 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:32.602 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:32.619 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:32.754 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:32.855 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:32.906 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:33.074 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:33.124 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:33.260 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:33.394 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:33.461 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:33.681 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:33.917 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:33.985 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:34.170 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:34.304 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:34.440 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:34.641 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:34.725 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:34.995 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:35.012 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:35.316 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:35.365 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:35.635 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:35.753 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:35.972 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:36.158 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:36.327 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:36.562 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:36.696 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:36.983 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:37.084 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:37.421 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:37.489 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:37.876 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:37.910 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:38.332 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:38.348 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:38.769 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:38.837 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:39.225 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:39.343 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:39.695 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:39.864 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:40.184 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:40.404 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:40.690 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:40.960 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:41.212 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:41.516 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:41.751 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:42.089 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:42.307 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:42.678 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:42.863 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:43.285 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:43.436 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:43.909 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:44.026 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:44.548 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:44.632 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:45.205 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:45.256 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:45.865 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[W]00:32:45.898 > Gateway::DoReceiveInThread() 无效的包! sid:50331648
+[I]00:32:53.028 > ServerDemo::OnLoginRequest() id:123, name:我就是我
+[I]00:32:53.031 > NetManager::Send() index:0, cmd:2
+[W]00:32:53.045 > Gateway::DoReceiveInThread() 无效的包! sid:67108864
+[W]00:32:53.237 > Gateway::DoReceiveInThread() 无效的包! sid:67108864
+[W]00:32:53.540 > Gateway::DoReceiveInThread() 无效的包! sid:67108864
+[W]00:32:53.944 > Gateway::DoReceiveInThread() 无效的包! sid:67108864
+[W]00:32:54.450 > Gateway::DoReceiveInThread() 无效的包! sid:67108864
+[W]00:32:55.057 > Gateway::DoReceiveInThread() 无效的包! sid:67108864
+[W]00:32:55.764 > Gateway::DoReceiveInThread() 无效的包! sid:67108864
+[W]00:32:56.573 > Gateway::DoReceiveInThread() 无效的包! sid:67108864
+[W]00:32:57.483 > Gateway::DoReceiveInThread() 无效的包! sid:67108864
+[W]00:32:58.477 > Gateway::DoReceiveInThread() 无效的包! sid:67108864
+[W]00:32:59.589 > Gateway::DoReceiveInThread() 无效的包! sid:67108864
+[W]00:33:00.785 > Gateway::DoReceiveInThread() 无效的包! sid:67108864
+[W]00:33:02.082 > Gateway::DoReceiveInThread() 无效的包! sid:67108864
+[W]00:33:03.482 > Gateway::DoReceiveInThread() 无效的包! sid:67108864
+[W]00:33:04.981 > Gateway::DoReceiveInThread() 无效的包! sid:67108864
+[W]00:33:06.582 > Gateway::DoReceiveInThread() 无效的包! sid:67108864
+[W]00:33:08.283 > Gateway::DoReceiveInThread() 无效的包! sid:67108864
+[W]00:33:10.103 > Gateway::DoReceiveInThread() 无效的包! sid:67108864
+[W]00:33:12.007 > Gateway::DoReceiveInThread() 无效的包! sid:67108864
+[W]00:33:14.012 > Gateway::DoReceiveInThread() 无效的包! sid:67108864
+[W]00:33:16.118 > Gateway::DoReceiveInThread() 无效的包! sid:67108864
+[W]00:33:18.325 > Gateway::DoReceiveInThread() 无效的包! sid:67108864
+[W]00:33:20.617 > Gateway::DoReceiveInThread() 无效的包! sid:67108864
+[W]00:33:23.026 > Gateway::DoReceiveInThread() 无效的包! sid:67108864
+[W]00:33:25.522 > Gateway::DoReceiveInThread() 无效的包! sid:67108864

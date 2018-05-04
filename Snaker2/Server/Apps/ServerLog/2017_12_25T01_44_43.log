@@ -1,0 +1,1268 @@
+[I]01:44:43.542 ================================================================================
+[I]01:44:43.546                                    SGFDebuger                                   
+[I]01:44:43.547 --------------------------------------------------------------------------------
+[I]01:44:43.547 Time:	01:44:43.541 
+[I]01:44:43.547 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/ServerLog/
+[I]01:44:43.547 ================================================================================
+[I]01:44:43.551 > Program::InitDebuger() 
+[I]01:44:43.560 > ServerManager::StartServer() 2
+[I]01:44:43.562 > ServerConfig::ReadConfig() 
+[I]01:44:43.576 > GameServer[2,4541]::Create() 
+[I]01:44:43.580 > GameServer[2,4541]::Start() 
+[I]01:44:43.583 > FSPManager::Init() port:4541
+[I]01:44:43.586 > FSPGateway::Init() port:4541
+[I]01:44:43.588 > FSPGateway::Start() 
+[I]01:44:43.610 > IPCConfig::ReadConfig() 
+[I]01:44:43.615 > RPCManagerBase::RegisterListener() GameManager
+[I]01:44:43.618 > MainLoop::Run() 
+[I]01:45:00.966 > IPCManager::HandleMessage() [1]-> StartGame([System.Byte[]])
+[I]01:45:00.974 > FSPManager::CreateGame() gameId:1, auth:0
+[I]01:45:00.976 > FSPGame::Create() 
+[I]01:45:00.977 > FSPGame::SetGameState() >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[I]01:45:00.977 > FSPGame::SetGameState() None -> Create, param1 = 0, param2 = 0
+[I]01:45:00.977 > FSPGame::SetGameState() <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[I]01:45:00.981 > FSPManager::AddPlayer() gameId:1, players:[1]
+[I]01:45:00.982 > FSPGateway::CreateSession() 
+[I]01:45:00.985 > FSPSession::.ctor() 
+[I]01:45:00.987 > FSPGame::AddPlayer() playerId:1
+[I]01:45:00.989 > FSPPlayer::Create() id:1, authId:0, sid:1
+[I]01:45:00.989 > FSPSession::SetReceiveListener() 
+[I]01:45:01.009 > IPCManager::Return() ->[1] OnStartGame([SGF.Network.FSPLite.FSPParam, Snaker.GlobalData.Data.GameStartParam])
+[I]01:45:01.137 > FSPPlayer::SetAuth() 0
+[I]01:45:02.761 > FSPGame::HandleClientCmd() GAME_BEGIN, playerId = 1, cmd = cmd:1000, args:[0], custom:0
+[I]01:45:02.764 > FSPGame::SetFlag() player = 1, flag = m_GameBeginFlag
+[I]01:45:02.772 > FSPGame::SetGameState() >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[I]01:45:02.774 > FSPGame::SetGameState() Create -> GameBegin, param1 = 0, param2 = 0
+[I]01:45:02.776 > FSPGame::SetGameState() <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[I]01:45:03.971 > FSPGame::HandleClientCmd() ROUND_BEGIN, playerId = 1, cmd = cmd:1001, args:[0], custom:0
+[I]01:45:03.974 > FSPGame::SetFlag() player = 1, flag = m_RoundBeginFlag
+[I]01:45:04.026 > FSPGame::SetGameState() >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[I]01:45:04.026 > FSPGame::SetGameState() GameBegin -> RoundBegin, param1 = 0, param2 = 0
+[I]01:45:04.028 > FSPGame::SetGameState() <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[I]01:45:05.083 > FSPGame::HandleClientCmd() CONTROL_START, playerId = 1, cmd = cmd:1004, args:[0], custom:30
+[I]01:45:05.087 > FSPGame::SetFlag() player = 1, flag = m_ControlStartFlag
+[I]01:45:05.149 > FSPGame::SetGameState() >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[I]01:45:05.151 > FSPGame::SetGameState() RoundBegin -> ControlStart, param1 = 0, param2 = 0
+[I]01:45:05.152 > FSPGame::SetGameState() <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[I]01:45:11.957 > FSPGame::HandleClientCmd() ROUND_END, playerId = 1, cmd = cmd:1006, args:[0], custom:238
+[I]01:45:11.959 > FSPGame::SetFlag() player = 1, flag = m_RoundEndFlag
+[I]01:45:12.013 > FSPGame::SetGameState() >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[I]01:45:12.015 > FSPGame::SetGameState() ControlStart -> RoundEnd, param1 = 0, param2 = 0
+[I]01:45:12.015 > FSPGame::SetGameState() <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[I]01:45:12.017 > FSPPlayer::ClearRound() 
+[I]01:45:14.906 > FSPGame::HandleClientCmd() GAME_END, playerId = 1, cmd = cmd:1007, args:[0], custom:240
+[I]01:45:14.907 > FSPGame::SetFlag() player = 1, flag = m_GameEndFlag
+[I]01:45:14.917 > FSPGame::SetGameState() >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[I]01:45:14.918 > FSPGame::SetGameState() RoundEnd -> GameEnd, param1 = 0, param2 = 0
+[I]01:45:14.921 > FSPGame::SetGameState() <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[W]01:45:14.970 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:15.003 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:15.063 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:15.143 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:15.234 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:15.342 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:15.463 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:15.603 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:15.753 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:15.923 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:16.113 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:16.313 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:16.523 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:16.752 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:16.992 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:17.253 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:17.532 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:17.824 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:18.134 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:18.454 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:18.792 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:19.142 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:19.504 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:19.883 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:20.283 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:20.693 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:21.124 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:21.563 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:22.014 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:22.483 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:22.973 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:23.474 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:23.993 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:24.523 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:25.064 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:25.624 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:26.202 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:26.793 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:27.393 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:28.013 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:28.642 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:29.293 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:29.953 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:30.634 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:31.334 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:32.043 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:32.762 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:33.504 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:34.264 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:35.032 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:35.814 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:36.613 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:37.429 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:38.253 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:39.094 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:39.953 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:40.832 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:41.724 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:42.634 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:43.553 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:44.483 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:45.433 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:46.392 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:47.373 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:48.363 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:49.379 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:50.396 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:51.435 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:52.485 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:53.556 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:54.635 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:55.735 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:56.855 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:57.985 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:45:59.126 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:46:00.284 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:46:01.455 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:46:02.646 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:46:03.846 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:46:05.065 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:46:06.305 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:46:07.556 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:46:08.825 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:46:10.105 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:46:11.396 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:46:12.705 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:46:14.024 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:46:15.365 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:46:16.716 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:46:18.085 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:46:19.465 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:46:20.865 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:46:22.276 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:46:23.705 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:46:25.145 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:46:26.605 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:46:28.076 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:46:29.565 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:46:31.076 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:46:32.595 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:46:34.125 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:46:35.675 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:46:37.236 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:46:38.815 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:46:40.406 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:46:42.014 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:46:43.635 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:46:45.274 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:46:46.925 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:46:48.595 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:46:50.275 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:46:51.975 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:46:53.687 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:46:55.415 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:46:57.156 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:46:58.915 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:47:00.695 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:47:02.484 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:47:04.286 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:47:06.105 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:47:07.937 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:47:09.787 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:47:11.646 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:47:13.532 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:47:15.420 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:47:17.331 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:47:19.251 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:47:21.194 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:47:23.144 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:47:25.113 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:47:27.093 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:47:29.093 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:47:31.104 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:47:33.134 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:47:35.174 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:47:37.234 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:47:39.308 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:47:41.397 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:47:43.501 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:47:45.622 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:47:47.763 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:47:49.910 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:47:52.071 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:47:54.251 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:47:56.441 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:47:58.650 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:48:00.870 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:48:03.111 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:48:05.362 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:48:07.631 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:48:09.911 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:48:12.209 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:48:14.519 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:48:16.850 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:48:19.190 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:48:21.550 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:48:23.921 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:48:26.309 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:48:28.709 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:48:31.131 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:48:33.566 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:48:36.017 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:48:38.477 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:48:40.954 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:48:43.450 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:48:45.974 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:48:48.497 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:48:51.037 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:48:53.588 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:48:56.159 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:48:58.740 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:49:01.338 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:49:03.953 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:49:06.578 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:49:09.221 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:49:11.882 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:49:14.553 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:49:17.241 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:49:19.945 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:49:22.664 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:49:25.397 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:49:28.151 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:49:30.914 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:49:33.749 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:49:36.545 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:49:39.354 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:49:42.174 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:49:45.014 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:49:47.863 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:49:50.734 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:49:53.613 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:49:56.514 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:49:59.431 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:50:02.361 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:50:05.306 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:50:08.267 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:50:11.236 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:50:14.227 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:50:17.231 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:50:20.247 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:50:23.277 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:50:26.327 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:50:29.388 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:50:32.468 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:50:35.559 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:50:38.671 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:50:41.790 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:50:44.932 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[I]01:50:47.815 > IPCManager::HandleMessage() [1]-> StartGame([System.Byte[]])
+[I]01:50:47.818 > FSPManager::CreateGame() gameId:2, auth:0
+[I]01:50:47.819 > FSPGame::Create() 
+[I]01:50:47.820 > FSPGame::SetGameState() >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[I]01:50:47.820 > FSPGame::SetGameState() None -> Create, param1 = 0, param2 = 0
+[I]01:50:47.821 > FSPGame::SetGameState() <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[I]01:50:47.821 > FSPManager::AddPlayer() gameId:2, players:[1]
+[I]01:50:47.822 > FSPGateway::CreateSession() 
+[I]01:50:47.822 > FSPSession::.ctor() 
+[I]01:50:47.822 > FSPGame::AddPlayer() playerId:1
+[I]01:50:47.823 > FSPPlayer::Create() id:1, authId:0, sid:2
+[I]01:50:47.823 > FSPSession::SetReceiveListener() 
+[I]01:50:47.824 > IPCManager::Return() ->[1] OnStartGame([SGF.Network.FSPLite.FSPParam, Snaker.GlobalData.Data.GameStartParam])
+[I]01:50:47.902 > FSPPlayer::SetAuth() 0
+[W]01:50:48.081 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[I]01:50:50.130 > FSPGame::HandleClientCmd() GAME_BEGIN, playerId = 1, cmd = cmd:1000, args:[0], custom:0
+[I]01:50:50.133 > FSPGame::SetFlag() player = 1, flag = m_GameBeginFlag
+[I]01:50:50.133 > FSPGame::SetGameState() >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[I]01:50:50.136 > FSPGame::SetGameState() Create -> GameBegin, param1 = 0, param2 = 0
+[I]01:50:50.137 > FSPGame::SetGameState() <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[W]01:50:51.249 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[I]01:50:51.460 > FSPGame::HandleClientCmd() ROUND_BEGIN, playerId = 1, cmd = cmd:1001, args:[0], custom:0
+[I]01:50:51.462 > FSPGame::SetFlag() player = 1, flag = m_RoundBeginFlag
+[I]01:50:51.517 > FSPGame::SetGameState() >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[I]01:50:51.521 > FSPGame::SetGameState() GameBegin -> RoundBegin, param1 = 0, param2 = 0
+[I]01:50:51.523 > FSPGame::SetGameState() <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[I]01:50:52.977 > FSPGame::HandleClientCmd() CONTROL_START, playerId = 1, cmd = cmd:1004, args:[0], custom:42
+[I]01:50:52.980 > FSPGame::SetFlag() player = 1, flag = m_ControlStartFlag
+[I]01:50:53.034 > FSPGame::SetGameState() >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[I]01:50:53.035 > FSPGame::SetGameState() RoundBegin -> ControlStart, param1 = 0, param2 = 0
+[I]01:50:53.036 > FSPGame::SetGameState() <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[I]01:50:54.090 > FSPGame::HandleClientCmd() ROUND_END, playerId = 1, cmd = cmd:1006, args:[0], custom:76
+[I]01:50:54.096 > FSPGame::SetFlag() player = 1, flag = m_RoundEndFlag
+[I]01:50:54.096 > FSPGame::SetGameState() >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[I]01:50:54.097 > FSPGame::SetGameState() ControlStart -> RoundEnd, param1 = 0, param2 = 0
+[I]01:50:54.097 > FSPGame::SetGameState() <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[I]01:50:54.098 > FSPPlayer::ClearRound() 
+[W]01:50:54.429 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:50:57.630 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[I]01:50:59.145 > FSPPlayer::SetAuth() 0
+[W]01:51:00.840 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[I]01:51:01.942 > FSPGame::HandleClientCmd() GAME_END, playerId = 1, cmd = cmd:1007, args:[0], custom:76
+[I]01:51:01.945 > FSPGame::SetFlag() player = 1, flag = m_GameEndFlag
+[I]01:51:01.946 > FSPGame::SetGameState() >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[I]01:51:01.947 > FSPGame::SetGameState() RoundEnd -> GameEnd, param1 = 0, param2 = 0
+[I]01:51:01.950 > FSPGame::SetGameState() <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[W]01:51:04.070 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:51:07.310 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:51:10.571 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:51:13.850 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:51:17.140 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:51:20.440 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:51:23.760 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:51:27.090 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:51:30.439 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:51:33.799 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:51:37.178 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:51:40.568 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:51:43.978 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:51:47.399 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:51:50.839 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:51:54.288 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:51:57.759 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:52:01.249 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:52:04.748 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:52:08.258 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184
+[W]01:52:11.788 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 199
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 184

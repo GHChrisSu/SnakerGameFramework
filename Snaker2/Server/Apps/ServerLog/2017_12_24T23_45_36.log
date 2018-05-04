@@ -1,0 +1,31 @@
+[I]23:45:36.547 ================================================================================
+[I]23:45:36.553                                    SGFDebuger                                   
+[I]23:45:36.554 --------------------------------------------------------------------------------
+[I]23:45:36.554 Time:	23:45:36.546 
+[I]23:45:36.554 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/ServerLog/
+[I]23:45:36.554 ================================================================================
+[I]23:45:36.556 > Program::InitDebuger() 
+[I]23:45:36.581 > ServerManager::StartServer() 2
+[I]23:45:36.586 > ServerConfig::ReadConfig() 
+[I]23:45:36.605 > GameServer[2,4541]::Create() 
+[I]23:45:36.608 > GameServer[2,4541]::Start() 
+[I]23:45:36.612 > FSPManager::Init() port:4541
+[I]23:45:36.614 > FSPGateway::Init() port:4541
+[I]23:45:36.616 > FSPGateway::Start() 
+[I]23:45:36.662 > IPCConfig::ReadConfig() 
+[I]23:45:36.675 > RPCManagerBase::RegisterListener() GameManager
+[I]23:45:36.677 > MainLoop::Run() 
+[I]23:46:06.482 > IPCManager::HandleMessage() [1]-> StartGame([System.Byte[]])
+[I]23:46:06.490 > FSPGame::Create() 
+[I]23:46:06.491 > FSPGame::SetGameState() >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[I]23:46:06.492 > FSPGame::SetGameState() None -> Create, param1 = 0, param2 = 0
+[I]23:46:06.492 > FSPGame::SetGameState() <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[I]23:46:06.498 > FSPGame::AddPlayer() playerId:0
+[I]23:46:06.540 > IPCManager::Return() ->[1] OnStartGame([SGF.Network.FSPLite.FSPParam, Snaker.GlobalData.Data.GameStartParam])
+[I]23:47:06.055 > IPCManager::HandleMessage() [1]-> StartGame([System.Byte[]])
+[I]23:47:06.056 > FSPGame::Create() 
+[I]23:47:06.056 > FSPGame::SetGameState() >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[I]23:47:06.056 > FSPGame::SetGameState() None -> Create, param1 = 0, param2 = 0
+[I]23:47:06.057 > FSPGame::SetGameState() <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[I]23:47:06.057 > FSPGame::AddPlayer() playerId:0
+[I]23:47:06.058 > IPCManager::Return() ->[1] OnStartGame([SGF.Network.FSPLite.FSPParam, Snaker.GlobalData.Data.GameStartParam])

@@ -1,0 +1,16 @@
+[I]16:02:38.785 ================================================================================
+[I]16:02:38.812                                    SGFDebuger                                   
+[I]16:02:38.812 --------------------------------------------------------------------------------
+[I]16:02:38.813 Time:	16:02:38.781 
+[I]16:02:38.813 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/ServerLog/
+[I]16:02:38.813 ================================================================================
+[I]16:02:38.814 > Program::InitDebuger() 
+[I]16:02:38.919 > ServerManager::StartServer() 1
+[I]16:02:38.923 > ServerConfig::ReadConfig() 
+[E]16:02:38.994 > ServerManager::StartServer() 值不能为空。
+参数名: type
+   在 SGF.Debuger.LogError(String message)
+   在 SGF.Server.ServerManager.StartServer(Int32 id)
+   在 Snaker.Server.Program.Main(String[] args)
+
+[I]16:02:38.999 > MainLoop::Run() 

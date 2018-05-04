@@ -1,0 +1,19 @@
+[I]16:18:29.324 ================================================================================
+[I]16:18:29.359                                    SGFDebuger                                   
+[I]16:18:29.359 --------------------------------------------------------------------------------
+[I]16:18:29.359 Time:	16:18:29.319 
+[I]16:18:29.359 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/ServerLog/
+[I]16:18:29.359 ================================================================================
+[I]16:18:29.361 > Program::InitDebuger() 
+[I]16:18:29.420 > ServerManager::StartServer() 1
+[I]16:18:29.422 > ServerConfig::ReadConfig() 
+[I]16:18:29.433 > ZoneServer[1,4540]::Create() 
+[I]16:18:29.438 > ZoneServer[1,4540]::Start() 
+[I]16:18:29.454 > NetManager::Init() port:4540
+[I]16:18:29.456 > Gateway::Init() port:4540
+[I]16:18:29.461 > Gateway::Start() 
+[I]16:18:29.558 > IPCConfig::ReadConfig() 
+[I]16:18:29.578 > NetManager::AddListener() cmd:1, listener:OnlineManager.OnLoginReq
+[I]16:18:29.579 > NetManager::AddListener() cmd:3, listener:OnlineManager.OnHeartBeatReq
+[I]16:18:29.580 > RPCManagerBase::RegisterListener() OnlineManager
+[I]16:18:29.582 > MainLoop::Run() 

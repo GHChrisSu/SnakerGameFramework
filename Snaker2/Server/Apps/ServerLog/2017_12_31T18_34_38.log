@@ -1,0 +1,35 @@
+[I]18:34:38.860 ================================================================================
+[I]18:34:38.865                                    SGFDebuger                                   
+[I]18:34:38.866 --------------------------------------------------------------------------------
+[I]18:34:38.866 Time:	18:34:38.859 
+[I]18:34:38.867 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/ServerLog/
+[I]18:34:38.867 ================================================================================
+[I]18:34:38.873 > Program::InitDebuger() 
+[I]18:34:38.889 > ServerManager::StartServer() 1
+[I]18:34:38.891 > ServerConfig::ReadConfig() 
+[I]18:34:38.918 > ZoneServer[1,4540]::Create() 
+[I]18:34:38.922 > ZoneServer[1,4540]::Start() 
+[I]18:34:38.931 > NetManager::Init() port:4540
+[I]18:34:38.938 > Gateway::Init() port:4540
+[I]18:34:38.940 > Gateway::Start() 
+[I]18:34:38.986 > IPCConfig::ReadConfig() 
+[I]18:34:39.002 > NetManager::AddListener() cmd:1, listener:OnlineManager.OnLoginReq
+[I]18:34:39.003 > NetManager::AddListener() cmd:3, listener:OnlineManager.OnHeartBeatReq
+[I]18:34:39.004 > RPCManagerBase::RegisterListener() OnlineManager
+[I]18:34:39.006 > RPCManagerBase::RegisterListener() RoomManager
+[I]18:34:39.006 > RPCManagerBase::RegisterListener() RoomManager
+[I]18:34:39.007 > MainLoop::Run() 
+[I]18:34:47.926 > OnlineManager::OnLoginReq() session:1, index:1, name:a
+[I]18:34:47.938 > NetManager::Send() index:1, cmd:2
+[I]18:34:50.452 > NetManager::Send() index:2, cmd:4
+[I]18:34:55.457 > NetManager::Send() index:3, cmd:4
+[I]18:35:00.464 > NetManager::Send() index:4, cmd:4
+[I]18:36:48.445 > OnlineManager::OnLoginReq() session:2, index:1, name:adab
+[I]18:36:48.446 > NetManager::Send() index:1, cmd:2
+[I]18:36:49.894 > NetManager::Send() index:2, cmd:4
+[I]18:36:54.908 > NetManager::Send() index:3, cmd:4
+[I]18:36:59.910 > NetManager::Send() index:4, cmd:4
+[I]18:37:04.921 > NetManager::Send() index:5, cmd:4
+[I]18:37:22.898 > OnlineManager::OnLoginReq() session:3, index:1, name:adfsafsa
+[I]18:37:22.900 > NetManager::Send() index:1, cmd:2
+[I]18:37:24.991 > NetManager::Send() index:2, cmd:4

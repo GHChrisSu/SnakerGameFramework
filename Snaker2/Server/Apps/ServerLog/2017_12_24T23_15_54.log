@@ -1,0 +1,48 @@
+[I]23:15:54.736 ================================================================================
+[I]23:15:54.743                                    SGFDebuger                                   
+[I]23:15:54.745 --------------------------------------------------------------------------------
+[I]23:15:54.745 Time:	23:15:54.731 
+[I]23:15:54.746 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/ServerLog/
+[I]23:15:54.746 ================================================================================
+[I]23:15:54.750 > Program::InitDebuger() 
+[I]23:15:54.762 > ServerManager::StartServer() 1
+[I]23:15:54.764 > ServerConfig::ReadConfig() 
+[I]23:15:54.782 > ZoneServer[1,4540]::Create() 
+[I]23:15:54.788 > ZoneServer[1,4540]::Start() 
+[I]23:15:54.793 > NetManager::Init() port:4540
+[I]23:15:54.798 > Gateway::Init() port:4540
+[I]23:15:54.803 > Gateway::Start() 
+[I]23:15:54.839 > IPCConfig::ReadConfig() 
+[I]23:15:54.848 > NetManager::AddListener() cmd:1, listener:OnlineManager.OnLoginReq
+[I]23:15:54.849 > NetManager::AddListener() cmd:3, listener:OnlineManager.OnHeartBeatReq
+[I]23:15:54.852 > RPCManagerBase::RegisterListener() OnlineManager
+[I]23:15:54.853 > RPCManagerBase::RegisterListener() RoomManager
+[I]23:15:54.854 > RPCManagerBase::RegisterListener() RoomManager
+[I]23:15:54.856 > MainLoop::Run() 
+[W]23:15:57.692 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]23:15:57.707 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]23:15:57.757 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]23:15:57.774 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]23:15:57.824 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]23:15:57.875 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]23:15:57.909 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]23:15:57.993 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]23:15:58.010 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]23:15:58.127 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]23:15:58.249 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]23:15:58.266 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]23:15:58.386 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]23:15:58.431 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]23:15:58.549 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]23:15:58.616 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]23:15:58.721 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]23:15:58.806 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]23:15:58.924 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[I]23:16:03.937 > OnlineManager::OnLoginReq() session:1, index:1, name:sss
+[I]23:16:03.944 > NetManager::Send() index:1, cmd:2
+[I]23:16:06.678 > NetManager::Send() index:2, cmd:4
+[I]23:16:08.462 > NetManager::Invoke() ->Session<Cnt=1> NotifyRoomUpdate([<id:1, name:sss, owner:1, players:[<id:0, name:sss, userId:1, sid:1, isReady:True>]>])
+[I]23:16:09.366 > IPCManager::Invoke() ->[2] StartGame([1, 0, [0]])
+[W]23:18:06.633 > Gateway::DoReceiveInThread() 无效的包! sid:1
+[W]23:18:07.153 > Gateway::DoReceiveInThread() 无效的包! sid:1
+[W]23:18:07.919 > Gateway::DoReceiveInThread() 无效的包! sid:1

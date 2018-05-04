@@ -1,0 +1,52 @@
+[I]00:47:51.680 ================================================================================
+[I]00:47:51.711                                    SGFDebuger                                   
+[I]00:47:51.711 --------------------------------------------------------------------------------
+[I]00:47:51.711 Time:	00:47:51.678 
+[I]00:47:51.711 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/ServerLog/
+[I]00:47:51.711 ================================================================================
+[I]00:47:51.713 > Program::InitDebuger() 
+[I]00:47:51.815 > ServerManager::StartServer() 2
+[I]00:47:51.824 > ServerConfig::ReadConfig() 
+[I]00:47:51.843 > GameServer[2,4541]::Create() 
+[I]00:47:51.846 > GameServer[2,4541]::Start() 
+[I]00:47:59.467 > FSPManager::Init() port:4541
+[I]00:48:01.961 > FSPGateway::Init() port:4541
+[I]00:48:05.214 > FSPGateway::Start() 
+[I]00:48:08.285 > IPCConfig::ReadConfig() 
+[W]00:48:08.286 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[I]00:48:08.295 > RPCManagerBase::RegisterListener() GameManager
+[I]00:48:08.297 > MainLoop::Run() 
+[W]00:48:09.033 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]00:48:09.630 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]00:48:09.832 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]00:48:10.135 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]00:48:10.540 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]00:48:11.046 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]00:48:11.652 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]00:48:12.360 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]00:48:13.168 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]00:48:14.078 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]00:48:14.651 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]00:48:14.853 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]00:48:15.157 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]00:48:15.561 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]00:48:16.066 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]00:48:16.673 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]00:48:17.381 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]00:48:18.189 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]00:48:19.099 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]00:48:19.689 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]00:48:19.891 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]00:48:20.194 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]00:48:20.599 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]00:48:21.104 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]00:48:21.710 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]00:48:22.419 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]00:48:23.227 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]00:48:24.138 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]00:48:24.710 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]00:48:24.912 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]00:48:25.215 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]00:48:25.620 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]00:48:26.125 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]00:48:26.739 > FSPGateway::DoReceiveInThread() 无效的包! sid:1

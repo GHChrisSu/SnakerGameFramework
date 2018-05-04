@@ -1,0 +1,25 @@
+[I]23:38:02.806 ================================================================================
+[I]23:38:02.811                                    SGFDebuger                                   
+[I]23:38:02.811 --------------------------------------------------------------------------------
+[I]23:38:02.812 Time:	23:38:02.804 
+[I]23:38:02.812 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/ServerLog/
+[I]23:38:02.812 ================================================================================
+[I]23:38:02.814 > Program::InitDebuger() 
+[I]23:38:02.821 > ServerManager::StartServer() 1
+[I]23:38:02.823 > ServerConfig::ReadConfig() 
+[I]23:38:02.836 > Server1[1,4540]::Create() 
+[I]23:38:02.839 > Server1[1,4540]::Start() 
+[I]23:38:02.843 > IPCConfig::ReadConfig() 
+[I]23:38:02.847 > RPCManagerBase::RegisterListener() Server1
+[I]23:38:02.871 > ServerManager::StartServer() 2
+[I]23:38:02.872 > Server2[2,4541]::Create() 
+[I]23:38:02.873 > Server2[2,4541]::Start() 
+[I]23:38:02.873 > RPCManagerBase::RegisterListener() Server2
+[I]23:38:02.874 > MainLoop::Run() 
+[I]23:38:02.881 > IPCManager::Invoke() ->[2] Func2([我是参数1, 123456])
+[I]23:38:03.058 > IPCManager::HandleMessage() [1]-> Func2([我是参数1, 123456])
+[I]23:38:03.069 > Server2::Func2() arg1:我是参数1, arg2:123456
+[I]23:38:03.069 > IPCManager::Invoke() ->[3] Func3([789, 我是参数2])
+[I]23:38:03.071 > IPCManager::Return() ->[1] OnFunc2([你成功了])
+[I]23:38:03.073 > IPCManager::HandleMessage() [2]-> OnFunc2([你成功了])
+[W]23:38:03.074 > Server1::OnFunc2() 你成功了

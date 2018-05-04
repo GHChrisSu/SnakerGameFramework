@@ -1,0 +1,94 @@
+[I]20:33:26.937 ================================================================================
+[I]20:33:26.940                                    SGFDebuger                                   
+[I]20:33:26.941 --------------------------------------------------------------------------------
+[I]20:33:26.942 Time:	20:33:26.936 
+[I]20:33:26.942 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/ServerLog/
+[I]20:33:26.942 ================================================================================
+[I]20:33:26.944 > Program::InitDebuger() 
+[I]20:33:26.954 > ServerManager::StartServer() 2
+[I]20:33:26.955 > ServerConfig::ReadConfig() 
+[I]20:33:26.969 > GameServer[2,4541]::Create() 
+[I]20:33:26.972 > GameServer[2,4541]::Start() 
+[I]20:33:26.974 > FSPManager::Init() port:4541
+[I]20:33:26.976 > FSPGateway::Init() port:4541
+[I]20:33:26.980 > FSPGateway::Start() 
+[I]20:33:26.996 > IPCConfig::ReadConfig() 
+[I]20:33:27.001 > RPCManagerBase::RegisterListener() GameManager
+[I]20:33:27.002 > MainLoop::Run() 
+[I]20:34:11.030 > IPCManager::HandleMessage() [1]-> StartGame([System.Byte[]])
+[I]20:34:20.375 > FSPManager::CreateGame() gameId:1, auth:0
+[I]20:34:20.377 > FSPGame::Create() 
+[I]20:34:20.377 > FSPGame::SetGameState() >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[I]20:34:20.378 > FSPGame::SetGameState() None -> Create, param1 = 0, param2 = 0
+[I]20:34:20.378 > FSPGame::SetGameState() <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[I]20:34:20.382 > FSPManager::AddPlayer() gameId:1, players:[1]
+[I]20:34:20.384 > FSPGateway::CreateSession() 
+[I]20:34:20.388 > FSPSession::.ctor() 
+[I]20:34:20.390 > FSPGame::AddPlayer() playerId:1
+[I]20:34:20.391 > FSPPlayer::Create() id:1, authId:0, sid:1
+[I]20:34:20.392 > FSPSession::SetReceiveListener() 
+[I]20:34:20.413 > IPCManager::Return() ->[1] OnStartGame([host:127.0.0.1, ip:4541, serverFrameInterval:66, clientFrameRateMultiple:2, serverTimeout:15000, maxFrameId:1800, Snaker.GlobalData.Data.GamesServerStartParam])
+[I]20:34:20.431 > GameServer::OnInputKey() F1
+[W]20:34:20.437 > FSPGateway::Dump() 
+FSPGateway Sessions (1):
+	SGF.Network.FSPLite.Server.FSPSession
+
+[W]20:34:20.443 > FSPManager::Dump() FSPParam:host:127.0.0.1, ip:4541, serverFrameInterval:66, clientFrameRateMultiple:2, serverTimeout:15000, maxFrameId:1800
+[W]20:34:20.444 > FSPGame::Dump() AuthId:0
+[W]20:34:20.445 > FSPGame::Dump() CurrentState:Create
+[W]20:34:20.446 > FSPGame::Dump() ListPlayers:
+[W]20:34:20.447 > FSPPlayer::Dump() Id:1
+[W]20:34:20.448 > FSPPlayer::Dump() IsLose:False
+[W]20:34:20.449 > FSPGame::Dump() ListPlayersExitOnNextFrame:
+[I]20:34:20.462 > IPCManager::HandleMessage() [1]-> StartGame([System.Byte[]])
+[I]20:34:20.463 > FSPManager::CreateGame() gameId:1, auth:0
+[I]20:34:20.464 > FSPGame::Create() 
+[I]20:34:20.465 > FSPGame::SetGameState() >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[I]20:34:20.465 > FSPGame::SetGameState() None -> Create, param1 = 0, param2 = 0
+[I]20:34:20.466 > FSPGame::SetGameState() <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[I]20:34:20.467 > FSPManager::AddPlayer() gameId:1, players:[1]
+[I]20:34:20.468 > FSPGateway::CreateSession() 
+[I]20:34:20.469 > FSPSession::.ctor() 
+[I]20:34:20.471 > FSPGame::AddPlayer() playerId:1
+[W]20:34:20.471 > FSPGame::AddPlayer() PlayerId已经存在！用新的替代旧的! PlayerId = 1
+[I]20:34:20.478 > FSPPlayer::Release() 
+[I]20:34:20.480 > FSPSession::SetReceiveListener() 
+[I]20:34:20.481 > FSPPlayer::Create() id:1, authId:0, sid:2
+[I]20:34:20.481 > FSPSession::SetReceiveListener() 
+[I]20:34:20.489 > IPCManager::Return() ->[1] OnStartGame([host:127.0.0.1, ip:4541, serverFrameInterval:66, clientFrameRateMultiple:2, serverTimeout:15000, maxFrameId:1800, Snaker.GlobalData.Data.GamesServerStartParam])
+[E]20:34:20.575 > FSPSession::DoReceiveInMain() 找不到接收者！
+   在 SGF.Debuger.LogError(String message)
+   在 SGF.Network.FSPLite.Server.FSPSession.DoReceiveInMain()
+   在 SGF.Network.FSPLite.Server.FSPSession.Tick(UInt32 currentTimeMS)
+   在 SGF.Network.FSPLite.Server.FSPGateway.Tick()
+   在 SGF.Network.FSPLite.Server.FSPManager.Tick()
+   在 Snaker2.Battle.GameServer.GameServer.Tick()
+   在 SGF.Server.ServerManager.Tick()
+   在 SGF.Server.MainLoop.Run()
+   在 Snaker2.Battle.Program.Main(String[] args)
+
+[I]20:34:20.644 > FSPPlayer::SetAuth() 0
+[I]20:34:25.645 > FSPPlayer::SetAuth() 0
+[I]20:34:30.684 > FSPPlayer::SetAuth() 0
+[I]20:34:35.721 > FSPPlayer::SetAuth() 0
+[I]20:34:38.079 > FSPGame::HandleClientCmd() GAME_BEGIN, playerId = 1, cmd = cmd:1000, args:[0], custom:0
+[I]20:34:38.080 > FSPGame::SetFlag() player = 1, flag = m_GameBeginFlag
+[I]20:34:38.118 > FSPGame::SetGameState() >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[I]20:34:38.119 > FSPGame::SetGameState() Create -> GameBegin, param1 = 0, param2 = 0
+[I]20:34:38.121 > FSPGame::SetGameState() <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[I]20:34:43.183 > FSPPlayer::SetAuth() 0
+[I]20:34:46.218 > FSPGame::HandleClientCmd() ROUND_BEGIN, playerId = 1, cmd = cmd:1001, args:[0], custom:0
+[I]20:34:46.219 > FSPGame::SetFlag() player = 1, flag = m_RoundBeginFlag
+[I]20:34:46.237 > FSPGame::SetGameState() >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[I]20:34:46.238 > FSPGame::SetGameState() GameBegin -> RoundBegin, param1 = 0, param2 = 0
+[I]20:34:46.238 > FSPGame::SetGameState() <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[I]20:34:50.026 > FSPGame::HandleClientCmd() CONTROL_START, playerId = 1, cmd = cmd:1004, args:[0], custom:112
+[I]20:34:50.028 > FSPGame::SetFlag() player = 1, flag = m_ControlStartFlag
+[I]20:34:50.065 > FSPGame::SetGameState() >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[I]20:34:50.070 > FSPGame::SetGameState() RoundBegin -> ControlStart, param1 = 0, param2 = 0
+[I]20:34:50.070 > FSPGame::SetGameState() <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[I]20:34:51.540 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1, args:[1], custom:158
+[I]20:34:51.978 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1, args:[1], custom:172
+[I]20:34:52.181 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1, args:[1], custom:178
+[I]20:34:52.333 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1, args:[1], custom:182
+[I]20:34:52.502 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1, args:[1], custom:188

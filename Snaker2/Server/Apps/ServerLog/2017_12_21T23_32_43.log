@@ -1,0 +1,19 @@
+[I]23:32:43.585 ================================================================================
+[I]23:32:43.589                                    SGFDebuger                                   
+[I]23:32:43.589 --------------------------------------------------------------------------------
+[I]23:32:43.590 Time:	23:32:43.582 
+[I]23:32:43.590 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/ServerLog/
+[I]23:32:43.590 ================================================================================
+[I]23:32:43.592 > Program::InitDebuger() 
+[I]23:32:43.601 > ServerManager::StartServer() 1
+[I]23:32:43.603 > ServerConfig::ReadConfig() 
+[I]23:32:43.621 > Server1[1,4540]::Create() 
+[I]23:32:43.623 > Server1[1,4540]::Start() 
+[I]23:32:43.626 > IPCConfig::ReadConfig() 
+[I]23:32:43.630 > RPCManagerBase::RegisterListener() Server1
+[I]23:32:43.651 > ServerManager::StartServer() 2
+[I]23:32:43.652 > Server2[2,4541]::Create() 
+[I]23:32:43.653 > Server2[2,4541]::Start() 
+[I]23:32:43.653 > RPCManagerBase::RegisterListener() Server2
+[I]23:32:43.654 > MainLoop::Run() 
+[I]23:32:43.658 > IPCManager::Invoke() ->[2] Func2([我是参数1, 123456])

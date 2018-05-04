@@ -1,0 +1,29 @@
+[I]23:25:54.762 ================================================================================
+[I]23:25:54.771                                    SGFDebuger                                   
+[I]23:25:54.771 --------------------------------------------------------------------------------
+[I]23:25:54.771 Time:	23:25:54.760 
+[I]23:25:54.771 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/ServerLog/
+[I]23:25:54.772 ================================================================================
+[I]23:25:54.774 > Program::InitDebuger() 
+[I]23:25:54.786 > ServerManager::StartServer() 3
+[I]23:25:54.789 > ServerConfig::ReadConfig() 
+[I]23:25:54.816 > Server3[3,4542]::Create() 
+[I]23:25:54.818 > Server3[3,4542]::Start() 
+[I]23:25:54.829 > IPCConfig::ReadConfig() 
+[E]23:25:54.830 > FileUtils::ReadFile() FileUtils
+   在 SGF.Debuger.LogError(String format, Object[] args)
+   在 SGF.Utils.FileUtils.ReadFile(String fullpath)
+   在 SGF.Utils.FileUtils.ReadString(String fullpath)
+   在 SGF.IPCWork.IPCConfig.ReadConfig()
+   在 SGF.IPCWork.IPCConfig.GetIPCInfo(Int32 id)
+   在 SGF.IPCWork.IPCManager.Init(Int32 id)
+   在 Snaker2.Battle.Server3.Server3.Start()
+   在 SGF.Server.ServerManager.StartServer(Int32 id)
+   在 Snaker2.Battle.Program.Main(String[] args)
+
+[E]23:25:54.847 > ServerManager::StartServer() 值对于字符太大或太小。
+   在 SGF.Debuger.LogError(String message)
+   在 SGF.Server.ServerManager.StartServer(Int32 id)
+   在 Snaker2.Battle.Program.Main(String[] args)
+
+[I]23:25:54.850 > MainLoop::Run() 

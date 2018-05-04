@@ -1,0 +1,384 @@
+[I]18:41:08.568 ================================================================================
+[I]18:41:08.578                                    SGFDebuger                                   
+[I]18:41:08.579 --------------------------------------------------------------------------------
+[I]18:41:08.579 Time:	18:41:08.567 
+[I]18:41:08.579 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/ServerLog/
+[I]18:41:08.579 ================================================================================
+[I]18:41:08.581 > Program::InitDebuger() 
+[I]18:41:08.590 > ServerManager::StartServer() 1
+[I]18:41:08.595 > ServerConfig::ReadConfig() 
+[I]18:41:08.646 > ZoneServer[1,4540]::Create() 
+[I]18:41:08.652 > ZoneServer[1,4540]::Start() 
+[I]18:41:08.656 > NetManager::Init() port:4540
+[I]18:41:08.667 > Gateway::Init() port:4540
+[I]18:41:08.672 > Gateway::Start() 
+[I]18:41:08.721 > IPCConfig::ReadConfig() 
+[I]18:41:08.737 > NetManager::AddListener() cmd:1, listener:OnlineManager.OnLoginReq
+[I]18:41:08.738 > NetManager::AddListener() cmd:3, listener:OnlineManager.OnHeartBeatReq
+[I]18:41:08.739 > RPCManagerBase::RegisterListener() OnlineManager
+[I]18:41:08.745 > RPCManagerBase::RegisterListener() RoomManager
+[I]18:41:08.745 > RPCManagerBase::RegisterListener() RoomManager
+[I]18:41:08.749 > MainLoop::Run() 
+[I]18:41:14.902 > OnlineManager::OnLoginReq() session:1, index:1, name:aaa
+[I]18:41:14.906 > NetManager::Send() index:1, cmd:2
+[I]18:41:15.006 > NetManager::Send() index:2, cmd:4
+[I]18:41:20.011 > NetManager::Send() index:3, cmd:4
+[I]18:41:25.017 > NetManager::Send() index:4, cmd:4
+[I]18:41:30.021 > NetManager::Send() index:5, cmd:4
+[I]18:45:06.814 > OnlineManager::OnLoginReq() session:2, index:1, name:a
+[I]18:45:06.815 > NetManager::Send() index:1, cmd:2
+[I]18:45:09.529 > NetManager::Send() index:2, cmd:4
+[I]18:45:14.531 > NetManager::Send() index:3, cmd:4
+[I]18:45:19.538 > NetManager::Send() index:4, cmd:4
+[I]18:45:24.542 > NetManager::Send() index:5, cmd:4
+[I]18:45:29.546 > NetManager::Send() index:6, cmd:4
+[I]18:45:34.551 > NetManager::Send() index:7, cmd:4
+[I]18:45:39.554 > NetManager::Send() index:8, cmd:4
+[I]18:45:44.566 > NetManager::Send() index:9, cmd:4
+[I]18:45:49.582 > NetManager::Send() index:10, cmd:4
+[I]18:45:54.583 > NetManager::Send() index:11, cmd:4
+[I]18:45:59.599 > NetManager::Send() index:12, cmd:4
+[I]18:46:04.602 > NetManager::Send() index:13, cmd:4
+[I]18:46:17.253 > OnlineManager::OnLoginReq() session:3, index:1, name:aaa
+[I]18:46:17.256 > NetManager::Send() index:1, cmd:2
+[I]18:46:18.967 > NetManager::Send() index:2, cmd:4
+[I]18:46:23.970 > NetManager::Send() index:3, cmd:4
+[I]18:46:28.981 > NetManager::Send() index:4, cmd:4
+[I]18:46:33.985 > NetManager::Send() index:5, cmd:4
+[I]18:47:55.560 > OnlineManager::OnLoginReq() session:4, index:1, name:aaa
+[I]18:47:55.562 > NetManager::Send() index:1, cmd:2
+[I]18:47:58.184 > NetManager::Send() index:2, cmd:4
+[I]18:48:03.188 > NetManager::Send() index:3, cmd:4
+[I]18:48:08.201 > NetManager::Send() index:4, cmd:4
+[I]18:49:37.649 > OnlineManager::OnLoginReq() session:5, index:1, name:aaa
+[I]18:49:37.650 > NetManager::Send() index:1, cmd:2
+[I]18:49:40.102 > NetManager::Send() index:2, cmd:4
+[I]18:49:45.107 > NetManager::Send() index:3, cmd:4
+[I]18:49:50.113 > NetManager::Send() index:4, cmd:4
+[I]18:51:45.636 > OnlineManager::OnLoginReq() session:6, index:1, name:aaa
+[I]18:51:45.637 > NetManager::Send() index:1, cmd:2
+[I]18:51:48.369 > NetManager::Send() index:2, cmd:4
+[I]18:51:53.376 > NetManager::Send() index:3, cmd:4
+[I]18:51:58.378 > NetManager::Send() index:4, cmd:4
+[I]18:52:03.384 > NetManager::Send() index:5, cmd:4
+[I]18:52:08.388 > NetManager::Send() index:6, cmd:4
+[I]18:52:49.256 > OnlineManager::OnLoginReq() session:7, index:1, name:aaaa
+[I]18:52:49.257 > NetManager::Send() index:1, cmd:2
+[I]18:52:50.809 > NetManager::Send() index:2, cmd:4
+[I]18:53:22.208 > OnlineManager::OnLoginReq() session:8, index:1, name:aaa
+[I]18:53:22.209 > NetManager::Send() index:1, cmd:2
+[W]18:54:02.425 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:02.454 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:02.483 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:02.517 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:02.567 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:02.636 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:02.719 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:02.820 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:02.938 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:03.073 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:03.208 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:03.360 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:03.528 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:03.715 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:03.915 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:04.136 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:04.371 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:04.623 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:04.893 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:05.163 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:05.451 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:05.755 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:06.085 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:06.427 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:06.781 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:07.152 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:07.488 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:07.522 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:07.539 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:07.575 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:07.640 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:07.724 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:07.826 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:07.943 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:08.079 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:08.213 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:08.349 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:08.364 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:08.533 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:08.718 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:08.770 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:08.921 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:09.141 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:09.207 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:09.375 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:09.629 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:09.662 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:09.898 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:10.135 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:10.184 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:10.471 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:10.622 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:10.774 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:11.095 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:11.128 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:11.431 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:11.650 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:11.786 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:12.157 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:12.189 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:12.492 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:12.527 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:12.543 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:12.577 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:12.644 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:12.729 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:12.745 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:12.829 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:12.947 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:13.083 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:13.217 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:13.302 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:13.353 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:13.369 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:13.538 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:13.723 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:13.775 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:13.874 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:13.925 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:14.147 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:14.215 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:14.383 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:14.468 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:14.637 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:14.671 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:14.906 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:15.075 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:15.142 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:15.175 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:15.461 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:15.630 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:15.697 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:15.767 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:16.084 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:16.135 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:16.338 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:16.422 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:16.659 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:16.777 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:16.994 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:17.146 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:17.197 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:17.500 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:17.535 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:17.584 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:17.652 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:17.669 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:17.736 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:17.837 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:17.938 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:17.955 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:18.090 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:18.226 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:18.292 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:18.343 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:18.376 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:18.545 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:18.731 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:18.768 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:18.865 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:18.932 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:19.034 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:19.152 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:19.202 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:19.388 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:19.454 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:19.640 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:19.658 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:19.741 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:19.911 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:20.061 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:20.129 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:20.197 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:20.466 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:20.483 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:20.617 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:20.684 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:20.786 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:21.106 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:21.123 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:21.207 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:21.325 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:21.444 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:21.646 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:21.793 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:21.962 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:21.980 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:22.164 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]18:54:22.181 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[I]18:54:22.486 > OnlineManager::OnLoginReq() session:9, index:6, name:aaa
+[I]18:54:22.488 > NetManager::Send() index:6, cmd:2
+[I]18:54:22.536 > NetManager::Send() index:7, cmd:4
+[I]18:56:10.774 > OnlineManager::OnLoginReq() session:10, index:1, name:aaa
+[I]18:56:10.775 > NetManager::Send() index:1, cmd:2
+[I]18:56:12.542 > NetManager::Send() index:2, cmd:4
+[I]18:56:17.545 > NetManager::Send() index:3, cmd:4
+[I]18:56:22.550 > NetManager::Send() index:4, cmd:4
+[I]18:56:27.557 > NetManager::Send() index:5, cmd:4
+[I]19:00:25.709 > OnlineManager::OnLoginReq() session:11, index:1, name:aaa
+[I]19:00:25.709 > NetManager::Send() index:1, cmd:2
+[I]19:00:28.193 > NetManager::Send() index:2, cmd:4
+[I]19:00:33.208 > NetManager::Send() index:3, cmd:4
+[I]19:00:38.212 > NetManager::Send() index:4, cmd:4
+[I]19:00:43.215 > NetManager::Send() index:5, cmd:4
+[I]19:00:48.217 > NetManager::Send() index:6, cmd:4
+[I]19:00:53.233 > NetManager::Send() index:7, cmd:4
+[I]19:00:58.238 > NetManager::Send() index:8, cmd:4
+[I]19:01:03.242 > NetManager::Send() index:9, cmd:4
+[I]19:01:08.257 > NetManager::Send() index:10, cmd:4
+[I]19:01:13.269 > NetManager::Send() index:11, cmd:4
+[I]19:01:18.272 > NetManager::Send() index:12, cmd:4
+[I]19:01:23.289 > NetManager::Send() index:13, cmd:4
+[I]19:01:28.300 > NetManager::Send() index:14, cmd:4
+[I]19:01:33.312 > NetManager::Send() index:15, cmd:4
+[I]19:02:45.885 > OnlineManager::OnLoginReq() session:12, index:1, name:aaaa
+[I]19:02:45.886 > NetManager::Send() index:1, cmd:2
+[I]19:02:59.994 > NetManager::Send() index:2, cmd:4
+[I]19:03:40.740 > OnlineManager::OnLoginReq() session:13, index:1, name:aaa
+[I]19:03:40.741 > NetManager::Send() index:1, cmd:2
+[I]19:03:43.591 > NetManager::Send() index:2, cmd:4
+[I]19:03:48.588 > NetManager::Send() index:3, cmd:4
+[I]19:03:53.593 > NetManager::Send() index:4, cmd:4
+[I]19:06:17.585 > OnlineManager::OnLoginReq() session:14, index:1, name:aaa
+[I]19:06:17.586 > NetManager::Send() index:1, cmd:2
+[I]19:06:20.499 > NetManager::Send() index:2, cmd:4
+[I]19:06:25.503 > NetManager::Send() index:3, cmd:4
+[I]19:11:34.653 > OnlineManager::OnLoginReq() session:15, index:1, name:aa
+[I]19:11:34.654 > NetManager::Send() index:1, cmd:2
+[I]19:11:37.394 > NetManager::Send() index:2, cmd:4
+[I]19:11:42.397 > NetManager::Send() index:3, cmd:4
+[I]19:11:47.402 > NetManager::Send() index:4, cmd:4
+[I]19:11:52.406 > NetManager::Send() index:5, cmd:4
+[I]19:11:57.410 > NetManager::Send() index:6, cmd:4
+[I]19:12:02.415 > NetManager::Send() index:7, cmd:4
+[I]19:14:15.869 > OnlineManager::OnLoginReq() session:16, index:1, name:aaa
+[I]19:14:15.870 > NetManager::Send() index:1, cmd:2
+[I]19:14:18.606 > NetManager::Send() index:2, cmd:4
+[I]19:14:23.610 > NetManager::Send() index:3, cmd:4
+[I]19:14:28.616 > NetManager::Send() index:4, cmd:4
+[I]19:14:33.629 > NetManager::Send() index:5, cmd:4
+[I]19:14:38.634 > NetManager::Send() index:6, cmd:4
+[I]19:14:43.640 > NetManager::Send() index:7, cmd:4
+[I]19:14:48.655 > NetManager::Send() index:8, cmd:4
+[I]19:14:53.660 > NetManager::Send() index:9, cmd:4
+[I]19:14:58.664 > NetManager::Send() index:10, cmd:4
+[I]19:15:03.669 > NetManager::Send() index:11, cmd:4
+[I]19:15:08.668 > NetManager::Send() index:12, cmd:4
+[I]19:15:13.673 > NetManager::Send() index:13, cmd:4
+[I]19:15:18.677 > NetManager::Send() index:14, cmd:4
+[I]19:15:23.682 > NetManager::Send() index:15, cmd:4
+[I]19:15:39.125 > OnlineManager::OnLoginReq() session:17, index:1, name:aaa
+[I]19:15:39.126 > NetManager::Send() index:1, cmd:2
+[I]19:15:42.316 > OnlineManager::OnLoginReq() session:18, index:2, name:aaaaa
+[I]19:15:42.317 > NetManager::Send() index:2, cmd:2
+[I]19:15:42.505 > NetManager::Send() index:3, cmd:4
+[I]19:15:47.509 > NetManager::Send() index:4, cmd:4
+[I]19:15:52.512 > NetManager::Send() index:5, cmd:4
+[I]19:15:57.516 > NetManager::Send() index:6, cmd:4
+[I]19:18:03.101 > OnlineManager::OnLoginReq() session:19, index:1, name:aaa
+[I]19:18:03.102 > NetManager::Send() index:1, cmd:2
+[I]19:18:04.443 > NetManager::Send() index:2, cmd:4
+[I]19:18:09.446 > NetManager::Send() index:3, cmd:4
+[I]19:19:07.076 > OnlineManager::OnLoginReq() session:20, index:1, name:ddd
+[I]19:19:07.077 > NetManager::Send() index:1, cmd:2
+[I]19:19:08.626 > NetManager::Send() index:2, cmd:4
+[I]19:20:59.901 > OnlineManager::OnLoginReq() session:21, index:1, name:aaaa
+[I]19:20:59.902 > NetManager::Send() index:1, cmd:2
+[I]19:21:06.429 > NetManager::Send() index:2, cmd:4
+[I]19:21:11.440 > NetManager::Send() index:3, cmd:4
+[I]19:22:16.115 > OnlineManager::OnLoginReq() session:22, index:1, name:aaa
+[I]19:22:16.117 > NetManager::Send() index:1, cmd:2
+[I]19:22:47.287 > NetManager::Send() index:2, cmd:4
+[I]19:23:36.952 > OnlineManager::OnLoginReq() session:23, index:1, name:ggg
+[I]19:23:36.952 > NetManager::Send() index:1, cmd:2
+[I]19:23:37.263 > NetManager::Send() index:2, cmd:4
+[I]19:23:42.267 > NetManager::Send() index:3, cmd:4
+[I]19:23:47.278 > NetManager::Send() index:4, cmd:4
+[I]19:24:47.256 > OnlineManager::OnLoginReq() session:24, index:1, name:adfas
+[I]19:24:47.258 > NetManager::Send() index:1, cmd:2
+[I]19:24:50.122 > NetManager::Send() index:2, cmd:4
+[I]19:24:55.126 > NetManager::Send() index:3, cmd:4
+[I]19:25:00.137 > NetManager::Send() index:4, cmd:4
+[I]19:25:05.143 > NetManager::Send() index:5, cmd:4
+[I]19:25:10.147 > NetManager::Send() index:6, cmd:4
+[I]19:25:15.150 > NetManager::Send() index:7, cmd:4
+[I]19:25:20.163 > NetManager::Send() index:8, cmd:4
+[I]19:25:36.872 > OnlineManager::OnLoginReq() session:25, index:1, name:adfsa
+[I]19:25:36.873 > NetManager::Send() index:1, cmd:2
+[I]19:26:12.402 > OnlineManager::OnLoginReq() session:26, index:1, name:aaa
+[I]19:26:12.402 > NetManager::Send() index:1, cmd:2
+[I]19:26:33.050 > OnlineManager::OnLoginReq() session:27, index:1, name:adfasd
+[I]19:26:33.051 > NetManager::Send() index:1, cmd:2
+[I]19:26:36.057 > NetManager::Send() index:2, cmd:4
+[I]19:27:24.282 > OnlineManager::OnLoginReq() session:28, index:1, name:adfasd
+[I]19:27:24.283 > NetManager::Send() index:1, cmd:2
+[I]19:27:54.438 > NetManager::Send() index:2, cmd:4
+[I]19:28:39.491 > OnlineManager::OnLoginReq() session:29, index:1, name:dfafda
+[I]19:28:39.493 > NetManager::Send() index:1, cmd:2
+[I]19:28:39.936 > NetManager::Send() index:2, cmd:4
+[I]19:28:44.930 > NetManager::Send() index:3, cmd:4
+[I]19:28:49.944 > NetManager::Send() index:4, cmd:4
+[I]19:28:54.955 > NetManager::Send() index:5, cmd:4
+[I]19:28:59.960 > NetManager::Send() index:6, cmd:4
+[I]19:29:04.963 > NetManager::Send() index:7, cmd:4
+[I]19:29:09.968 > NetManager::Send() index:8, cmd:4
+[I]19:29:14.974 > NetManager::Send() index:9, cmd:4
+[I]19:29:19.989 > NetManager::Send() index:10, cmd:4
+[I]19:29:24.992 > NetManager::Send() index:11, cmd:4
+[I]19:29:29.996 > NetManager::Send() index:12, cmd:4
+[I]19:29:35.002 > NetManager::Send() index:13, cmd:4
+[I]19:29:40.004 > NetManager::Send() index:14, cmd:4
+[I]19:29:45.009 > NetManager::Send() index:15, cmd:4
+[I]19:29:50.014 > NetManager::Send() index:16, cmd:4
+[I]19:29:55.028 > NetManager::Send() index:17, cmd:4
+[I]19:30:03.201 > OnlineManager::OnLoginReq() session:30, index:1, name:adfad
+[I]19:30:03.202 > NetManager::Send() index:1, cmd:2
+[I]19:30:03.844 > NetManager::Send() index:2, cmd:4
+[I]19:32:02.417 > OnlineManager::OnLoginReq() session:31, index:1, name:aaa
+[I]19:32:02.419 > NetManager::Send() index:1, cmd:2
+[I]19:32:05.109 > NetManager::Send() index:2, cmd:4
+[I]19:32:10.116 > NetManager::Send() index:3, cmd:4
+[I]19:32:15.121 > NetManager::Send() index:4, cmd:4
+[I]19:32:20.123 > NetManager::Send() index:5, cmd:4
+[I]19:32:25.129 > NetManager::Send() index:6, cmd:4
+[I]19:32:30.137 > NetManager::Send() index:7, cmd:4
+[I]19:32:35.139 > NetManager::Send() index:8, cmd:4
+[I]19:32:40.144 > NetManager::Send() index:9, cmd:4
+[I]19:33:39.295 > OnlineManager::OnLoginReq() session:32, index:1, name:adfa
+[I]19:33:39.296 > NetManager::Send() index:1, cmd:2
+[I]19:33:42.283 > NetManager::Send() index:2, cmd:4
+[I]19:33:53.655 > OnlineManager::OnLoginReq() session:33, index:1, name:sdfa
+[I]19:33:53.656 > NetManager::Send() index:1, cmd:2
+[I]19:33:56.510 > NetManager::Send() index:2, cmd:4
+[I]19:34:19.809 > OnlineManager::OnLoginReq() session:34, index:1, name:adsfa
+[I]19:34:19.811 > NetManager::Send() index:1, cmd:2
+[I]19:34:22.845 > NetManager::Send() index:2, cmd:4
+[I]20:02:15.129 > OnlineManager::OnLoginReq() session:35, index:1, name:af
+[I]20:02:15.132 > NetManager::Send() index:1, cmd:2
+[I]20:02:17.115 > NetManager::Send() index:2, cmd:4
+[I]20:03:21.743 > OnlineManager::OnLoginReq() session:36, index:1, name:aaa
+[I]20:03:21.744 > NetManager::Send() index:1, cmd:2
+[I]20:05:29.996 > OnlineManager::OnLoginReq() session:37, index:1, name:adfsafsa
+[I]20:05:29.997 > NetManager::Send() index:1, cmd:2
+[I]20:05:32.830 > NetManager::Send() index:2, cmd:4
+[I]20:05:37.834 > NetManager::Send() index:3, cmd:4
+[I]20:05:42.839 > NetManager::Send() index:4, cmd:4
+[I]20:07:09.425 > OnlineManager::OnLoginReq() session:38, index:1, name:adfas
+[I]20:07:09.425 > NetManager::Send() index:1, cmd:2
+[I]20:07:12.330 > NetManager::Send() index:2, cmd:4
+[I]20:08:59.270 > OnlineManager::OnLoginReq() session:39, index:1, name:aaa
+[I]20:08:59.271 > NetManager::Send() index:1, cmd:2
+[I]20:09:56.172 > OnlineManager::OnLoginReq() session:40, index:1, name:adfsa
+[I]20:09:56.173 > NetManager::Send() index:1, cmd:2
+[I]20:10:47.967 > OnlineManager::OnLoginReq() session:41, index:1, name:adfsa
+[I]20:10:47.968 > NetManager::Send() index:1, cmd:2

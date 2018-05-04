@@ -1,0 +1,16 @@
+[I]01:31:29.589 ================================================================================
+[I]01:31:29.594                                    SGFDebuger                                   
+[I]01:31:29.594 --------------------------------------------------------------------------------
+[I]01:31:29.595 Time:	01:31:29.587 
+[I]01:31:29.595 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/DebugerLog/
+[I]01:31:29.595 ================================================================================
+[I]01:31:29.596 > ServerDemo::Init() 
+[I]01:31:29.599 > NetManager::Init() port:4540
+[I]01:31:29.601 > Gateway::Init() port:4540
+[I]01:31:29.603 > Gateway::Start() 
+[I]01:31:29.636 > NetManager::AddListener() cmd:1, listener:ServerDemo.OnLoginReq
+[I]01:31:29.640 > RPCManagerBase::RegisterListener() ServerDemo
+[W]01:33:32.381 > NetManager::OnReceive() 收到未鉴权的消息! cmd:0
+[I]01:33:43.864 > ServerDemo::OnLoginReq() id:123, name:slicol
+[I]01:33:43.865 > NetManager::Send() index:1, cmd:2
+[W]01:33:48.661 > NetManager::OnReceive() 收到未鉴权的消息! cmd:0

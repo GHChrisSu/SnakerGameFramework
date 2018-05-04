@@ -1,0 +1,6 @@
+F:\Project\gad\Recording\Snaker2\Plugins\Snaker2.GlobalData\obj\Debug\Snaker2.GlobalData.csproj.CoreCompileInputs.cache
+F:\Project\gad\Recording\Snaker2\Plugins\Libs\GlobalData.dll
+F:\Project\gad\Recording\Snaker2\Plugins\Libs\GlobalData.pdb
+F:\Project\gad\Recording\Snaker2\Plugins\Snaker2.GlobalData\obj\Debug\GlobalData.dll
+F:\Project\gad\Recording\Snaker2\Plugins\Snaker2.GlobalData\obj\Debug\GlobalData.pdb
+F:\Project\gad\Recording\Snaker2\Plugins\Snaker2.GlobalData\obj\Debug\Snaker2.GlobalData.csprojResolveAssemblyReference.cache

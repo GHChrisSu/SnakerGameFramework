@@ -1,0 +1,162 @@
+[E]01:03:02.993 Debuger::LogToFile() 文件“F:\Project\gad\Recording\Snaker2\Server\Apps\ServerLog\2017_12_28T01_03_02.log”正由另一进程使用，因此该进程无法访问该文件。   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   在 System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   在 System.IO.StreamWriter..ctor(String path, Boolean append)
+   在 System.IO.File.AppendText(String path)
+   在 SGF.Debuger.LogToFile(String message, Boolean EnableStack) 位置 F:\Project\gad\Recording\SGF\SGFDebuger\Debuger.cs:行号 537
+   在 SGF.Debuger.LogToFile(String message, Boolean EnableStack)
+   在 SGF.Debuger.Internal_LogError(String msg, Object context)
+   在 SGF.Debuger.LogToFile(String message, Boolean EnableStack)
+   在 SGF.Debuger.Internal_LogError(String msg, Object context)
+   在 SGF.Debuger.LogToFile(String message, Boolean EnableStack)
+   在 SGF.Debuger.Internal_LogError(String msg, Object context)
+   在 SGF.Debuger.LogToFile(String message, Boolean EnableStack)
+   在 SGF.Debuger.Internal_LogError(String msg, Object context)
+   在 SGF.Debuger.LogToFile(String message, Boolean EnableStack)
+   在 SGF.Debuger.Internal_LogError(String msg, Object context)
+   在 SGF.Debuger.LogToFile(String message, Boolean EnableStack)
+   在 SGF.Debuger.Internal_LogError(String msg, Object context)
+   在 SGF.Debuger.LogToFile(String message, Boolean EnableStack)
+   在 SGF.Debuger.Internal_LogError(String msg, Object context)
+   在 SGF.Debuger.LogToFile(String message, Boolean EnableStack)
+   在 SGF.Debuger.Internal_LogError(String msg, Object context)
+   在 SGF.Debuger.LogToFile(String message, Boolean EnableStack)
+   在 SGF.Debuger.Internal_LogError(String msg, Object context)
+   在 SGF.Debuger.LogToFile(String message, Boolean EnableStack)
+   在 SGF.Debuger.Internal_LogError(String msg, Object context)
+   在 SGF.Debuger.LogToFile(String message, Boolean EnableStack)
+   在 SGF.Debuger.Internal_LogError(String msg, Object context)
+   在 SGF.Debuger.LogToFile(String message, Boolean EnableStack)
+   在 SGF.Debuger.Internal_LogError(String msg, Object context)
+   在 SGF.Debuger.LogToFile(String message, Boolean EnableStack)
+   在 SGF.Debuger.Internal_LogError(String msg, Object context)
+   在 SGF.Debuger.LogToFile(String message, Boolean EnableStack)
+   在 SGF.Debuger.Internal_LogError(String msg, Object context)
+   在 SGF.Debuger.LogToFile(String message, Boolean EnableStack)
+   在 SGF.Debuger.Internal_LogError(String msg, Object context)
+   在 SGF.Debuger.LogToFile(String message, Boolean EnableStack)
+   在 SGF.Debuger.Internal_LogError(String msg, Object context)
+   在 SGF.Debuger.LogToFile(String message, Boolean EnableStack)
+   在 SGF.Debuger.Internal_LogError(String msg, Object context)
+   在 SGF.Debuger.LogToFile(String message, Boolean EnableStack)
+   在 SGF.Debuger.Internal_LogError(String msg, Object context)
+   在 SGF.Debuger.LogToFile(String message, Boolean EnableStack)
+   在 SGF.Debuger.Internal_LogError(String msg, Object context)
+   在 SGF.Debuger.LogToFile(String message, Boolean EnableStack)
+   在 SGF.Debuger.Internal_LogError(String msg, Object context)
+   在 SGF.Debuger.LogToFile(String message, Boolean EnableStack)
+   在 SGF.Debuger.Internal_LogError(String msg, Object context)
+   在 SGF.Debuger.LogToFile(String message, Boolean EnableStack)
+   在 SGF.Debuger.Internal_LogError(String msg, Object context)
+   在 SGF.Debuger.LogToFile(String message, Boolean EnableStack)
+   在 SGF.Debuger.Internal_LogError(String msg, Object context)
+   在 SGF.Debuger.LogToFile(String message, Boolean EnableStack)
+   在 SGF.Debuger.Internal_LogError(String msg, Object context)
+   在 SGF.Debuger.LogToFile(String message, Boolean EnableStack)
+   在 SGF.Debuger.Internal_LogError(String msg, Object context)
+   在 SGF.Debuger.LogToFile(String message, Boolean EnableStack)
+   在 SGF.Debuger.Internal_LogError(String msg, Object context)
+   在 SGF.Debuger.LogToFile(String message, Boolean EnableStack)
+   在 SGF.Debuger.Internal_LogError(String msg, Object context)
+   在 SGF.Debuger.LogToFile(String message, Boolean EnableStack)
+   在 SGF.Debuger.Internal_LogError(String msg, Object context)
+   在 SGF.Debuger.LogToFile(String message, Boolean EnableStack)
+   在 SGF.Debuger.Internal_LogError(String msg, Object context)
+   在 SGF.Debuger.LogToFile(String message, Boolean EnableStack)
+   在 SGF.Debuger.Internal_LogError(String msg, Object context)
+   在 SGF.Debuger.LogToFile(String message, Boolean EnableStack)
+   在 SGF.Debuger.Internal_LogError(String msg, Object context)
+   在 SGF.Debuger.LogToFile(String message, Boolean EnableStack)
+   在 SGF.Debuger.Internal_LogError(String msg, Object context)
+   在 SGF.Debuger.LogToFile(String message, Boolean EnableStack)
+   在 SGF.Debuger.Internal_LogError(String msg, Object context)
+   在 SGF.Debuger.LogToFile(String message, Boolean EnableStack)
+   在 SGF.Debuger.Internal_LogError(String msg, Object context)
+   在 SGF.Debuger.LogToFile(String message, Boolean EnableStack)
+   在 SGF.Debuger.Internal_Log(String msg, Object context)
+   在 SGF.Debuger.LogLogHead()
+   在 SGF.Debuger.Init(String logFileDir, IDebugerConsole console)
+   在 Snaker.Server.Program.InitDebuger()
+   在 Snaker.Server.Program.Main(String[] args)
+
+[I]01:03:03.004                                    SGFDebuger                                   
+[I]01:03:03.005 --------------------------------------------------------------------------------
+[I]01:03:03.006 Time:	01:03:02.833 
+[I]01:03:03.006 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/ServerLog/
+[I]01:03:03.006 ================================================================================
+[I]01:03:03.008 > Program::InitDebuger() 
+[I]01:03:03.020 > ServerManager::StartServer() 1
+[I]01:03:03.023 > ServerConfig::ReadConfig() 
+[I]01:03:03.037 > ZoneServer[1,4540]::Create() 
+[I]01:03:03.043 > ZoneServer[1,4540]::Start() 
+[I]01:03:03.051 > NetManager::Init() port:4540
+[I]01:03:03.056 > Gateway::Init() port:4540
+[I]01:03:03.059 > Gateway::Start() 
+[I]01:03:03.091 > IPCConfig::ReadConfig() 
+[I]01:03:03.099 > NetManager::AddListener() cmd:1, listener:OnlineManager.OnLoginReq
+[I]01:03:03.102 > NetManager::AddListener() cmd:3, listener:OnlineManager.OnHeartBeatReq
+[I]01:03:03.105 > RPCManagerBase::RegisterListener() OnlineManager
+[I]01:03:03.108 > RPCManagerBase::RegisterListener() RoomManager
+[I]01:03:03.109 > RPCManagerBase::RegisterListener() RoomManager
+[I]01:03:03.111 > MainLoop::Run() 
+[I]01:03:19.729 > ZoneServer::OnInputKey() F1
+[W]01:03:19.733 > Gateway::Dump() 
+Gateway Sessions (0):
+
+[W]01:03:19.733 > NetManager::Dump() 
+Net Listeners (2):
+	<cmd:1, msg:LoginReq, 	listener:OnlineManager.OnLoginReq>
+	<cmd:3, msg:HeartBeatReq, 	listener:OnlineManager.OnHeartBeatReq>
+
+[W]01:03:19.734 > RPCManagerBase::Dump() 
+RPC Cached Methods (0):
+
+[I]01:03:26.304 > ZoneServer::OnInputKey() Enter
+[I]01:03:26.698 > ZoneServer::OnInputLine() 
+[I]01:03:27.095 > ZoneServer::OnInputKey() Enter
+[I]01:03:27.447 > ZoneServer::OnInputLine() 
+[I]01:03:28.832 > ZoneServer::OnInputKey() F1
+[W]01:03:28.832 > Gateway::Dump() 
+Gateway Sessions (0):
+
+[W]01:03:28.832 > NetManager::Dump() 
+Net Listeners (2):
+	<cmd:1, msg:LoginReq, 	listener:OnlineManager.OnLoginReq>
+	<cmd:3, msg:HeartBeatReq, 	listener:OnlineManager.OnHeartBeatReq>
+
+[W]01:03:28.833 > RPCManagerBase::Dump() 
+RPC Cached Methods (0):
+
+[I]01:03:47.283 > OnlineManager::OnLoginReq() session:1, index:1, name:adfas
+[I]01:03:47.287 > NetManager::Send() index:1, cmd:2
+[I]01:03:48.382 > NetManager::Send() index:2, cmd:4
+[I]01:03:51.144 > NetManager::Invoke() ->Session<Cnt=1> NotifyRoomUpdate([<id:1, name:adfsa, owner:1, players:[<id:1, name:adfas, userId:1, sid:1, isReady:True>]>])
+[I]01:03:52.019 > IPCManager::Invoke() ->[2] StartGame([Snaker.GlobalData.Data.GamesServerStartParam])
+[I]01:03:52.215 > IPCManager::HandleMessage() [2]-> OnStartGame([[10, 9, 49, 50, 55, 46, 48, 46, 48, 46, 49, 16, 189, 35, 32, 66, 40, 152, 117, 48, 2, 72, 136, 14, 80, 1, 88, 1, 104, 1], [8, 1, 24, 1, 32, 1]])
+[I]01:03:52.224 > NetManager::Invoke() ->Session[1] NotifyGameStart([Snaker.GlobalData.Data.PVPStartParam])
+[I]01:03:53.394 > NetManager::Send() index:3, cmd:4
+[I]01:03:58.399 > NetManager::Send() index:4, cmd:4
+[I]01:04:03.404 > NetManager::Send() index:5, cmd:4
+[I]01:04:08.407 > NetManager::Send() index:6, cmd:4
+[I]01:04:13.412 > NetManager::Send() index:7, cmd:4
+[I]01:04:18.418 > NetManager::Send() index:8, cmd:4
+[I]01:04:23.421 > NetManager::Send() index:9, cmd:4
+[I]01:04:28.434 > NetManager::Send() index:10, cmd:4
+[I]01:04:33.438 > NetManager::Send() index:11, cmd:4
+[I]01:04:38.441 > NetManager::Send() index:12, cmd:4
+[I]01:04:44.919 > OnlineManager::OnLoginReq() session:2, index:1, name:bbb
+[I]01:04:44.922 > NetManager::Send() index:1, cmd:2
+[I]01:04:47.631 > NetManager::Send() index:2, cmd:4
+[I]01:04:50.000 > NetManager::Invoke() ->Session<Cnt=1> NotifyRoomUpdate([<id:2, name:ddd, owner:2, players:[<id:1, name:bbb, userId:2, sid:2, isReady:True>]>])
+[I]01:04:50.861 > IPCManager::Invoke() ->[2] StartGame([Snaker.GlobalData.Data.GamesServerStartParam])
+[I]01:04:50.885 > IPCManager::HandleMessage() [2]-> OnStartGame([[10, 9, 49, 50, 55, 46, 48, 46, 48, 46, 49, 16, 189, 35, 32, 66, 40, 152, 117, 48, 2, 72, 136, 14, 80, 1, 88, 1, 104, 1], [8, 2, 24, 1, 32, 2]])
+[I]01:04:50.887 > NetManager::Invoke() ->Session[2] NotifyGameStart([Snaker.GlobalData.Data.PVPStartParam])
+[I]01:04:52.645 > NetManager::Send() index:3, cmd:4
+[I]01:04:57.648 > NetManager::Send() index:4, cmd:4
+[I]01:05:02.652 > NetManager::Send() index:5, cmd:4
+[I]01:05:07.657 > NetManager::Send() index:6, cmd:4
+[I]01:05:12.662 > NetManager::Send() index:7, cmd:4
+[I]01:05:17.666 > NetManager::Send() index:8, cmd:4
+[I]01:05:22.668 > NetManager::Send() index:9, cmd:4

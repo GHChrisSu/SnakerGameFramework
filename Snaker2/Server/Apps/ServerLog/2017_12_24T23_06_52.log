@@ -1,0 +1,43 @@
+[I]23:06:52.200 ================================================================================
+[I]23:06:52.227                                    SGFDebuger                                   
+[I]23:06:52.228 --------------------------------------------------------------------------------
+[I]23:06:52.228 Time:	23:06:52.198 
+[I]23:06:52.228 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/ServerLog/
+[I]23:06:52.228 ================================================================================
+[I]23:06:52.230 > Program::InitDebuger() 
+[I]23:06:52.359 > ServerManager::StartServer() 1
+[I]23:06:52.362 > ServerConfig::ReadConfig() 
+[I]23:06:52.380 > ZoneServer[1,4540]::Create() 
+[I]23:06:52.390 > ZoneServer[1,4540]::Start() 
+[I]23:06:52.397 > NetManager::Init() port:4540
+[I]23:06:52.399 > Gateway::Init() port:4540
+[I]23:06:52.401 > Gateway::Start() 
+[I]23:06:52.464 > IPCConfig::ReadConfig() 
+[I]23:06:52.479 > NetManager::AddListener() cmd:1, listener:OnlineManager.OnLoginReq
+[I]23:06:52.480 > NetManager::AddListener() cmd:3, listener:OnlineManager.OnHeartBeatReq
+[I]23:06:52.481 > RPCManagerBase::RegisterListener() OnlineManager
+[I]23:06:52.483 > RPCManagerBase::RegisterListener() RoomManager
+[I]23:06:52.486 > RPCManagerBase::RegisterListener() RoomManager
+[I]23:06:52.489 > MainLoop::Run() 
+[I]23:07:05.045 > OnlineManager::OnLoginReq() session:1, index:1, name:a
+[I]23:07:05.050 > NetManager::Send() index:1, cmd:2
+[I]23:07:07.801 > NetManager::Send() index:2, cmd:4
+[I]23:07:09.948 > NetManager::Invoke() ->Session<Cnt=1> NotifyRoomUpdate([<id:1, name:aaaa, owner:1, players:[<id:0, name:a, userId:1, sid:1, isReady:True>]>])
+[I]23:07:18.257 > IPCManager::Invoke() ->[2] StartGame([1, 0, [0]])
+[E]23:08:24.378 > NetManager::HandleRPCMessage() RPC调用出错：调用的目标发生了异常。
+   在 System.RuntimeMethodHandle._InvokeMethodFast(Object target, Object[] arguments, SignatureStruct& sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture, Boolean skipVisibilityChecks)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 SGF.Network.General.Server.NetManager.HandleRPCMessage(ISession session, RPCMessage rpcmsg) 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\NetManager.cs:行号 161
+   在 SGF.Debuger.LogError(String format, Object[] args)
+   在 SGF.Network.General.Server.NetManager.HandleRPCMessage(ISession session, RPCMessage rpcmsg)
+   在 SGF.Network.General.Server.NetManager.OnReceive(ISession session, Byte[] bytes, Int32 len)
+   在 SGF.Network.General.Server.KCPSession.DoReceiveInMain()
+   在 SGF.Network.General.Server.KCPSession.Tick(UInt32 currentTimeMS)
+   在 SGF.Network.General.Server.Gateway.Tick()
+   在 SGF.Network.General.Server.NetManager.Tick()
+   在 Snaker.Server.ZoneServer.ZoneServer.Tick()
+   在 SGF.Server.ServerManager.Tick()
+   在 SGF.Server.MainLoop.Run()
+   在 Snaker.Server.Program.Main(String[] args)
+

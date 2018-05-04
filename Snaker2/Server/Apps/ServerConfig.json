@@ -1,0 +1,5 @@
+[
+	{"id":1, "name":"ZoneServer", "port":4540, "assembly":"Snaker2.ServerLite"},
+	{"id":2, "name":"GameServer", "port":4541, "assembly":"Snaker2.Battle"}
+	
+]

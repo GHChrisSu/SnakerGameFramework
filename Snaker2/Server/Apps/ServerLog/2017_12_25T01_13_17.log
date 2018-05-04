@@ -1,0 +1,153 @@
+[I]01:13:17.502 ================================================================================
+[I]01:13:17.505                                    SGFDebuger                                   
+[I]01:13:17.505 --------------------------------------------------------------------------------
+[I]01:13:17.505 Time:	01:13:17.500 
+[I]01:13:17.505 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/ServerLog/
+[I]01:13:17.505 ================================================================================
+[I]01:13:17.507 > Program::InitDebuger() 
+[I]01:13:17.517 > ServerManager::StartServer() 1
+[I]01:13:17.518 > ServerConfig::ReadConfig() 
+[I]01:13:17.527 > ZoneServer[1,4540]::Create() 
+[I]01:13:17.533 > ZoneServer[1,4540]::Start() 
+[I]01:13:17.536 > NetManager::Init() port:4540
+[I]01:13:17.537 > Gateway::Init() port:4540
+[I]01:13:17.539 > Gateway::Start() 
+[I]01:13:17.558 > IPCConfig::ReadConfig() 
+[I]01:13:17.564 > NetManager::AddListener() cmd:1, listener:OnlineManager.OnLoginReq
+[I]01:13:17.564 > NetManager::AddListener() cmd:3, listener:OnlineManager.OnHeartBeatReq
+[I]01:13:17.565 > RPCManagerBase::RegisterListener() OnlineManager
+[I]01:13:17.566 > RPCManagerBase::RegisterListener() RoomManager
+[I]01:13:17.567 > RPCManagerBase::RegisterListener() RoomManager
+[I]01:13:17.568 > MainLoop::Run() 
+[I]01:13:30.866 > OnlineManager::OnLoginReq() session:1, index:1, name:aa
+[I]01:13:30.869 > NetManager::Send() index:1, cmd:2
+[I]01:13:31.088 > NetManager::Send() index:2, cmd:4
+[I]01:13:36.067 > NetManager::Send() index:3, cmd:4
+[I]01:13:36.125 > NetManager::Invoke() ->Session<Cnt=1> NotifyRoomUpdate([<id:1, name:aaa, owner:1, players:[<id:0, name:aa, userId:1, sid:1, isReady:True>]>])
+[I]01:13:36.797 > IPCManager::Invoke() ->[2] StartGame([Snaker.GlobalData.Data.GameStartParam])
+[I]01:13:36.972 > IPCManager::HandleMessage() [2]-> OnStartGame([[10, 9, 49, 50, 55, 46, 48, 46, 48, 46, 49, 16, 189, 35, 32, 66, 40, 152, 117, 48, 2, 72, 136, 14, 80, 1, 88, 1, 104, 1], [8, 1, 24, 0, 32, 1]])
+[I]01:13:36.980 > NetManager::Invoke() ->Session[1] NotifyGameStart([Snaker.GlobalData.Data.PVPStartParam])
+[I]01:13:41.073 > NetManager::Send() index:4, cmd:4
+[I]01:13:46.078 > NetManager::Send() index:5, cmd:4
+[I]01:13:51.082 > NetManager::Send() index:6, cmd:4
+[I]01:13:56.087 > NetManager::Send() index:7, cmd:4
+[I]01:14:01.090 > NetManager::Send() index:8, cmd:4
+[I]01:14:06.094 > NetManager::Send() index:9, cmd:4
+[I]01:14:11.096 > NetManager::Send() index:10, cmd:4
+[I]01:14:16.110 > NetManager::Send() index:11, cmd:4
+[I]01:14:21.112 > NetManager::Send() index:12, cmd:4
+[I]01:14:26.118 > NetManager::Send() index:13, cmd:4
+[I]01:14:31.123 > NetManager::Send() index:14, cmd:4
+[I]01:14:36.128 > NetManager::Send() index:15, cmd:4
+[I]01:14:41.133 > NetManager::Send() index:16, cmd:4
+[I]01:14:46.136 > NetManager::Send() index:17, cmd:4
+[I]01:14:51.141 > NetManager::Send() index:18, cmd:4
+[I]01:14:56.145 > NetManager::Send() index:19, cmd:4
+[I]01:15:01.157 > NetManager::Send() index:20, cmd:4
+[I]01:15:06.162 > NetManager::Send() index:21, cmd:4
+[I]01:15:11.177 > NetManager::Send() index:22, cmd:4
+[I]01:15:16.181 > NetManager::Send() index:23, cmd:4
+[I]01:15:21.186 > NetManager::Send() index:24, cmd:4
+[I]01:15:26.190 > NetManager::Send() index:25, cmd:4
+[I]01:15:31.194 > NetManager::Send() index:26, cmd:4
+[I]01:15:36.198 > NetManager::Send() index:27, cmd:4
+[I]01:15:41.213 > NetManager::Send() index:28, cmd:4
+[I]01:15:46.218 > NetManager::Send() index:29, cmd:4
+[I]01:15:51.221 > NetManager::Send() index:30, cmd:4
+[I]01:15:56.226 > NetManager::Send() index:31, cmd:4
+[I]01:16:01.231 > NetManager::Send() index:32, cmd:4
+[I]01:16:06.235 > NetManager::Send() index:33, cmd:4
+[I]01:16:11.238 > NetManager::Send() index:34, cmd:4
+[I]01:16:16.244 > NetManager::Send() index:35, cmd:4
+[I]01:16:21.247 > NetManager::Send() index:36, cmd:4
+[I]01:16:26.256 > NetManager::Send() index:37, cmd:4
+[I]01:16:31.260 > NetManager::Send() index:38, cmd:4
+[I]01:16:36.265 > NetManager::Send() index:39, cmd:4
+[I]01:16:41.270 > NetManager::Send() index:40, cmd:4
+[I]01:16:46.274 > NetManager::Send() index:41, cmd:4
+[I]01:16:51.277 > NetManager::Send() index:42, cmd:4
+[I]01:16:56.281 > NetManager::Send() index:43, cmd:4
+[I]01:17:01.286 > NetManager::Send() index:44, cmd:4
+[I]01:17:06.291 > NetManager::Send() index:45, cmd:4
+[I]01:17:11.295 > NetManager::Send() index:46, cmd:4
+[I]01:17:16.298 > NetManager::Send() index:47, cmd:4
+[I]01:17:21.304 > NetManager::Send() index:48, cmd:4
+[I]01:17:26.308 > NetManager::Send() index:49, cmd:4
+[I]01:17:31.312 > NetManager::Send() index:50, cmd:4
+[I]01:17:36.316 > NetManager::Send() index:51, cmd:4
+[I]01:17:41.319 > NetManager::Send() index:52, cmd:4
+[I]01:17:46.323 > NetManager::Send() index:53, cmd:4
+[I]01:17:51.328 > NetManager::Send() index:54, cmd:4
+[I]01:17:56.332 > NetManager::Send() index:55, cmd:4
+[I]01:18:01.336 > NetManager::Send() index:56, cmd:4
+[I]01:18:06.340 > NetManager::Send() index:57, cmd:4
+[I]01:18:11.345 > NetManager::Send() index:58, cmd:4
+[I]01:18:16.350 > NetManager::Send() index:59, cmd:4
+[I]01:18:21.353 > NetManager::Send() index:60, cmd:4
+[I]01:18:26.357 > NetManager::Send() index:61, cmd:4
+[I]01:18:31.362 > NetManager::Send() index:62, cmd:4
+[I]01:18:36.369 > NetManager::Send() index:63, cmd:4
+[I]01:18:41.373 > NetManager::Send() index:64, cmd:4
+[I]01:18:46.379 > NetManager::Send() index:65, cmd:4
+[I]01:18:51.382 > NetManager::Send() index:66, cmd:4
+[I]01:18:56.386 > NetManager::Send() index:67, cmd:4
+[I]01:19:01.391 > NetManager::Send() index:68, cmd:4
+[I]01:19:06.404 > NetManager::Send() index:69, cmd:4
+[I]01:19:11.407 > NetManager::Send() index:70, cmd:4
+[I]01:19:16.411 > NetManager::Send() index:71, cmd:4
+[I]01:19:21.416 > NetManager::Send() index:72, cmd:4
+[I]01:19:26.421 > NetManager::Send() index:73, cmd:4
+[I]01:19:31.424 > NetManager::Send() index:74, cmd:4
+[I]01:19:36.425 > NetManager::Send() index:75, cmd:4
+[I]01:19:41.430 > NetManager::Send() index:76, cmd:4
+[I]01:19:46.441 > NetManager::Send() index:77, cmd:4
+[I]01:19:51.457 > NetManager::Send() index:78, cmd:4
+[I]01:19:56.461 > NetManager::Send() index:79, cmd:4
+[I]01:20:01.465 > NetManager::Send() index:80, cmd:4
+[I]01:20:06.477 > NetManager::Send() index:81, cmd:4
+[I]01:20:11.482 > NetManager::Send() index:82, cmd:4
+[I]01:20:16.487 > NetManager::Send() index:83, cmd:4
+[I]01:20:21.490 > NetManager::Send() index:84, cmd:4
+[I]01:20:26.494 > NetManager::Send() index:85, cmd:4
+[I]01:20:31.498 > NetManager::Send() index:86, cmd:4
+[I]01:20:36.505 > NetManager::Send() index:87, cmd:4
+[I]01:20:41.509 > NetManager::Send() index:88, cmd:4
+[I]01:20:46.519 > NetManager::Send() index:89, cmd:4
+[I]01:20:51.524 > NetManager::Send() index:90, cmd:4
+[I]01:20:56.527 > NetManager::Send() index:91, cmd:4
+[I]01:21:01.544 > NetManager::Send() index:92, cmd:4
+[I]01:21:06.547 > NetManager::Send() index:93, cmd:4
+[I]01:21:11.551 > NetManager::Send() index:94, cmd:4
+[I]01:21:16.555 > NetManager::Send() index:95, cmd:4
+[I]01:21:21.561 > NetManager::Send() index:96, cmd:4
+[I]01:21:26.565 > NetManager::Send() index:97, cmd:4
+[I]01:21:31.567 > NetManager::Send() index:98, cmd:4
+[I]01:21:36.580 > NetManager::Send() index:99, cmd:4
+[I]01:21:41.585 > NetManager::Send() index:100, cmd:4
+[I]01:21:46.589 > NetManager::Send() index:101, cmd:4
+[I]01:21:51.594 > NetManager::Send() index:102, cmd:4
+[I]01:21:56.598 > NetManager::Send() index:103, cmd:4
+[I]01:22:01.602 > NetManager::Send() index:104, cmd:4
+[I]01:22:06.606 > NetManager::Send() index:105, cmd:4
+[I]01:22:11.611 > NetManager::Send() index:106, cmd:4
+[I]01:22:16.615 > NetManager::Send() index:107, cmd:4
+[I]01:22:21.619 > NetManager::Send() index:108, cmd:4
+[I]01:22:26.623 > NetManager::Send() index:109, cmd:4
+[I]01:22:31.627 > NetManager::Send() index:110, cmd:4
+[I]01:22:36.632 > NetManager::Send() index:111, cmd:4
+[I]01:22:41.637 > NetManager::Send() index:112, cmd:4
+[I]01:22:46.640 > NetManager::Send() index:113, cmd:4
+[I]01:22:51.645 > NetManager::Send() index:114, cmd:4
+[I]01:22:56.650 > NetManager::Send() index:115, cmd:4
+[I]01:23:01.653 > NetManager::Send() index:116, cmd:4
+[I]01:23:06.658 > NetManager::Send() index:117, cmd:4
+[I]01:23:11.666 > NetManager::Send() index:118, cmd:4
+[I]01:23:16.670 > NetManager::Send() index:119, cmd:4
+[I]01:23:21.675 > NetManager::Send() index:120, cmd:4
+[I]01:23:26.691 > NetManager::Send() index:121, cmd:4
+[I]01:23:31.687 > NetManager::Send() index:122, cmd:4
+[I]01:23:36.709 > NetManager::Send() index:123, cmd:4
+[I]01:23:41.704 > NetManager::Send() index:124, cmd:4
+[I]01:23:46.708 > NetManager::Send() index:125, cmd:4
+[I]01:23:51.717 > NetManager::Send() index:126, cmd:4
+[I]01:23:56.723 > NetManager::Send() index:127, cmd:4

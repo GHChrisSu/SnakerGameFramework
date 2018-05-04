@@ -1,0 +1,236 @@
+[I]19:59:55.399 ================================================================================
+[I]19:59:55.408                                    SGFDebuger                                   
+[I]19:59:55.412 --------------------------------------------------------------------------------
+[I]19:59:55.412 Time:	19:59:55.392 
+[I]19:59:55.413 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/ServerLog/
+[I]19:59:55.414 ================================================================================
+[I]19:59:55.418 > Program::InitDebuger() 
+[I]19:59:55.432 > ServerManager::StartServer() 1
+[I]19:59:55.435 > ServerConfig::ReadConfig() 
+[I]19:59:55.454 > ZoneServer[1,4540]::Create() 
+[I]19:59:55.457 > ZoneServer[1,4540]::Start() 
+[I]19:59:55.466 > NetManager::Init() port:4540
+[I]19:59:55.469 > Gateway::Init() port:4540
+[I]19:59:55.478 > Gateway::Start() 
+[I]19:59:55.557 > IPCConfig::ReadConfig() 
+[I]19:59:55.566 > NetManager::AddListener() cmd:1, listener:OnlineManager.OnLoginReq
+[I]19:59:55.567 > NetManager::AddListener() cmd:3, listener:OnlineManager.OnHeartBeatReq
+[I]19:59:55.569 > RPCManagerBase::RegisterListener() OnlineManager
+[I]19:59:55.572 > MainLoop::Run() 
+[I]20:00:01.402 > OnlineManager::OnLoginReq() session:1, index:1, name:abc
+[I]20:00:01.408 > NetManager::Send() index:1, cmd:2
+[I]20:00:01.446 > OnlineManager::OnLoginReq() session:2, index:1, name:abc
+[I]20:00:01.447 > NetManager::Send() index:1, cmd:2
+[I]20:00:01.747 > NetManager::Send() index:2, cmd:4
+[I]20:00:06.754 > NetManager::Send() index:3, cmd:4
+[I]20:00:11.758 > NetManager::Send() index:4, cmd:4
+[W]20:00:18.547 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 134
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 118
+[W]20:00:20.399 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 134
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 118
+[W]20:00:22.400 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 134
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 118
+[W]20:00:24.500 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 134
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 118
+[W]20:00:26.708 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 134
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 118
+[W]20:00:29.010 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 134
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 118
+[W]20:00:31.409 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 134
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 118
+[W]20:00:33.920 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 134
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 118
+[W]20:00:36.519 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 134
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 118
+[W]20:00:39.229 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 134
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 118
+[I]20:01:25.568 > OnlineManager::OnLoginReq() session:3, index:1, name:a
+[I]20:01:25.570 > NetManager::Send() index:1, cmd:2
+[I]20:01:25.933 > NetManager::Send() index:2, cmd:4
+[I]20:01:30.931 > NetManager::Send() index:3, cmd:4
+[I]20:01:35.935 > NetManager::Send() index:4, cmd:4
+[I]20:01:40.951 > NetManager::Send() index:5, cmd:4
+[I]20:01:45.959 > NetManager::Send() index:6, cmd:4
+[I]20:01:50.961 > NetManager::Send() index:7, cmd:4
+[I]20:01:55.962 > NetManager::Send() index:8, cmd:4
+[I]20:02:01.065 > NetManager::Send() index:9, cmd:4
+[I]20:02:05.992 > NetManager::Send() index:10, cmd:4
+[I]20:02:10.998 > NetManager::Send() index:11, cmd:4
+[I]20:02:16.091 > NetManager::Send() index:12, cmd:4
+[I]20:02:21.009 > NetManager::Send() index:13, cmd:4
+[I]20:04:21.066 > OnlineManager::OnLoginReq() session:4, index:1, name:a
+[I]20:04:21.070 > NetManager::Send() index:1, cmd:2
+[I]20:04:22.401 > NetManager::Send() index:2, cmd:4
+[I]20:04:27.411 > NetManager::Send() index:3, cmd:4
+[I]20:04:32.441 > NetManager::Send() index:4, cmd:4
+[I]20:06:36.082 > OnlineManager::OnLoginReq() session:5, index:1, name:a
+[I]20:06:36.085 > NetManager::Send() index:1, cmd:2
+[I]20:06:38.199 > NetManager::Send() index:2, cmd:4
+[I]20:06:51.670 > OnlineManager::OnLoginReq() session:6, index:1, name:a
+[I]20:06:51.672 > NetManager::Send() index:1, cmd:2
+[I]20:06:55.713 > OnlineManager::OnLoginReq() session:7, index:2, name:aa
+[I]20:06:55.716 > NetManager::Send() index:2, cmd:2
+[I]20:06:56.000 > NetManager::Send() index:3, cmd:4
+[I]20:07:01.003 > NetManager::Send() index:4, cmd:4
+[I]20:07:07.677 > NetManager::Send() index:5, cmd:4
+[I]20:07:12.689 > NetManager::Send() index:6, cmd:4
+[I]20:07:17.689 > NetManager::Send() index:7, cmd:4
+[I]20:07:22.705 > NetManager::Send() index:8, cmd:4
+[I]20:07:35.563 > OnlineManager::OnLoginReq() session:8, index:1, name:aaa
+[I]20:07:35.566 > NetManager::Send() index:1, cmd:2
+[W]20:10:33.225 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]20:10:41.761 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]20:10:41.781 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]20:10:41.815 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]20:10:41.866 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]20:10:41.933 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]20:10:42.017 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]20:10:42.118 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]20:10:42.237 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]20:10:42.371 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]20:10:42.506 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]20:10:42.658 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]20:10:42.827 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]20:10:43.012 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]20:10:43.214 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]20:10:43.433 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]20:10:43.668 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]20:10:43.921 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]20:10:44.191 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]20:10:44.462 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]20:10:44.747 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[W]20:10:45.050 > Gateway::DoReceiveInThread() 无效的包! sid:8
+[I]20:12:36.300 > OnlineManager::OnLoginReq() session:9, index:1, name:aa
+[I]20:12:36.301 > NetManager::Send() index:1, cmd:2
+[I]20:12:38.054 > NetManager::Send() index:2, cmd:4
+[I]20:12:48.451 > NetManager::Send() index:3, cmd:4
+[I]20:12:53.457 > NetManager::Send() index:4, cmd:4
+[I]20:12:58.466 > NetManager::Send() index:5, cmd:4
+[I]20:13:03.478 > NetManager::Send() index:6, cmd:4
+[I]20:13:08.497 > NetManager::Send() index:7, cmd:4
+[I]20:13:13.509 > NetManager::Send() index:8, cmd:4
+[I]20:13:18.684 > NetManager::Send() index:9, cmd:4
+[I]20:13:23.695 > NetManager::Send() index:10, cmd:4
+[I]20:13:28.739 > NetManager::Send() index:11, cmd:4
+[I]20:13:33.756 > NetManager::Send() index:12, cmd:4
+[I]20:13:38.776 > NetManager::Send() index:13, cmd:4
+[I]20:13:43.784 > NetManager::Send() index:14, cmd:4
+[I]20:13:48.708 > NetManager::Send() index:15, cmd:4
+[I]20:13:53.724 > NetManager::Send() index:16, cmd:4
+[I]20:13:58.738 > NetManager::Send() index:17, cmd:4
+[I]20:14:03.739 > NetManager::Send() index:18, cmd:4
+[I]20:14:08.747 > NetManager::Send() index:19, cmd:4
+[I]20:14:13.763 > NetManager::Send() index:20, cmd:4
+[I]20:14:18.776 > NetManager::Send() index:21, cmd:4
+[I]20:14:23.790 > NetManager::Send() index:22, cmd:4
+[I]20:14:28.794 > NetManager::Send() index:23, cmd:4
+[I]20:14:33.795 > NetManager::Send() index:24, cmd:4
+[I]20:14:42.957 > NetManager::Send() index:25, cmd:4
+[I]20:14:47.942 > NetManager::Send() index:26, cmd:4
+[I]20:14:53.058 > NetManager::Send() index:27, cmd:4
+[I]20:14:57.975 > NetManager::Send() index:28, cmd:4
+[I]20:15:02.975 > NetManager::Send() index:29, cmd:4
+[I]20:15:07.980 > NetManager::Send() index:30, cmd:4
+[I]20:15:13.140 > NetManager::Send() index:31, cmd:4
+[I]20:15:18.184 > NetManager::Send() index:32, cmd:4
+[I]20:15:23.195 > NetManager::Send() index:33, cmd:4
+[I]20:15:28.118 > NetManager::Send() index:34, cmd:4
+[I]20:15:33.120 > NetManager::Send() index:35, cmd:4
+[I]20:20:24.660 > OnlineManager::OnLoginReq() session:10, index:1, name:aa
+[I]20:20:24.660 > NetManager::Send() index:1, cmd:2
+[I]20:20:25.781 > NetManager::Send() index:2, cmd:4
+[I]20:20:30.782 > NetManager::Send() index:3, cmd:4
+[I]20:20:35.793 > NetManager::Send() index:4, cmd:4
+[I]20:21:24.435 > OnlineManager::OnLoginReq() session:11, index:1, name:aaa
+[I]20:21:24.436 > NetManager::Send() index:1, cmd:2
+[I]20:21:26.663 > NetManager::Send() index:2, cmd:4
+[I]20:21:31.672 > NetManager::Send() index:3, cmd:4
+[I]20:21:36.674 > NetManager::Send() index:4, cmd:4
+[I]20:21:41.685 > NetManager::Send() index:5, cmd:4
+[I]20:22:01.321 > NetManager::Send() index:6, cmd:4
+[I]20:22:14.928 > OnlineManager::OnLoginReq() session:12, index:1, name:aaa
+[I]20:22:14.929 > NetManager::Send() index:1, cmd:2
+[I]20:22:18.463 > OnlineManager::OnLoginReq() session:13, index:2, name:aaaaa
+[I]20:22:18.465 > NetManager::Send() index:2, cmd:2
+[I]20:22:24.729 > NetManager::Send() index:3, cmd:4
+[I]20:22:29.651 > NetManager::Send() index:4, cmd:4
+[I]20:22:34.772 > NetManager::Send() index:5, cmd:4
+[I]20:22:39.786 > NetManager::Send() index:6, cmd:4
+[I]20:22:44.697 > NetManager::Send() index:7, cmd:4
+[I]20:22:49.713 > NetManager::Send() index:8, cmd:4
+[I]20:22:54.720 > NetManager::Send() index:9, cmd:4
+[I]20:22:59.730 > NetManager::Send() index:10, cmd:4
+[I]20:23:04.732 > NetManager::Send() index:11, cmd:4
+[I]20:23:09.744 > NetManager::Send() index:12, cmd:4
+[I]20:23:14.756 > NetManager::Send() index:13, cmd:4
+[I]20:23:19.749 > NetManager::Send() index:14, cmd:4
+[I]20:23:49.495 > OnlineManager::OnLoginReq() session:14, index:1, name:aaa
+[I]20:23:49.496 > NetManager::Send() index:1, cmd:2
+[I]20:23:51.363 > NetManager::Send() index:2, cmd:4
+[I]20:41:14.845 > OnlineManager::OnLoginReq() session:15, index:1, name:a
+[I]20:41:14.846 > NetManager::Send() index:1, cmd:2
+[I]20:41:17.232 > NetManager::Send() index:2, cmd:4
+[I]20:41:22.235 > NetManager::Send() index:3, cmd:4
+[I]20:41:27.250 > NetManager::Send() index:4, cmd:4
+[I]20:41:32.253 > NetManager::Send() index:5, cmd:4
+[I]20:41:37.257 > NetManager::Send() index:6, cmd:4
+[I]20:41:42.262 > NetManager::Send() index:7, cmd:4
+[I]20:41:47.271 > NetManager::Send() index:8, cmd:4
+[I]20:41:52.277 > NetManager::Send() index:9, cmd:4
+[I]20:41:57.286 > NetManager::Send() index:10, cmd:4
+[I]20:42:02.292 > NetManager::Send() index:11, cmd:4
+[I]20:42:07.304 > NetManager::Send() index:12, cmd:4
+[I]20:42:19.299 > NetManager::Send() index:13, cmd:4
+[I]20:42:24.313 > NetManager::Send() index:14, cmd:4
+[I]20:42:29.325 > NetManager::Send() index:15, cmd:4
+[I]20:42:34.332 > NetManager::Send() index:16, cmd:4
+[I]20:42:39.342 > NetManager::Send() index:17, cmd:4
+[I]20:42:44.349 > NetManager::Send() index:18, cmd:4
+[I]20:42:49.355 > NetManager::Send() index:19, cmd:4
+[I]20:43:01.346 > OnlineManager::OnLoginReq() session:16, index:1, name:
+[I]20:43:01.347 > NetManager::Send() index:1, cmd:2
+[I]20:43:01.585 > NetManager::Send() index:2, cmd:4
+[I]20:44:16.025 > OnlineManager::OnLoginReq() session:17, index:1, name:aaa
+[I]20:44:16.025 > NetManager::Send() index:1, cmd:2
+[I]20:44:16.434 > NetManager::Send() index:2, cmd:4
+[I]20:45:53.061 > OnlineManager::OnLoginReq() session:18, index:1, name:aaa
+[I]20:45:53.062 > NetManager::Send() index:1, cmd:2
+[I]20:45:55.255 > NetManager::Send() index:2, cmd:4
+[I]20:46:00.272 > NetManager::Send() index:3, cmd:4
+[I]20:46:05.273 > NetManager::Send() index:4, cmd:4
+[I]20:46:10.285 > NetManager::Send() index:5, cmd:4
+[W]20:46:14.448 > NetManager::HandleRPCMessage() RPC不存在！
+[I]20:46:15.293 > NetManager::Send() index:6, cmd:4
+[I]20:46:20.301 > NetManager::Send() index:7, cmd:4
+[I]20:46:25.310 > NetManager::Send() index:8, cmd:4
+[I]20:46:41.777 > NetManager::Send() index:9, cmd:4

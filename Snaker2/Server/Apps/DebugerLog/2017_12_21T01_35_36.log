@@ -1,0 +1,17 @@
+[I]01:35:36.014 ================================================================================
+[I]01:35:36.023                                    SGFDebuger                                   
+[I]01:35:36.023 --------------------------------------------------------------------------------
+[I]01:35:36.024 Time:	01:35:36.011 
+[I]01:35:36.024 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/DebugerLog/
+[I]01:35:36.024 ================================================================================
+[I]01:35:36.026 > ServerDemo::Init() 
+[I]01:35:36.029 > NetManager::Init() port:4540
+[I]01:35:36.034 > Gateway::Init() port:4540
+[I]01:35:36.037 > Gateway::Start() 
+[I]01:35:36.083 > NetManager::AddListener() cmd:1, listener:ServerDemo.OnLoginReq
+[I]01:35:36.085 > RPCManagerBase::RegisterListener() ServerDemo
+[W]01:35:54.517 > NetManager::OnReceive() 收到未鉴权的消息! cmd:0
+[I]01:36:02.971 > ServerDemo::OnLoginReq() id:123, name:slicol
+[I]01:36:02.973 > NetManager::Send() index:1, cmd:2
+[I]01:36:10.030 > ServerDemo::StartGameRequest() a:1, b:abc
+[I]01:36:10.037 > NetManager::Invoke() ->Session[1] NotifyStartGame([ok, Snaker2.GlobalData.Data.PVPStartParam])

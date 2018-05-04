@@ -1,0 +1,93 @@
+[I]23:02:45.865 ================================================================================
+[I]23:02:45.869                                    SGFDebuger                                   
+[I]23:02:45.870 --------------------------------------------------------------------------------
+[I]23:02:45.870 Time:	23:02:45.864 
+[I]23:02:45.870 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/ServerLog/
+[I]23:02:45.871 ================================================================================
+[I]23:02:45.879 > Program::InitDebuger() 
+[I]23:02:45.893 > ServerManager::StartServer() 1
+[I]23:02:45.896 > ServerConfig::ReadConfig() 
+[I]23:02:45.924 > ZoneServer[1,4540]::Create() 
+[I]23:02:45.929 > ZoneServer[1,4540]::Start() 
+[I]23:02:45.932 > NetManager::Init() port:4540
+[I]23:02:45.934 > Gateway::Init() port:4540
+[I]23:02:45.938 > Gateway::Start() 
+[I]23:02:45.985 > IPCConfig::ReadConfig() 
+[I]23:02:45.990 > NetManager::AddListener() cmd:1, listener:OnlineManager.OnLoginReq
+[I]23:02:45.991 > NetManager::AddListener() cmd:3, listener:OnlineManager.OnHeartBeatReq
+[I]23:02:45.993 > RPCManagerBase::RegisterListener() OnlineManager
+[I]23:02:45.995 > RPCManagerBase::RegisterListener() RoomManager
+[I]23:02:45.996 > RPCManagerBase::RegisterListener() RoomManager
+[I]23:02:45.999 > MainLoop::Run() 
+[I]23:03:02.771 > OnlineManager::OnLoginReq() session:1, index:1, name:a
+[I]23:03:02.780 > NetManager::Send() index:1, cmd:2
+[I]23:03:03.943 > NetManager::Send() index:2, cmd:4
+[I]23:03:14.132 > NetManager::Send() index:3, cmd:4
+[I]23:03:19.145 > NetManager::Send() index:4, cmd:4
+[I]23:03:24.147 > NetManager::Send() index:5, cmd:4
+[I]23:03:29.156 > NetManager::Send() index:6, cmd:4
+[I]23:03:32.649 > ZoneServer::OnInputKey() F1
+[W]23:03:32.654 > Gateway::Dump() 
+Gateway Sessions (1):
+	SGF.Network.General.Server.KCPSession
+
+[W]23:03:32.656 > NetManager::Dump() 
+Net Listeners (2):
+	<cmd:1, msg:LoginReq, 	listener:OnlineManager.OnLoginReq>
+	<cmd:3, msg:HeartBeatReq, 	listener:OnlineManager.OnHeartBeatReq>
+
+[W]23:03:32.663 > RPCManagerBase::Dump() 
+RPC Cached Methods (2):
+	<name:UpdateRoomList, 	method:RoomManager.UpdateRoomList>
+	<name:CreateRoom, 	method:RoomManager.CreateRoom>
+
+[I]23:03:36.120 > ZoneServer::OnInputKey() F2
+[W]23:03:36.122 > OnlineManager::Dump() 
+User (1):
+	<id:1, name:a, online:True>
+
+[I]23:03:37.365 > ZoneServer::OnInputKey() F3
+[W]23:03:37.369 > RoomManager::Dump() 
+Rooms (1):
+	<id:1, name:room1, owner:1, players_count:1>
+		PlayerList:
+		<id:0, name:a, userId:1, sid:1, isReady:False>
+		SessionList:
+		SGF.Network.General.Server.KCPSession
+
+
+[I]23:03:40.728 > NetManager::Send() index:7, cmd:4
+[I]23:03:41.525 > NetManager::Invoke() ->Session<Cnt=1> NotifyRoomUpdate([<id:1, name:room1, owner:1, players:[<id:0, name:a, userId:1, sid:1, isReady:True>]>])
+[I]23:03:47.117 > ZoneServer::OnInputKey() F3
+[W]23:03:47.118 > RoomManager::Dump() 
+Rooms (1):
+	<id:1, name:room1, owner:1, players_count:1>
+		PlayerList:
+		<id:0, name:a, userId:1, sid:1, isReady:True>
+		SessionList:
+		SGF.Network.General.Server.KCPSession
+
+
+[I]23:03:49.823 > NetManager::Send() index:8, cmd:4
+[I]23:03:54.830 > NetManager::Send() index:9, cmd:4
+[I]23:04:17.602 > NetManager::Send() index:10, cmd:4
+[I]23:04:22.885 > NetManager::Send() index:11, cmd:4
+[I]23:04:24.022 > IPCManager::Invoke() ->[2] StartGame([1, 0, [0]])
+[E]23:04:24.099 > NetManager::HandleRPCMessage() RPC调用出错：调用的目标发生了异常。
+   在 System.RuntimeMethodHandle._InvokeMethodFast(Object target, Object[] arguments, SignatureStruct& sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture, Boolean skipVisibilityChecks)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 SGF.Network.General.Server.NetManager.HandleRPCMessage(ISession session, RPCMessage rpcmsg) 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\NetManager.cs:行号 161
+   在 SGF.Debuger.LogError(String format, Object[] args)
+   在 SGF.Network.General.Server.NetManager.HandleRPCMessage(ISession session, RPCMessage rpcmsg)
+   在 SGF.Network.General.Server.NetManager.OnReceive(ISession session, Byte[] bytes, Int32 len)
+   在 SGF.Network.General.Server.KCPSession.DoReceiveInMain()
+   在 SGF.Network.General.Server.KCPSession.Tick(UInt32 currentTimeMS)
+   在 SGF.Network.General.Server.Gateway.Tick()
+   在 SGF.Network.General.Server.NetManager.Tick()
+   在 Snaker.Server.ZoneServer.ZoneServer.Tick()
+   在 SGF.Server.ServerManager.Tick()
+   在 SGF.Server.MainLoop.Run()
+   在 Snaker.Server.Program.Main(String[] args)
+
+[W]23:05:10.094 > Gateway::DoReceiveInThread() 无效的包! sid:1

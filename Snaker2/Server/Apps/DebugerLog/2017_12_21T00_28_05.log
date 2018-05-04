@@ -1,0 +1,40 @@
+[I]00:28:05.550 ================================================================================
+[I]00:28:05.554                                    SGFDebuger                                   
+[I]00:28:05.554 --------------------------------------------------------------------------------
+[I]00:28:05.554 Time:	00:28:05.548 
+[I]00:28:05.555 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/DebugerLog/
+[I]00:28:05.555 ================================================================================
+[I]00:28:05.558 > NetManager::Init() port:4540
+[I]00:28:05.560 > Gateway::Init() port:4540
+[I]00:28:05.563 > Gateway::Start() 
+[I]00:28:05.588 > NetManager::AddListener() cmd:1, listener:ServerDemo.OnLoginRequest
+[W]00:28:08.022 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:28:08.875 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:28:09.197 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:28:09.482 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:28:09.870 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:28:09.920 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:28:11.369 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:28:12.077 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:28:12.651 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[I]00:28:18.190 > ServerDemo::OnLoginRequest() id:123, name:我就是我
+[I]00:28:18.191 > NetManager::Send() index:0, cmd:2
+[W]00:28:18.204 > KCPSession::Send() Session已经不活跃了！
+[W]00:28:29.174 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:28:29.560 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:28:30.133 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:28:33.947 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:28:33.999 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:28:34.385 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:28:34.890 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:28:34.957 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:28:35.715 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:28:36.019 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:28:36.660 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:28:37.333 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:28:37.788 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:28:38.834 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:28:39.103 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[I]00:28:44.763 > ServerDemo::OnLoginRequest() id:123, name:我就是我
+[I]00:28:44.765 > NetManager::Send() index:0, cmd:2
+[W]00:28:44.766 > KCPSession::Send() Session已经不活跃了！

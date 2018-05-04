@@ -1,0 +1,17 @@
+[I]23:45:04.708 ================================================================================
+[I]23:45:04.714                                    SGFDebuger                                   
+[I]23:45:04.714 --------------------------------------------------------------------------------
+[I]23:45:04.715 Time:	23:45:04.706 
+[I]23:45:04.715 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/ServerLog/
+[I]23:45:04.715 ================================================================================
+[I]23:45:04.717 > Program::InitDebuger() 
+[I]23:45:04.731 > ServerManager::StartServer() 1
+[I]23:45:04.736 > ServerConfig::ReadConfig() 
+[I]23:45:04.758 > Server1[1,4540]::Create() 
+[I]23:45:04.760 > Server1[1,4540]::Start() 
+[I]23:45:04.768 > IPCConfig::ReadConfig() 
+[I]23:45:04.773 > RPCManagerBase::RegisterListener() Server1
+[I]23:45:04.836 > MainLoop::Run() 
+[I]23:45:04.856 > IPCManager::Invoke() ->[2] Func2([我是参数1, 123456])
+[I]23:45:05.254 > IPCManager::HandleMessage() [2]-> OnFunc2([你成功了])
+[W]23:45:05.258 > Server1::OnFunc2() 你成功了

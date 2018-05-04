@@ -1,0 +1,79 @@
+[I]02:11:10.848 ================================================================================
+[I]02:11:10.852                                    SGFDebuger                                   
+[I]02:11:10.853 --------------------------------------------------------------------------------
+[I]02:11:10.853 Time:	02:11:10.846 
+[I]02:11:10.853 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/ServerLog/
+[I]02:11:10.853 ================================================================================
+[I]02:11:10.861 > Program::InitDebuger() 
+[I]02:11:10.871 > ServerManager::StartServer() 1
+[I]02:11:10.873 > ServerConfig::ReadConfig() 
+[I]02:11:10.892 > ZoneServer[1,4540]::Create() 
+[I]02:11:10.895 > ZoneServer[1,4540]::Start() 
+[I]02:11:10.898 > NetManager::Init() port:4540
+[I]02:11:10.899 > Gateway::Init() port:4540
+[I]02:11:10.900 > Gateway::Start() 
+[I]02:11:10.920 > IPCConfig::ReadConfig() 
+[I]02:11:10.927 > NetManager::AddListener() cmd:1, listener:OnlineManager.OnLoginReq
+[I]02:11:10.929 > NetManager::AddListener() cmd:3, listener:OnlineManager.OnHeartBeatReq
+[I]02:11:10.932 > RPCManagerBase::RegisterListener() OnlineManager
+[I]02:11:10.934 > RPCManagerBase::RegisterListener() RoomManager
+[I]02:11:10.934 > RPCManagerBase::RegisterListener() RoomManager
+[I]02:11:10.936 > MainLoop::Run() 
+[I]02:11:21.282 > OnlineManager::OnLoginReq() session:1, index:1, name:aa
+[I]02:11:21.286 > NetManager::Send() index:1, cmd:2
+[I]02:11:23.628 > NetManager::Send() index:2, cmd:4
+[I]02:11:25.279 > NetManager::Invoke() ->Session<Cnt=1> NotifyRoomUpdate([<id:1, name:bb, owner:1, players:[<id:1, name:aa, userId:1, sid:1, isReady:True>]>])
+[I]02:11:26.457 > IPCManager::Invoke() ->[2] StartGame([Snaker.GlobalData.Data.GamesServerStartParam])
+[I]02:11:26.692 > IPCManager::HandleMessage() [2]-> OnStartGame([[10, 9, 49, 50, 55, 46, 48, 46, 48, 46, 49, 16, 189, 35, 32, 66, 40, 152, 117, 48, 2, 72, 136, 14, 80, 1, 88, 1, 104, 1], [8, 1, 24, 1, 32, 1]])
+[I]02:11:26.700 > NetManager::Invoke() ->Session[1] NotifyGameStart([Snaker.GlobalData.Data.PVPStartParam])
+[I]02:11:28.622 > NetManager::Send() index:3, cmd:4
+[I]02:11:33.626 > NetManager::Send() index:4, cmd:4
+[I]02:11:38.644 > NetManager::Send() index:5, cmd:4
+[I]02:11:43.648 > NetManager::Send() index:6, cmd:4
+[I]02:11:48.661 > NetManager::Send() index:7, cmd:4
+[I]02:11:53.669 > NetManager::Send() index:8, cmd:4
+[I]02:11:58.675 > NetManager::Send() index:9, cmd:4
+[I]02:12:03.686 > NetManager::Send() index:10, cmd:4
+[I]02:12:08.689 > NetManager::Send() index:11, cmd:4
+[I]02:12:13.697 > NetManager::Send() index:12, cmd:4
+[I]02:12:18.712 > NetManager::Send() index:13, cmd:4
+[I]02:12:23.725 > NetManager::Send() index:14, cmd:4
+[I]02:12:28.727 > NetManager::Send() index:15, cmd:4
+[I]02:12:33.741 > NetManager::Send() index:16, cmd:4
+[I]02:12:38.749 > NetManager::Send() index:17, cmd:4
+[I]02:12:43.749 > NetManager::Send() index:18, cmd:4
+[I]02:12:48.762 > NetManager::Send() index:19, cmd:4
+[I]02:12:53.769 > NetManager::Send() index:20, cmd:4
+[I]02:12:58.780 > NetManager::Send() index:21, cmd:4
+[I]02:13:03.784 > NetManager::Send() index:22, cmd:4
+[I]02:13:08.787 > NetManager::Send() index:23, cmd:4
+[I]02:13:13.791 > NetManager::Send() index:24, cmd:4
+[I]02:13:18.798 > NetManager::Send() index:25, cmd:4
+[I]02:13:32.677 > OnlineManager::OnLoginReq() session:2, index:1, name:adfa
+[I]02:13:32.684 > NetManager::Send() index:1, cmd:2
+[I]02:13:32.975 > NetManager::Send() index:2, cmd:4
+[I]02:13:37.908 > NetManager::Send() index:3, cmd:4
+[I]02:13:42.913 > NetManager::Send() index:4, cmd:4
+[I]02:13:47.935 > NetManager::Send() index:5, cmd:4
+[I]02:13:48.982 > NetManager::Invoke() ->Session<Cnt=1> NotifyRoomUpdate([<id:2, name:bbb, owner:2, players:[<id:1, name:adfa, userId:2, sid:2, isReady:True>]>])
+[I]02:13:49.793 > IPCManager::Invoke() ->[2] StartGame([Snaker.GlobalData.Data.GamesServerStartParam])
+[I]02:13:49.821 > IPCManager::HandleMessage() [2]-> OnStartGame([[10, 9, 49, 50, 55, 46, 48, 46, 48, 46, 49, 16, 189, 35, 32, 66, 40, 152, 117, 48, 2, 72, 136, 14, 80, 1, 88, 1, 104, 1], [8, 2, 24, 1, 32, 2]])
+[I]02:13:49.824 > NetManager::Invoke() ->Session[2] NotifyGameStart([Snaker.GlobalData.Data.PVPStartParam])
+[I]02:13:52.942 > NetManager::Send() index:6, cmd:4
+[I]02:13:57.956 > NetManager::Send() index:7, cmd:4
+[I]02:14:02.963 > NetManager::Send() index:8, cmd:4
+[I]02:14:07.967 > NetManager::Send() index:9, cmd:4
+[I]02:14:12.972 > NetManager::Send() index:10, cmd:4
+[I]02:14:17.978 > NetManager::Send() index:11, cmd:4
+[I]02:14:22.981 > NetManager::Send() index:12, cmd:4
+[I]02:14:27.985 > NetManager::Send() index:13, cmd:4
+[I]02:14:32.989 > NetManager::Send() index:14, cmd:4
+[I]02:14:37.993 > NetManager::Send() index:15, cmd:4
+[I]02:14:42.997 > NetManager::Send() index:16, cmd:4
+[I]02:14:48.007 > NetManager::Send() index:17, cmd:4
+[I]02:14:53.012 > NetManager::Send() index:18, cmd:4
+[I]02:14:58.014 > NetManager::Send() index:19, cmd:4
+[I]02:15:03.019 > NetManager::Send() index:20, cmd:4
+[I]02:15:08.023 > NetManager::Send() index:21, cmd:4
+[I]02:15:13.035 > NetManager::Send() index:22, cmd:4
+[I]02:15:18.038 > NetManager::Send() index:23, cmd:4

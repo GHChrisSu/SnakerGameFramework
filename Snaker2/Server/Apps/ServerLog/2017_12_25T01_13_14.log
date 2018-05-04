@@ -1,0 +1,124 @@
+[I]01:13:14.753 ================================================================================
+[I]01:13:14.760                                    SGFDebuger                                   
+[I]01:13:14.760 --------------------------------------------------------------------------------
+[I]01:13:14.760 Time:	01:13:14.752 
+[I]01:13:14.760 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/ServerLog/
+[I]01:13:14.761 ================================================================================
+[I]01:13:14.763 > Program::InitDebuger() 
+[I]01:13:14.772 > ServerManager::StartServer() 2
+[I]01:13:14.774 > ServerConfig::ReadConfig() 
+[I]01:13:14.787 > GameServer[2,4541]::Create() 
+[I]01:13:14.789 > GameServer[2,4541]::Start() 
+[I]01:13:14.792 > FSPManager::Init() port:4541
+[I]01:13:14.796 > FSPGateway::Init() port:4541
+[I]01:13:14.798 > FSPGateway::Start() 
+[I]01:13:14.818 > IPCConfig::ReadConfig() 
+[I]01:13:14.822 > RPCManagerBase::RegisterListener() GameManager
+[I]01:13:14.823 > MainLoop::Run() 
+[I]01:13:36.911 > IPCManager::HandleMessage() [1]-> StartGame([System.Byte[]])
+[I]01:13:36.919 > FSPManager::CreateGame() gameId:1, auth:0
+[I]01:13:36.921 > FSPGame::Create() 
+[I]01:13:36.921 > FSPGame::SetGameState() >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[I]01:13:36.922 > FSPGame::SetGameState() None -> Create, param1 = 0, param2 = 0
+[I]01:13:36.922 > FSPGame::SetGameState() <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[I]01:13:36.927 > FSPManager::AddPlayer() gameId:1, players:[0]
+[I]01:13:36.928 > FSPGateway::CreateSession() 
+[I]01:13:36.929 > FSPSession::.ctor() 
+[I]01:13:36.932 > FSPGame::AddPlayer() playerId:0
+[I]01:13:36.933 > FSPPlayer::Create() id:0, authId:0, sid:1
+[I]01:13:36.934 > FSPSession::SetReceiveListener() 
+[I]01:13:36.953 > IPCManager::Return() ->[1] OnStartGame([SGF.Network.FSPLite.FSPParam, Snaker.GlobalData.Data.GameStartParam])
+[I]01:13:37.075 > FSPPlayer::SetAuth() 0
+[I]01:13:42.068 > FSPPlayer::SetAuth() 0
+[I]01:13:42.258 > FSPGame::HandleClientCmd() GAME_BEGIN, playerId = 0, cmd = cmd:1000, args:[0], custom:0
+[I]01:13:42.259 > FSPGame::SetFlag() player = 0, flag = m_GameBeginFlag
+[I]01:13:47.105 > FSPPlayer::SetAuth() 0
+[I]01:13:52.126 > FSPPlayer::SetAuth() 0
+[I]01:13:57.164 > FSPPlayer::SetAuth() 0
+[I]01:14:02.186 > FSPPlayer::SetAuth() 0
+[I]01:14:07.206 > FSPPlayer::SetAuth() 0
+[I]01:14:12.267 > FSPPlayer::SetAuth() 0
+[I]01:14:12.538 > FSPGame::HandleClientCmd() ROUND_BEGIN, playerId = 0, cmd = cmd:1001, args:[0], custom:0
+[I]01:14:12.540 > FSPGame::SetFlag() player = 0, flag = m_RoundBeginFlag
+[I]01:14:17.272 > FSPPlayer::SetAuth() 0
+[I]01:14:17.710 > FSPGame::HandleClientCmd() CONTROL_START, playerId = 0, cmd = cmd:1004, args:[0], custom:0
+[I]01:14:17.711 > FSPGame::SetFlag() player = 0, flag = m_ControlStartFlag
+[I]01:14:22.293 > FSPPlayer::SetAuth() 0
+[I]01:14:27.316 > FSPPlayer::SetAuth() 0
+[I]01:14:32.354 > FSPPlayer::SetAuth() 0
+[I]01:14:37.376 > FSPPlayer::SetAuth() 0
+[I]01:14:42.413 > FSPPlayer::SetAuth() 0
+[I]01:14:47.435 > FSPPlayer::SetAuth() 0
+[I]01:14:52.456 > FSPPlayer::SetAuth() 0
+[I]01:14:57.494 > FSPPlayer::SetAuth() 0
+[I]01:15:02.521 > FSPPlayer::SetAuth() 0
+[I]01:15:07.556 > FSPPlayer::SetAuth() 0
+[I]01:15:12.576 > FSPPlayer::SetAuth() 0
+[I]01:15:17.597 > FSPPlayer::SetAuth() 0
+[I]01:15:22.618 > FSPPlayer::SetAuth() 0
+[I]01:15:27.640 > FSPPlayer::SetAuth() 0
+[I]01:15:32.677 > FSPPlayer::SetAuth() 0
+[I]01:15:37.710 > FSPPlayer::SetAuth() 0
+[I]01:15:42.748 > FSPPlayer::SetAuth() 0
+[I]01:15:47.768 > FSPPlayer::SetAuth() 0
+[I]01:15:52.806 > FSPPlayer::SetAuth() 0
+[I]01:15:57.845 > FSPPlayer::SetAuth() 0
+[I]01:16:02.865 > FSPPlayer::SetAuth() 0
+[I]01:16:07.886 > FSPPlayer::SetAuth() 0
+[I]01:16:12.907 > FSPPlayer::SetAuth() 0
+[I]01:16:17.946 > FSPPlayer::SetAuth() 0
+[I]01:16:22.972 > FSPPlayer::SetAuth() 0
+[I]01:16:27.992 > FSPPlayer::SetAuth() 0
+[I]01:16:33.030 > FSPPlayer::SetAuth() 0
+[I]01:16:38.067 > FSPPlayer::SetAuth() 0
+[I]01:16:43.089 > FSPPlayer::SetAuth() 0
+[I]01:16:48.110 > FSPPlayer::SetAuth() 0
+[I]01:16:53.147 > FSPPlayer::SetAuth() 0
+[I]01:16:58.170 > FSPPlayer::SetAuth() 0
+[I]01:17:03.190 > FSPPlayer::SetAuth() 0
+[I]01:17:08.228 > FSPPlayer::SetAuth() 0
+[I]01:17:13.249 > FSPPlayer::SetAuth() 0
+[I]01:17:18.287 > FSPPlayer::SetAuth() 0
+[I]01:17:23.309 > FSPPlayer::SetAuth() 0
+[I]01:17:28.330 > FSPPlayer::SetAuth() 0
+[I]01:17:33.367 > FSPPlayer::SetAuth() 0
+[I]01:17:38.389 > FSPPlayer::SetAuth() 0
+[I]01:17:43.411 > FSPPlayer::SetAuth() 0
+[I]01:17:48.449 > FSPPlayer::SetAuth() 0
+[I]01:17:53.469 > FSPPlayer::SetAuth() 0
+[I]01:17:58.488 > FSPPlayer::SetAuth() 0
+[I]01:18:03.528 > FSPPlayer::SetAuth() 0
+[I]01:18:08.565 > FSPPlayer::SetAuth() 0
+[I]01:18:13.585 > FSPPlayer::SetAuth() 0
+[I]01:18:18.607 > FSPPlayer::SetAuth() 0
+[I]01:18:23.628 > FSPPlayer::SetAuth() 0
+[I]01:18:28.649 > FSPPlayer::SetAuth() 0
+[I]01:18:33.673 > FSPPlayer::SetAuth() 0
+[I]01:18:38.695 > FSPPlayer::SetAuth() 0
+[I]01:18:43.715 > FSPPlayer::SetAuth() 0
+[I]01:18:48.737 > FSPPlayer::SetAuth() 0
+[I]01:18:53.758 > FSPPlayer::SetAuth() 0
+[I]01:18:58.797 > FSPPlayer::SetAuth() 0
+[I]01:19:03.817 > FSPPlayer::SetAuth() 0
+[I]01:19:08.848 > FSPPlayer::SetAuth() 0
+[I]01:19:13.885 > FSPPlayer::SetAuth() 0
+[I]01:19:18.905 > FSPPlayer::SetAuth() 0
+[I]01:19:23.944 > FSPPlayer::SetAuth() 0
+[I]01:19:28.965 > FSPPlayer::SetAuth() 0
+[I]01:19:33.985 > FSPPlayer::SetAuth() 0
+[I]01:19:39.021 > FSPPlayer::SetAuth() 0
+[I]01:19:44.067 > FSPPlayer::SetAuth() 0
+[I]01:19:49.115 > FSPPlayer::SetAuth() 0
+[I]01:19:54.154 > FSPPlayer::SetAuth() 0
+[I]01:19:59.191 > FSPPlayer::SetAuth() 0
+[I]01:20:04.212 > FSPPlayer::SetAuth() 0
+[I]01:20:09.241 > FSPPlayer::SetAuth() 0
+[I]01:20:14.279 > FSPPlayer::SetAuth() 0
+[I]01:20:19.301 > FSPPlayer::SetAuth() 0
+[I]01:20:24.322 > FSPPlayer::SetAuth() 0
+[I]01:20:29.342 > FSPPlayer::SetAuth() 0
+[I]01:20:34.363 > FSPPlayer::SetAuth() 0
+[I]01:20:39.387 > FSPPlayer::SetAuth() 0
+[I]01:20:44.413 > FSPPlayer::SetAuth() 0
+[I]01:20:49.434 > FSPPlayer::SetAuth() 0
+[I]01:20:54.471 > FSPPlayer::SetAuth() 0

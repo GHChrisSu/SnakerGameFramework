@@ -1,0 +1,20 @@
+[I]00:23:48.571 ================================================================================
+[I]00:23:48.579                                    SGFDebuger                                   
+[I]00:23:48.580 --------------------------------------------------------------------------------
+[I]00:23:48.580 Time:	00:23:48.570 
+[I]00:23:48.580 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/DebugerLog/
+[I]00:23:48.580 ================================================================================
+[I]00:23:48.587 > NetManager::Init() port:4540
+[I]00:23:48.590 > Gateway::Init() port:4540
+[I]00:23:48.592 > Gateway::Start() 
+[I]00:23:48.628 > NetManager::AddListener() cmd:1, listener:ServerDemo.OnLoginRequest
+[I]00:23:59.087 > ServerDemo::OnLoginRequest() id:123, name:我就是我
+[I]00:23:59.089 > NetManager::Send() index:0, cmd:2
+[W]00:23:59.101 > KCPSession::Send() Session已经不活跃了！
+[W]00:24:12.347 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:24:12.781 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:24:13.422 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:24:16.951 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:24:17.072 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:24:17.508 > Gateway::DoReceiveInThread() 无效的包! sid:16777216
+[W]00:24:18.026 > Gateway::DoReceiveInThread() 无效的包! sid:16777216

@@ -1,0 +1,6 @@
+F:\Project\gad\Recording\Snaker2\Plugins\Snaker2.ILRScript\obj\Debug\Snaker2.ILRScript.csproj.CoreCompileInputs.cache
+F:\Project\gad\Recording\Snaker2\Plugins\Libs\ILRScript.dll
+F:\Project\gad\Recording\Snaker2\Plugins\Libs\ILRScript.pdb
+F:\Project\gad\Recording\Snaker2\Plugins\Snaker2.ILRScript\obj\Debug\ILRScript.dll
+F:\Project\gad\Recording\Snaker2\Plugins\Snaker2.ILRScript\obj\Debug\ILRScript.pdb
+F:\Project\gad\Recording\Snaker2\Plugins\Snaker2.ILRScript\obj\Debug\Snaker2.ILRScript.csprojResolveAssemblyReference.cache

@@ -1,0 +1,109 @@
+[I]21:24:02.014 ================================================================================
+[I]21:24:02.042                                    SGFDebuger                                   
+[I]21:24:02.042 --------------------------------------------------------------------------------
+[I]21:24:02.042 Time:	21:24:02.011 
+[I]21:24:02.042 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/ServerLog/
+[I]21:24:02.042 ================================================================================
+[I]21:24:02.045 > Program::InitDebuger() 
+[I]21:24:02.131 > ServerManager::StartServer() 1
+[I]21:24:02.144 > ServerConfig::ReadConfig() 
+[I]21:24:02.167 > ZoneServer[1,4540]::Create() 
+[I]21:24:02.170 > ZoneServer[1,4540]::Start() 
+[I]21:24:02.174 > NetManager::Init() port:4540
+[I]21:24:02.177 > Gateway::Init() port:4540
+[I]21:24:02.179 > Gateway::Start() 
+[I]21:24:02.251 > IPCConfig::ReadConfig() 
+[I]21:24:02.266 > NetManager::AddListener() cmd:1, listener:OnlineManager.OnLoginReq
+[I]21:24:02.266 > NetManager::AddListener() cmd:3, listener:OnlineManager.OnHeartBeatReq
+[I]21:24:02.267 > RPCManagerBase::RegisterListener() OnlineManager
+[I]21:24:02.269 > RPCManagerBase::RegisterListener() RoomManager
+[I]21:24:02.270 > RPCManagerBase::RegisterListener() RoomManager
+[I]21:24:02.272 > MainLoop::Run() 
+[I]21:24:22.235 > OnlineManager::OnLoginReq() session:1, index:1, name:aa
+[I]21:24:22.246 > NetManager::Send() index:1, cmd:2
+[I]21:24:22.289 > OnlineManager::OnLoginReq() session:2, index:1, name:aa
+[I]21:24:22.291 > NetManager::Send() index:1, cmd:2
+[I]21:24:24.248 > NetManager::Send() index:2, cmd:4
+[I]21:24:29.258 > NetManager::Send() index:3, cmd:4
+[I]21:24:34.260 > NetManager::Send() index:4, cmd:4
+[I]21:24:39.262 > NetManager::Send() index:5, cmd:4
+[I]21:24:44.277 > NetManager::Send() index:6, cmd:4
+[W]21:24:49.910 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 134
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 118
+[W]21:24:52.269 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 134
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 118
+[W]21:24:54.759 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 134
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 118
+[W]21:24:57.367 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 134
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 118
+[W]21:25:00.072 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 134
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 118
+[I]21:25:08.172 > OnlineManager::OnLoginReq() session:3, index:1, name:aaaa
+[I]21:25:08.177 > NetManager::Send() index:1, cmd:2
+[I]21:25:10.193 > NetManager::Send() index:2, cmd:4
+[W]21:25:51.119 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:51.152 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:51.203 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:51.271 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:51.355 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:51.456 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:51.575 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:51.711 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:51.863 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:52.014 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:52.184 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:52.369 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:52.571 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:52.792 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:53.026 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:53.273 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:53.543 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:53.814 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:54.103 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:54.403 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:54.724 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:55.060 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:55.414 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:55.785 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:56.122 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:56.157 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:56.174 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:56.207 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:56.275 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:56.360 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:56.460 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:56.578 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:56.714 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:56.855 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:57.006 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:57.174 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:57.359 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:57.427 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:57.562 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:57.781 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:57.865 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:58.016 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:58.260 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:58.327 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:58.529 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:58.799 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:58.815 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:59.104 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:59.291 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:59.408 > Gateway::DoReceiveInThread() 无效的包! sid:3
+[W]21:25:59.728 > Gateway::DoReceiveInThread() 无效的包! sid:3

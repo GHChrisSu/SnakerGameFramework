@@ -1,0 +1,29 @@
+[I]11:36:48.954 ================================================================================
+[I]11:36:48.959                                    SGFDebuger                                   
+[I]11:36:48.960 --------------------------------------------------------------------------------
+[I]11:36:48.960 Time:	11:36:48.953 
+[I]11:36:48.960 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/ServerLog/
+[I]11:36:48.961 ================================================================================
+[I]11:36:48.967 > Program::InitDebuger() 
+[I]11:36:48.990 > ServerManager::StartServer() 1
+[I]11:36:48.996 > ServerConfig::ReadConfig() 
+[I]11:36:49.024 > ZoneServer[1,4540]::Create() 
+[I]11:36:49.039 > ZoneServer[1,4540]::Start() 
+[I]11:36:49.050 > NetManager::Init() port:4540
+[I]11:36:49.057 > Gateway::Init() port:4540
+[I]11:36:49.060 > Gateway::Start() 
+[I]11:36:49.110 > IPCConfig::ReadConfig() 
+[I]11:36:49.116 > NetManager::AddListener() cmd:1, listener:OnlineManager.OnLoginReq
+[I]11:36:49.119 > NetManager::AddListener() cmd:3, listener:OnlineManager.OnHeartBeatReq
+[I]11:36:49.121 > RPCManagerBase::RegisterListener() OnlineManager
+[I]11:36:49.122 > RPCManagerBase::RegisterListener() RoomManager
+[I]11:36:49.123 > RPCManagerBase::RegisterListener() RoomManager
+[I]11:36:49.125 > MainLoop::Run() 
+[I]11:36:51.382 > OnlineManager::OnLoginReq() session:1, index:3, name:a
+[I]11:36:51.387 > NetManager::Send() index:3, cmd:2
+[I]11:36:51.680 > NetManager::Send() index:4, cmd:4
+[I]11:36:56.650 > NetManager::Send() index:5, cmd:4
+[I]11:37:01.653 > NetManager::Send() index:6, cmd:4
+[I]11:37:06.658 > NetManager::Send() index:7, cmd:4
+[I]11:37:11.661 > NetManager::Send() index:8, cmd:4
+[I]11:37:16.670 > NetManager::Send() index:9, cmd:4

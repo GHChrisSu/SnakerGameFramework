@@ -1,0 +1,21 @@
+[I]23:34:49.057 ================================================================================
+[I]23:34:49.065                                    SGFDebuger                                   
+[I]23:34:49.066 --------------------------------------------------------------------------------
+[I]23:34:49.067 Time:	23:34:49.055 
+[I]23:34:49.067 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/ServerLog/
+[I]23:34:49.067 ================================================================================
+[I]23:34:49.069 > Program::InitDebuger() 
+[I]23:34:49.080 > ServerManager::StartServer() 1
+[I]23:34:49.082 > ServerConfig::ReadConfig() 
+[I]23:34:49.102 > Server1[1,4540]::Create() 
+[I]23:34:49.104 > Server1[1,4540]::Start() 
+[I]23:34:49.107 > IPCConfig::ReadConfig() 
+[I]23:34:49.109 > RPCManagerBase::RegisterListener() Server1
+[I]23:34:49.133 > ServerManager::StartServer() 2
+[I]23:34:49.135 > Server2[2,4541]::Create() 
+[I]23:34:49.137 > Server2[2,4541]::Start() 
+[I]23:34:49.139 > RPCManagerBase::RegisterListener() Server2
+[I]23:34:49.140 > MainLoop::Run() 
+[I]23:34:49.153 > IPCManager::Invoke() ->[2] Func2([我是参数1, 123456])
+[I]23:34:49.363 > IPCManager::HandleMessage() [1]-> Func2([我是参数1, 123456])
+[W]23:34:49.368 > IPCManager::HandleMessage() 参数数量不一致！

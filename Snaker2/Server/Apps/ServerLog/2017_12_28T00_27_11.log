@@ -1,0 +1,55 @@
+[I]00:27:11.353 ================================================================================
+[I]00:27:11.356                                    SGFDebuger                                   
+[I]00:27:11.357 --------------------------------------------------------------------------------
+[I]00:27:11.357 Time:	00:27:11.352 
+[I]00:27:11.358 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/ServerLog/
+[I]00:27:11.358 ================================================================================
+[I]00:27:11.360 > Program::InitDebuger() 
+[I]00:27:11.373 > ServerManager::StartServer() 1
+[I]00:27:11.376 > ServerConfig::ReadConfig() 
+[I]00:27:11.394 > ZoneServer[1,4540]::Create() 
+[I]00:27:11.399 > ZoneServer[1,4540]::Start() 
+[I]00:27:11.402 > NetManager::Init() port:4540
+[I]00:27:11.405 > Gateway::Init() port:4540
+[I]00:27:11.406 > Gateway::Start() 
+[I]00:27:11.427 > IPCConfig::ReadConfig() 
+[I]00:27:11.436 > NetManager::AddListener() cmd:1, listener:OnlineManager.OnLoginReq
+[I]00:27:11.437 > NetManager::AddListener() cmd:3, listener:OnlineManager.OnHeartBeatReq
+[I]00:27:11.438 > RPCManagerBase::RegisterListener() OnlineManager
+[I]00:27:11.439 > RPCManagerBase::RegisterListener() RoomManager
+[I]00:27:11.440 > RPCManagerBase::RegisterListener() RoomManager
+[I]00:27:11.441 > MainLoop::Run() 
+[I]00:27:14.504 > ZoneServer::OnInputKey() F3
+[W]00:27:14.506 > RoomManager::Dump() 
+Rooms (0):
+
+[I]00:27:15.453 > ZoneServer::OnInputKey() F4
+[W]00:27:15.461 > Gateway::Dump() 
+Gateway Sessions (0):
+
+[W]00:27:15.462 > NetManager::Dump() 
+Net Listeners (2):
+	<cmd:1, msg:LoginReq, 	listener:OnlineManager.OnLoginReq>
+	<cmd:3, msg:HeartBeatReq, 	listener:OnlineManager.OnHeartBeatReq>
+
+[W]00:27:15.464 > RPCManagerBase::Dump() 
+RPC Cached Methods (0):
+
+[W]00:27:15.465 > OnlineManager::Dump() 
+User (0):
+
+[W]00:27:15.466 > RoomManager::Dump() 
+Rooms (0):
+
+[I]00:27:18.177 > OnlineManager::OnLoginReq() session:1, index:1, name:sss
+[I]00:27:18.183 > NetManager::Send() index:1, cmd:2
+[I]00:27:18.763 > NetManager::Send() index:2, cmd:4
+[I]00:27:22.905 > NetManager::Invoke() ->Session<Cnt=1> NotifyRoomUpdate([<id:1, name:aaaa, owner:1, players:[<id:1, name:sss, userId:1, sid:1, isReady:True>]>])
+[I]00:27:23.581 > NetManager::Send() index:3, cmd:4
+[I]00:27:23.603 > IPCManager::Invoke() ->[2] StartGame([Snaker.GlobalData.Data.GamesServerStartParam])
+[I]00:27:23.800 > IPCManager::HandleMessage() [2]-> OnStartGame([[10, 9, 49, 50, 55, 46, 48, 46, 48, 46, 49, 16, 189, 35, 32, 66, 40, 152, 117, 48, 2, 72, 136, 14, 80, 1, 88, 1, 104, 1], [8, 1, 24, 1, 32, 1]])
+[I]00:27:23.808 > NetManager::Invoke() ->Session[1] NotifyGameStart([Snaker.GlobalData.Data.PVPStartParam])
+[I]00:27:28.587 > NetManager::Send() index:4, cmd:4
+[I]00:27:33.591 > NetManager::Send() index:5, cmd:4
+[I]00:27:38.595 > NetManager::Send() index:6, cmd:4
+[I]00:27:43.600 > NetManager::Send() index:7, cmd:4

@@ -1,0 +1,164 @@
+[I]23:13:07.049 ================================================================================
+[I]23:13:07.080                                    SGFDebuger                                   
+[I]23:13:07.085 --------------------------------------------------------------------------------
+[I]23:13:07.085 Time:	23:13:07.045 
+[I]23:13:07.086 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/ServerLog/
+[I]23:13:07.087 ================================================================================
+[I]23:13:07.091 > Program::InitDebuger() 
+[I]23:13:07.160 > ServerManager::StartServer() 1
+[I]23:13:07.161 > ServerConfig::ReadConfig() 
+[I]23:13:07.180 > ZoneServer[1,4540]::Create() 
+[I]23:13:07.185 > ZoneServer[1,4540]::Start() 
+[I]23:13:07.192 > NetManager::Init() port:4540
+[I]23:13:07.195 > Gateway::Init() port:4540
+[I]23:13:07.199 > Gateway::Start() 
+[I]23:13:07.254 > IPCConfig::ReadConfig() 
+[I]23:13:07.266 > NetManager::AddListener() cmd:1, listener:OnlineManager.OnLoginReq
+[I]23:13:07.267 > NetManager::AddListener() cmd:3, listener:OnlineManager.OnHeartBeatReq
+[I]23:13:07.268 > RPCManagerBase::RegisterListener() OnlineManager
+[I]23:13:07.269 > RPCManagerBase::RegisterListener() RoomManager
+[I]23:13:07.269 > RPCManagerBase::RegisterListener() RoomManager
+[I]23:13:07.270 > MainLoop::Run() 
+[I]23:13:12.663 > OnlineManager::OnLoginReq() session:1, index:12, name:aa
+[I]23:13:12.666 > NetManager::Send() index:12, cmd:2
+[W]23:13:12.817 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 134
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 118
+[W]23:13:12.841 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 134
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 118
+[W]23:13:13.127 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 134
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 118
+[W]23:13:13.521 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 134
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 118
+[W]23:13:14.054 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 134
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 118
+[W]23:13:14.640 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 134
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 118
+[W]23:13:15.351 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 134
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 118
+[W]23:13:16.146 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 134
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 118
+[I]23:13:16.890 > OnlineManager::OnLoginReq() session:2, index:13, name:ssss
+[I]23:13:16.895 > NetManager::Send() index:13, cmd:2
+[I]23:13:16.941 > NetManager::Send() index:14, cmd:4
+[W]23:13:17.041 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 134
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 118
+[I]23:13:17.733 > OnlineManager::OnLoginReq() session:3, index:15, name:ssss
+[I]23:13:17.738 > NetManager::Send() index:15, cmd:2
+[W]23:13:18.047 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 134
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 118
+[W]23:13:19.143 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 134
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 118
+[I]23:13:20.016 > OnlineManager::OnLoginReq() session:4, index:16, name:ssss
+[I]23:13:20.017 > NetManager::Send() index:16, cmd:2
+[W]23:13:20.345 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 134
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 118
+[W]23:13:21.642 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 134
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 118
+[W]23:13:21.949 > NetManager::OnReceive() 收到未鉴权的消息! cmd:3
+[I]23:13:22.609 > OnlineManager::OnLoginReq() session:5, index:18, name:a
+[I]23:13:22.617 > NetManager::Send() index:18, cmd:2
+[W]23:13:23.050 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 134
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 118
+[W]23:13:24.562 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 134
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 118
+[I]23:13:25.725 > OnlineManager::OnLoginReq() session:6, index:19, name:ddd
+[I]23:13:25.728 > NetManager::Send() index:19, cmd:2
+[W]23:13:26.162 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 134
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 118
+[I]23:13:26.956 > NetManager::Send() index:20, cmd:4
+[W]23:13:27.859 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 134
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 118
+[W]23:13:29.666 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 134
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 118
+[I]23:13:30.386 > OnlineManager::OnLoginReq() session:7, index:21, name:ddd
+[I]23:13:30.389 > NetManager::Send() index:21, cmd:2
+[W]23:13:31.563 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 134
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 118
+[W]23:13:31.969 > NetManager::OnReceive() 收到未鉴权的消息! cmd:3
+[W]23:13:33.563 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 134
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 118
+[W]23:13:35.671 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 134
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 118
+[W]23:13:37.875 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 134
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 118
+[I]23:13:38.404 > OnlineManager::OnLoginReq() session:8, index:1, name:bb
+[I]23:13:38.405 > NetManager::Send() index:1, cmd:2
+[W]23:13:40.172 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 134
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 118
+[I]23:13:41.266 > NetManager::Send() index:2, cmd:4
+[W]23:13:42.571 > Gateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.General.Server.Gateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 134
+   在 SGF.Network.General.Server.Gateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\General\Server\Gateway.cs:行号 118
+[I]23:13:43.044 > NetManager::Invoke() ->Session<Cnt=1> NotifyRoomUpdate([<id:1, name:afda, owner:8, players:[<id:0, name:bb, userId:8, sid:8, isReady:True>]>])
+[I]23:13:57.881 > IPCManager::Invoke() ->[2] StartGame([1, 0, [0]])

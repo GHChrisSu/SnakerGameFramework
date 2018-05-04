@@ -1,0 +1,20 @@
+[I]23:06:37.251 ================================================================================
+[I]23:06:37.295                                    SGFDebuger                                   
+[I]23:06:37.296 --------------------------------------------------------------------------------
+[I]23:06:37.296 Time:	23:06:37.249 
+[I]23:06:37.296 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/ServerLog/
+[I]23:06:37.296 ================================================================================
+[I]23:06:37.298 > Program::InitDebuger() 
+[I]23:06:37.367 > ServerManager::StartServer() 1
+[I]23:06:37.373 > ServerConfig::ReadConfig() 
+[I]23:06:37.414 > ZoneServer[1,4540]::Create() 
+[I]23:06:37.418 > ZoneServer[1,4540]::Start() 
+[I]23:06:37.423 > NetManager::Init() port:4540
+[I]23:06:37.425 > Gateway::Init() port:4540
+[I]23:06:37.427 > Gateway::Start() 
+[E]23:06:37.548 > ServerManager::StartServer() 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。
+   在 SGF.Debuger.LogError(String message)
+   在 SGF.Server.ServerManager.StartServer(Int32 id)
+   在 Snaker.Server.Program.Main(String[] args)
+
+[I]23:06:37.549 > MainLoop::Run() 

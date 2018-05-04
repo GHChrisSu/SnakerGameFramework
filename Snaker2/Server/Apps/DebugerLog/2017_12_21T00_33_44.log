@@ -1,0 +1,12 @@
+[I]00:33:44.061 ================================================================================
+[I]00:33:44.089                                    SGFDebuger                                   
+[I]00:33:44.089 --------------------------------------------------------------------------------
+[I]00:33:44.089 Time:	00:33:44.060 
+[I]00:33:44.089 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/DebugerLog/
+[I]00:33:44.090 ================================================================================
+[I]00:33:44.094 > NetManager::Init() port:4540
+[I]00:33:44.095 > Gateway::Init() port:4540
+[I]00:33:44.097 > Gateway::Start() 
+[I]00:33:44.166 > NetManager::AddListener() cmd:1, listener:ServerDemo.OnLoginRequest
+[I]00:34:13.159 > ServerDemo::OnLoginRequest() id:123, name:我就是我
+[I]00:34:13.161 > NetManager::Send() index:0, cmd:2

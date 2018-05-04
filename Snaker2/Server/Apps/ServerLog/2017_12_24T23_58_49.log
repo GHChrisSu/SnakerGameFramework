@@ -1,0 +1,69 @@
+[I]23:58:49.769 ================================================================================
+[I]23:58:49.775                                    SGFDebuger                                   
+[I]23:58:49.776 --------------------------------------------------------------------------------
+[I]23:58:49.776 Time:	23:58:49.768 
+[I]23:58:49.776 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/ServerLog/
+[I]23:58:49.776 ================================================================================
+[I]23:58:49.778 > Program::InitDebuger() 
+[I]23:58:49.792 > ServerManager::StartServer() 1
+[I]23:58:49.795 > ServerConfig::ReadConfig() 
+[I]23:58:49.807 > ZoneServer[1,4540]::Create() 
+[I]23:58:49.809 > ZoneServer[1,4540]::Start() 
+[I]23:58:49.812 > NetManager::Init() port:4540
+[I]23:58:49.816 > Gateway::Init() port:4540
+[I]23:58:49.818 > Gateway::Start() 
+[I]23:58:49.842 > IPCConfig::ReadConfig() 
+[I]23:58:49.886 > NetManager::AddListener() cmd:1, listener:OnlineManager.OnLoginReq
+[I]23:58:49.887 > NetManager::AddListener() cmd:3, listener:OnlineManager.OnHeartBeatReq
+[I]23:58:49.888 > RPCManagerBase::RegisterListener() OnlineManager
+[I]23:58:49.890 > RPCManagerBase::RegisterListener() RoomManager
+[I]23:58:49.891 > RPCManagerBase::RegisterListener() RoomManager
+[I]23:58:49.895 > MainLoop::Run() 
+[I]23:58:54.504 > OnlineManager::OnLoginReq() session:1, index:1, name:aaa
+[I]23:58:54.509 > NetManager::Send() index:1, cmd:2
+[I]23:58:54.824 > NetManager::Send() index:2, cmd:4
+[I]23:58:58.997 > NetManager::Invoke() ->Session<Cnt=1> NotifyRoomUpdate([<id:1, name:aaa, owner:1, players:[<id:0, name:aaa, userId:1, sid:1, isReady:True>]>])
+[I]23:58:59.782 > NetManager::Send() index:3, cmd:4
+[I]23:59:00.327 > IPCManager::Invoke() ->[2] StartGame([Snaker.GlobalData.Data.GameStartParam])
+[I]23:59:00.553 > IPCManager::HandleMessage() [2]-> OnStartGame([[10, 9, 49, 50, 55, 46, 48, 46, 48, 46, 49, 16, 189, 35, 32, 66, 40, 152, 117, 48, 2, 72, 136, 14, 80, 1, 88, 1, 104, 1], [8, 1, 24, 0, 32, 1]])
+[I]23:59:00.565 > NetManager::Invoke() ->Session[1] NotifyGameStart([Snaker.GlobalData.Data.PVPStartParam])
+[I]23:59:30.524 > NetManager::Send() index:4, cmd:4
+[I]23:59:35.501 > NetManager::Send() index:5, cmd:4
+[I]23:59:40.505 > NetManager::Send() index:6, cmd:4
+[I]23:59:45.511 > NetManager::Send() index:7, cmd:4
+[I]23:59:50.513 > NetManager::Send() index:8, cmd:4
+[I]23:59:55.526 > NetManager::Send() index:9, cmd:4
+[I]00:00:01.916 > NetManager::Send() index:10, cmd:4
+[I]00:00:06.933 > NetManager::Send() index:11, cmd:4
+[I]00:00:11.949 > NetManager::Send() index:12, cmd:4
+[I]00:00:16.959 > NetManager::Send() index:13, cmd:4
+[I]00:00:21.965 > NetManager::Send() index:14, cmd:4
+[I]00:00:26.977 > NetManager::Send() index:15, cmd:4
+[I]00:00:31.992 > NetManager::Send() index:16, cmd:4
+[I]00:00:36.995 > NetManager::Send() index:17, cmd:4
+[I]00:00:42.007 > NetManager::Send() index:18, cmd:4
+[I]00:00:47.007 > NetManager::Send() index:19, cmd:4
+[I]00:00:52.009 > NetManager::Send() index:20, cmd:4
+[I]00:00:57.012 > NetManager::Send() index:21, cmd:4
+[I]00:01:02.023 > NetManager::Send() index:22, cmd:4
+[I]00:01:09.567 > NetManager::Send() index:23, cmd:4
+[I]00:01:14.565 > NetManager::Send() index:24, cmd:4
+[I]00:01:19.595 > NetManager::Send() index:25, cmd:4
+[I]00:01:24.574 > NetManager::Send() index:26, cmd:4
+[I]00:01:29.586 > NetManager::Send() index:27, cmd:4
+[I]00:01:34.584 > NetManager::Send() index:28, cmd:4
+[I]00:01:39.587 > NetManager::Send() index:29, cmd:4
+[I]00:01:44.598 > NetManager::Send() index:30, cmd:4
+[I]00:01:49.603 > NetManager::Send() index:31, cmd:4
+[I]00:01:54.607 > NetManager::Send() index:32, cmd:4
+[I]00:02:06.089 > NetManager::Send() index:33, cmd:4
+[I]00:02:09.872 > NetManager::Send() index:34, cmd:4
+[I]00:02:14.882 > NetManager::Send() index:35, cmd:4
+[I]00:02:19.891 > NetManager::Send() index:36, cmd:4
+[I]00:02:24.896 > NetManager::Send() index:37, cmd:4
+[I]00:02:29.896 > NetManager::Send() index:38, cmd:4
+[I]00:02:34.913 > NetManager::Send() index:39, cmd:4
+[I]00:02:39.920 > NetManager::Send() index:40, cmd:4
+[I]00:02:44.920 > NetManager::Send() index:41, cmd:4
+[I]00:02:49.928 > NetManager::Send() index:42, cmd:4
+[W]00:03:53.079 > Gateway::DoReceiveInThread() 无效的包! sid:1

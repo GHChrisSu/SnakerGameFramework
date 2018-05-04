@@ -1,0 +1,40 @@
+[I]01:30:08.980 ================================================================================
+[I]01:30:08.985                                    SGFDebuger                                   
+[I]01:30:08.985 --------------------------------------------------------------------------------
+[I]01:30:08.986 Time:	01:30:08.977 
+[I]01:30:08.986 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/ServerLog/
+[I]01:30:08.986 ================================================================================
+[I]01:30:08.988 > Program::InitDebuger() 
+[I]01:30:08.999 > ServerManager::StartServer() 2
+[I]01:30:09.002 > ServerConfig::ReadConfig() 
+[I]01:30:09.019 > GameServer[2,4541]::Create() 
+[I]01:30:09.023 > GameServer[2,4541]::Start() 
+[I]01:30:09.026 > FSPManager::Init() port:4541
+[I]01:30:09.030 > FSPGateway::Init() port:4541
+[I]01:30:09.033 > FSPGateway::Start() 
+[I]01:30:09.055 > IPCConfig::ReadConfig() 
+[I]01:30:09.066 > RPCManagerBase::RegisterListener() GameManager
+[I]01:30:09.068 > MainLoop::Run() 
+[I]01:30:32.310 > IPCManager::HandleMessage() [1]-> StartGame([System.Byte[]])
+[I]01:30:32.320 > FSPManager::CreateGame() gameId:1, auth:0
+[I]01:30:32.322 > FSPGame::Create() 
+[I]01:30:32.322 > FSPGame::SetGameState() >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[I]01:30:32.323 > FSPGame::SetGameState() None -> Create, param1 = 0, param2 = 0
+[I]01:30:32.323 > FSPGame::SetGameState() <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[I]01:30:32.327 > FSPManager::AddPlayer() gameId:1, players:[1]
+[I]01:30:32.328 > FSPGateway::CreateSession() 
+[I]01:30:32.330 > FSPSession::.ctor() 
+[I]01:30:32.332 > FSPGame::AddPlayer() playerId:1
+[I]01:30:32.333 > FSPPlayer::Create() id:1, authId:0, sid:1
+[I]01:30:32.334 > FSPSession::SetReceiveListener() 
+[I]01:30:32.356 > IPCManager::Return() ->[1] OnStartGame([SGF.Network.FSPLite.FSPParam, Snaker.GlobalData.Data.GameStartParam])
+[I]01:30:32.478 > FSPPlayer::SetAuth() 0
+[I]01:30:35.605 > FSPGame::HandleClientCmd() GAME_BEGIN, playerId = 1, cmd = cmd:1000, args:[0], custom:0
+[I]01:30:35.608 > FSPGame::SetFlag() player = 1, flag = m_GameBeginFlag
+[I]01:30:37.471 > FSPPlayer::SetAuth() 0
+[I]01:30:42.491 > FSPPlayer::SetAuth() 0
+[I]01:30:47.523 > FSPPlayer::SetAuth() 0
+[I]01:30:52.566 > FSPPlayer::SetAuth() 0
+[I]01:30:53.980 > FSPGame::HandleClientCmd() GAME_BEGIN, playerId = 1, cmd = cmd:1000, args:[0], custom:0
+[I]01:30:53.983 > FSPGame::SetFlag() player = 1, flag = m_GameBeginFlag
+[I]01:30:57.586 > FSPPlayer::SetAuth() 0

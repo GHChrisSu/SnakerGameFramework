@@ -1,0 +1,40 @@
+[I]23:44:58.912 ================================================================================
+[I]23:44:58.918                                    SGFDebuger                                   
+[I]23:44:58.918 --------------------------------------------------------------------------------
+[I]23:44:58.918 Time:	23:44:58.910 
+[I]23:44:58.918 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/ServerLog/
+[I]23:44:58.919 ================================================================================
+[I]23:44:58.923 > Program::InitDebuger() 
+[I]23:44:58.932 > ServerManager::StartServer() 3
+[I]23:44:58.934 > ServerConfig::ReadConfig() 
+[I]23:44:58.963 > Server3[3,4542]::Create() 
+[I]23:44:58.965 > Server3[3,4542]::Start() 
+[I]23:44:58.970 > IPCConfig::ReadConfig() 
+[I]23:44:59.003 > RPCManagerBase::RegisterListener() Server3
+[I]23:44:59.007 > ServerManager::StartServer() 2
+[I]23:44:59.008 > Server2[2,4541]::Create() 
+[I]23:44:59.013 > Server2[2,4541]::Start() 
+[I]23:44:59.015 > RPCManagerBase::RegisterListener() Server2
+[I]23:44:59.017 > MainLoop::Run() 
+[I]23:45:05.176 > IPCManager::HandleMessage() [1]-> Func2([我是参数1, 123456])
+[I]23:45:05.182 > Server2::Func2() arg1:我是参数1, arg2:123456
+[I]23:45:05.183 > IPCManager::Invoke() ->[3] Func3([789, 我是参数2])
+[I]23:45:05.208 > IPCManager::Return() ->[1] OnFunc2([你成功了])
+[I]23:45:05.210 > IPCManager::HandleMessage() [2]-> Func3([789, 我是参数2])
+[I]23:45:05.213 > Server3::Func3() arg1:789, arg2:我是参数2
+[W]23:45:05.214 > IPCManager::ReturnError() ->[2] OnFunc3Error(你失败了,1)
+[I]23:45:05.215 > IPCManager::HandleMessage() [3]-> OnFunc3Error([你失败了, 1])
+[E]23:45:05.216 > Server2::OnFunc3Error() errinfo:你失败了, errcode:1
+   在 SGF.Debuger.LogError(String format, Object[] args)
+   在 Snaker2.Battle.Server2.Server2.OnFunc3Error(Int32 src, String errinfo, Int32 errcode)
+   在 System.RuntimeMethodHandle._InvokeMethodFast(Object target, Object[] arguments, SignatureStruct& sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture, Boolean skipVisibilityChecks)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 SGF.IPCWork.IPCManager.HandleMessage(IPCMessage msg)
+   在 SGF.IPCWork.IPCManager.DoReceiveInMain()
+   在 SGF.IPCWork.IPCManager.Tick()
+   在 Snaker2.Battle.Server2.Server2.Tick()
+   在 SGF.Server.ServerManager.Tick()
+   在 SGF.Server.MainLoop.Run()
+   在 Snaker2.Battle.Program.Main(String[] args)
+

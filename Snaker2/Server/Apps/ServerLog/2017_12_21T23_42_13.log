@@ -1,0 +1,18 @@
+[I]23:42:13.212 ================================================================================
+[I]23:42:13.219                                    SGFDebuger                                   
+[I]23:42:13.220 --------------------------------------------------------------------------------
+[I]23:42:13.220 Time:	23:42:13.210 
+[I]23:42:13.220 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/ServerLog/
+[I]23:42:13.220 ================================================================================
+[I]23:42:13.222 > Program::InitDebuger() 
+[I]23:42:13.236 > ServerManager::StartServer() 3
+[I]23:42:13.240 > ServerConfig::ReadConfig() 
+[I]23:42:13.272 > Server3[3,4542]::Create() 
+[I]23:42:13.274 > Server3[3,4542]::Start() 
+[I]23:42:13.278 > IPCConfig::ReadConfig() 
+[I]23:42:13.310 > RPCManagerBase::RegisterListener() Server3
+[I]23:42:13.310 > ServerManager::StartServer() 2
+[I]23:42:13.311 > Server2[2,4541]::Create() 
+[I]23:42:13.311 > Server2[2,4541]::Start() 
+[I]23:42:13.317 > RPCManagerBase::RegisterListener() Server2
+[I]23:42:13.322 > MainLoop::Run() 

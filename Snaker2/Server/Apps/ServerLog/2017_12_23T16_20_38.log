@@ -1,0 +1,242 @@
+[I]16:20:38.202 ================================================================================
+[I]16:20:38.214                                    SGFDebuger                                   
+[I]16:20:38.215 --------------------------------------------------------------------------------
+[I]16:20:38.215 Time:	16:20:38.200 
+[I]16:20:38.215 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/ServerLog/
+[I]16:20:38.216 ================================================================================
+[I]16:20:38.224 > Program::InitDebuger() 
+[I]16:20:38.239 > ServerManager::StartServer() 1
+[I]16:20:38.246 > ServerConfig::ReadConfig() 
+[I]16:20:38.278 > ZoneServer[1,4540]::Create() 
+[I]16:20:38.284 > ZoneServer[1,4540]::Start() 
+[I]16:20:38.289 > NetManager::Init() port:4540
+[I]16:20:38.296 > Gateway::Init() port:4540
+[I]16:20:38.298 > Gateway::Start() 
+[I]16:20:38.344 > IPCConfig::ReadConfig() 
+[I]16:20:38.349 > NetManager::AddListener() cmd:1, listener:OnlineManager.OnLoginReq
+[I]16:20:38.350 > NetManager::AddListener() cmd:3, listener:OnlineManager.OnHeartBeatReq
+[I]16:20:38.351 > RPCManagerBase::RegisterListener() OnlineManager
+[I]16:20:38.353 > MainLoop::Run() 
+[I]16:21:08.864 > ZoneServer::OnInputKey() D1
+[I]16:21:09.486 > ZoneServer::OnInputKey() D2
+[I]16:21:12.213 > ZoneServer::OnInputKey() F1
+[W]16:21:12.224 > Gateway::Dump() 
+Gateway Sessions (0):
+
+[W]16:21:12.225 > NetManager::Dump() 
+Net Listeners (2):
+	<cmd:1, msg:LoginReq, 	listener:OnlineManager.OnLoginReq>
+	<cmd:3, msg:HeartBeatReq, 	listener:OnlineManager.OnHeartBeatReq>
+
+[W]16:21:12.227 > RPCManagerBase::Dump() 
+RPC Cached Methods (0):
+
+[I]16:21:14.381 > ZoneServer::OnInputKey() F2
+[W]16:21:14.383 > OnlineManager::Dump() 
+User (0):
+
+[I]16:23:03.026 > OnlineManager::OnLoginReq() session:1, index:1, name:aaaa
+[I]16:23:03.032 > NetManager::Send() index:1, cmd:2
+[I]16:23:09.974 > ZoneServer::OnInputKey() D1
+[I]16:23:10.438 > ZoneServer::OnInputKey() D2
+[I]16:23:11.864 > ZoneServer::OnInputKey() F1
+[W]16:23:11.865 > Gateway::Dump() 
+Gateway Sessions (1):
+	SGF.Network.General.Server.KCPSession
+
+[W]16:23:11.866 > NetManager::Dump() 
+Net Listeners (2):
+	<cmd:1, msg:LoginReq, 	listener:OnlineManager.OnLoginReq>
+	<cmd:3, msg:HeartBeatReq, 	listener:OnlineManager.OnHeartBeatReq>
+
+[W]16:23:11.868 > RPCManagerBase::Dump() 
+RPC Cached Methods (0):
+
+[I]16:23:16.551 > ZoneServer::OnInputKey() F2
+[W]16:23:16.553 > OnlineManager::Dump() 
+User (1):
+	<id:1, name:aaaa, online:True>
+
+[I]16:23:29.541 > ZoneServer::OnInputKey() F2
+[W]16:23:29.541 > OnlineManager::Dump() 
+User (1):
+	<id:1, name:aaaa, online:True>
+
+[I]16:23:30.182 > ZoneServer::OnInputKey() F2
+[W]16:23:30.183 > OnlineManager::Dump() 
+User (1):
+	<id:1, name:aaaa, online:True>
+
+[I]16:23:30.572 > ZoneServer::OnInputKey() F2
+[W]16:23:30.572 > OnlineManager::Dump() 
+User (1):
+	<id:1, name:aaaa, online:True>
+
+[I]16:23:30.765 > ZoneServer::OnInputKey() F2
+[W]16:23:30.765 > OnlineManager::Dump() 
+User (1):
+	<id:1, name:aaaa, online:True>
+
+[I]16:23:30.934 > ZoneServer::OnInputKey() F2
+[W]16:23:30.936 > OnlineManager::Dump() 
+User (1):
+	<id:1, name:aaaa, online:True>
+
+[I]16:23:31.100 > ZoneServer::OnInputKey() F2
+[W]16:23:31.101 > OnlineManager::Dump() 
+User (1):
+	<id:1, name:aaaa, online:True>
+
+[I]16:23:31.277 > ZoneServer::OnInputKey() F2
+[W]16:23:31.278 > OnlineManager::Dump() 
+User (1):
+	<id:1, name:aaaa, online:True>
+
+[I]16:23:35.209 > NetManager::Send() index:2, cmd:4
+[I]16:23:40.196 > NetManager::Send() index:3, cmd:4
+[I]16:23:45.193 > NetManager::Send() index:4, cmd:4
+[I]16:23:50.194 > NetManager::Send() index:5, cmd:4
+[I]16:23:55.205 > NetManager::Send() index:6, cmd:4
+[I]16:30:02.701 > ZoneServer::OnInputKey() D2
+[I]16:30:03.605 > ZoneServer::OnInputKey() D3
+[I]16:30:05.021 > ZoneServer::OnInputKey() F2
+[W]16:30:05.021 > OnlineManager::Dump() 
+User (1):
+	<id:1, name:aaaa, online:False>
+
+[I]16:30:14.366 > ZoneServer::OnInputKey() F2
+[W]16:30:14.366 > OnlineManager::Dump() 
+User (1):
+	<id:1, name:aaaa, online:False>
+
+[I]16:30:14.549 > ZoneServer::OnInputKey() F2
+[W]16:30:14.552 > OnlineManager::Dump() 
+User (1):
+	<id:1, name:aaaa, online:False>
+
+[I]16:30:15.252 > ZoneServer::OnInputKey() F2
+[W]16:30:15.253 > OnlineManager::Dump() 
+User (1):
+	<id:1, name:aaaa, online:False>
+
+[I]16:31:04.040 > OnlineManager::OnLoginReq() session:2, index:1, name:aaaa
+[I]16:31:04.042 > NetManager::Send() index:1, cmd:2
+[I]16:31:04.364 > NetManager::Send() index:2, cmd:4
+[I]16:31:07.764 > ZoneServer::OnInputKey() F2
+[W]16:31:07.764 > OnlineManager::Dump() 
+User (1):
+	<id:1, name:aaaa, online:True>
+
+[I]16:31:09.361 > NetManager::Send() index:3, cmd:4
+[I]16:31:10.733 > ZoneServer::OnInputKey() F2
+[W]16:31:10.733 > OnlineManager::Dump() 
+User (1):
+	<id:1, name:aaaa, online:True>
+
+[I]16:31:11.269 > ZoneServer::OnInputKey() F2
+[W]16:31:11.271 > OnlineManager::Dump() 
+User (1):
+	<id:1, name:aaaa, online:True>
+
+[I]16:31:11.531 > ZoneServer::OnInputKey() F2
+[W]16:31:11.533 > OnlineManager::Dump() 
+User (1):
+	<id:1, name:aaaa, online:True>
+
+[I]16:31:11.742 > ZoneServer::OnInputKey() F2
+[W]16:31:11.743 > OnlineManager::Dump() 
+User (1):
+	<id:1, name:aaaa, online:True>
+
+[I]16:31:19.447 > OnlineManager::OnLoginReq() session:3, index:1, name:aaaa
+[I]16:31:19.450 > NetManager::Send() index:1, cmd:2
+[I]16:31:30.872 > OnlineManager::OnLoginReq() session:4, index:2, name:aa
+[I]16:31:30.872 > NetManager::Send() index:2, cmd:2
+[I]16:31:31.151 > NetManager::Send() index:3, cmd:4
+[I]16:31:36.146 > NetManager::Send() index:4, cmd:4
+[I]16:31:41.156 > NetManager::Send() index:5, cmd:4
+[I]16:31:46.169 > NetManager::Send() index:6, cmd:4
+[I]16:32:44.158 > ZoneServer::OnInputKey() F2
+[W]16:32:44.158 > OnlineManager::Dump() 
+User (2):
+	<id:1, name:aaaa, online:False>
+	<id:4, name:aa, online:False>
+
+[I]16:32:49.860 > OnlineManager::OnLoginReq() session:5, index:1, name:aaaa
+[I]16:32:49.864 > NetManager::Send() index:1, cmd:2
+[I]16:32:50.085 > NetManager::Send() index:2, cmd:4
+[I]16:32:55.089 > NetManager::Send() index:3, cmd:4
+[I]16:33:00.096 > NetManager::Send() index:4, cmd:4
+[I]16:33:05.108 > NetManager::Send() index:5, cmd:4
+[I]16:33:10.111 > NetManager::Send() index:6, cmd:4
+[I]16:33:37.445 > OnlineManager::OnLoginReq() session:6, index:1, name:adfsaf
+[I]16:33:37.448 > NetManager::Send() index:1, cmd:2
+[I]16:33:39.753 > NetManager::Send() index:2, cmd:4
+[I]16:33:44.762 > NetManager::Send() index:3, cmd:4
+[I]16:33:49.771 > NetManager::Send() index:4, cmd:4
+[I]16:33:54.787 > NetManager::Send() index:5, cmd:4
+[I]16:37:17.552 > OnlineManager::OnLoginReq() session:7, index:1, name:afdsaf
+[I]16:37:17.554 > NetManager::Send() index:1, cmd:2
+[I]16:37:19.915 > NetManager::Send() index:2, cmd:4
+[I]16:40:11.556 > ZoneServer::OnInputKey() F1
+[W]16:40:11.556 > Gateway::Dump() 
+Gateway Sessions (0):
+
+[W]16:40:11.557 > NetManager::Dump() 
+Net Listeners (2):
+	<cmd:1, msg:LoginReq, 	listener:OnlineManager.OnLoginReq>
+	<cmd:3, msg:HeartBeatReq, 	listener:OnlineManager.OnHeartBeatReq>
+
+[W]16:40:11.557 > RPCManagerBase::Dump() 
+RPC Cached Methods (0):
+
+[I]16:40:12.171 > ZoneServer::OnInputKey() F2
+[W]16:40:12.172 > OnlineManager::Dump() 
+User (4):
+	<id:1, name:aaaa, online:False>
+	<id:4, name:aa, online:False>
+	<id:6, name:adfsaf, online:False>
+	<id:7, name:afdsaf, online:False>
+
+[I]16:40:14.286 > ZoneServer::OnInputKey() F3
+[I]16:40:14.787 > ZoneServer::OnInputKey() F2
+[W]16:40:14.788 > OnlineManager::Dump() 
+User (4):
+	<id:1, name:aaaa, online:False>
+	<id:4, name:aa, online:False>
+	<id:6, name:adfsaf, online:False>
+	<id:7, name:afdsaf, online:False>
+
+[I]16:43:25.177 > OnlineManager::OnLoginReq() session:8, index:1, name:a
+[I]16:43:25.180 > NetManager::Send() index:1, cmd:2
+[I]16:43:25.989 > NetManager::Send() index:2, cmd:4
+[I]16:43:31.916 > OnlineManager::OnLoginReq() session:9, index:1, name:a
+[I]16:43:31.919 > NetManager::Send() index:1, cmd:2
+[I]16:43:37.078 > OnlineManager::OnLoginReq() session:10, index:2, name:a
+[I]16:43:37.081 > NetManager::Send() index:2, cmd:2
+[I]16:46:54.619 > OnlineManager::OnLoginReq() session:11, index:1, name:a
+[I]16:46:54.623 > NetManager::Send() index:1, cmd:2
+[I]16:46:54.910 > NetManager::Send() index:2, cmd:4
+[I]16:47:01.077 > OnlineManager::OnLoginReq() session:12, index:1, name:a
+[I]16:47:01.085 > NetManager::Send() index:1, cmd:2
+[I]16:48:23.641 > OnlineManager::OnLoginReq() session:13, index:1, name:a
+[I]16:48:23.645 > NetManager::Send() index:1, cmd:2
+[I]16:48:30.671 > OnlineManager::OnLoginReq() session:14, index:1, name:a
+[I]16:48:30.673 > NetManager::Send() index:1, cmd:2
+[I]16:49:36.083 > OnlineManager::OnLoginReq() session:15, index:1, name:a
+[I]16:49:36.085 > NetManager::Send() index:1, cmd:2
+[I]16:49:41.558 > OnlineManager::OnLoginReq() session:16, index:1, name:a
+[I]16:49:41.561 > NetManager::Send() index:1, cmd:2
+[I]16:49:45.902 > OnlineManager::OnLoginReq() session:17, index:2, name:a
+[I]16:49:45.905 > NetManager::Send() index:2, cmd:2
+[I]16:49:52.915 > OnlineManager::OnLoginReq() session:18, index:1, name:a
+[I]16:49:52.917 > NetManager::Send() index:1, cmd:2
+[I]16:50:11.958 > ZoneServer::OnInputKey() F2
+[W]16:50:11.960 > OnlineManager::Dump() 
+User (5):
+	<id:1, name:aaaa, online:False>
+	<id:4, name:aa, online:False>
+	<id:6, name:adfsaf, online:False>
+	<id:7, name:afdsaf, online:False>
+	<id:8, name:a, online:True>
+

@@ -1,0 +1,17 @@
+[I]23:02:12.999 ================================================================================
+[I]23:02:13.004                                    SGFDebuger                                   
+[I]23:02:13.004 --------------------------------------------------------------------------------
+[I]23:02:13.005 Time:	23:02:12.994 
+[I]23:02:13.005 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/ServerLog/
+[I]23:02:13.005 ================================================================================
+[I]23:02:13.007 > Program::InitDebuger() 
+[I]23:02:13.022 > ServerManager::StartServer() 2
+[I]23:02:13.026 > ServerConfig::ReadConfig() 
+[I]23:02:13.041 > GameServer[2,4541]::Create() 
+[I]23:02:13.058 > GameServer[2,4541]::Start() 
+[I]23:02:13.064 > FSPManager::Init() port:4541
+[I]23:02:13.067 > FSPGateway::Init() port:4541
+[I]23:02:13.087 > FSPGateway::Start() 
+[I]23:02:13.125 > IPCConfig::ReadConfig() 
+[I]23:02:13.129 > RPCManagerBase::RegisterListener() GameManager
+[I]23:02:13.132 > MainLoop::Run() 

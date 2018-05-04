@@ -1,0 +1,96 @@
+[I]02:18:44.470 ================================================================================
+[I]02:18:44.474                                    SGFDebuger                                   
+[I]02:18:44.474 --------------------------------------------------------------------------------
+[I]02:18:44.474 Time:	02:18:44.469 
+[I]02:18:44.475 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/ServerLog/
+[I]02:18:44.475 ================================================================================
+[I]02:18:44.476 > Program::InitDebuger() 
+[I]02:18:44.486 > ServerManager::StartServer() 2
+[I]02:18:44.488 > ServerConfig::ReadConfig() 
+[I]02:18:44.503 > GameServer[2,4541]::Create() 
+[I]02:18:44.506 > GameServer[2,4541]::Start() 
+[I]02:18:44.509 > FSPManager::Init() port:4541
+[I]02:18:44.511 > FSPGateway::Init() port:4541
+[I]02:18:44.513 > FSPGateway::Start() 
+[I]02:18:44.541 > IPCConfig::ReadConfig() 
+[I]02:18:44.546 > RPCManagerBase::RegisterListener() GameManager
+[I]02:18:44.548 > MainLoop::Run() 
+[I]02:19:01.278 > IPCManager::HandleMessage() [1]-> StartGame([System.Byte[]])
+[I]02:19:01.286 > FSPManager::CreateGame() gameId:1, auth:0
+[I]02:19:01.287 > FSPGame::Create() 
+[I]02:19:01.288 > FSPGame::SetGameState() >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[I]02:19:01.288 > FSPGame::SetGameState() None -> Create, param1 = 0, param2 = 0
+[I]02:19:01.289 > FSPGame::SetGameState() <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[I]02:19:01.293 > FSPManager::AddPlayer() gameId:1, players:[1]
+[I]02:19:01.294 > FSPGateway::CreateSession() 
+[I]02:19:01.295 > FSPSession::.ctor() 
+[I]02:19:01.298 > FSPGame::AddPlayer() playerId:1
+[I]02:19:01.299 > FSPPlayer::Create() id:1, authId:0, sid:1
+[I]02:19:01.301 > FSPSession::SetReceiveListener() 
+[I]02:19:01.320 > IPCManager::Return() ->[1] OnStartGame([SGF.Network.FSPLite.FSPParam, Snaker.GlobalData.Data.GameStartParam])
+[I]02:19:01.456 > FSPPlayer::SetAuth() 0
+[I]02:19:07.028 > FSPPlayer::SetAuth() 0
+[I]02:19:11.472 > FSPPlayer::SetAuth() 0
+[I]02:19:16.492 > FSPPlayer::SetAuth() 0
+[I]02:19:16.723 > FSPGame::HandleClientCmd() GAME_BEGIN, playerId = 1, cmd = cmd:1000, args:[0], custom:0
+[I]02:19:16.724 > FSPGame::SetFlag() player = 1, flag = m_GameBeginFlag
+[I]02:19:16.758 > FSPGame::SetGameState() >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[I]02:19:16.759 > FSPGame::SetGameState() Create -> GameBegin, param1 = 0, param2 = 0
+[I]02:19:16.759 > FSPGame::SetGameState() <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[I]02:19:18.842 > FSPGame::HandleClientCmd() ROUND_BEGIN, playerId = 1, cmd = cmd:1001, args:[0], custom:0
+[I]02:19:18.843 > FSPGame::SetFlag() player = 1, flag = m_RoundBeginFlag
+[I]02:19:18.870 > FSPGame::SetGameState() >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[I]02:19:18.872 > FSPGame::SetGameState() GameBegin -> RoundBegin, param1 = 0, param2 = 0
+[I]02:19:18.873 > FSPGame::SetGameState() <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[I]02:19:22.868 > FSPGame::HandleClientCmd() CONTROL_START, playerId = 1, cmd = cmd:1004, args:[0], custom:118
+[I]02:19:22.869 > FSPGame::SetFlag() player = 1, flag = m_ControlStartFlag
+[I]02:19:22.896 > FSPGame::SetGameState() >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[I]02:19:22.898 > FSPGame::SetGameState() RoundBegin -> ControlStart, param1 = 0, param2 = 0
+[I]02:19:22.899 > FSPGame::SetGameState() <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[I]02:19:24.721 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1, args:[1], custom:176
+[I]02:19:26.086 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1, args:[1], custom:216
+[I]02:19:30.112 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1, args:[1], custom:338
+[I]02:19:32.488 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1, args:[1], custom:410
+[I]02:19:37.210 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1, args:[1], custom:553
+[I]02:19:39.463 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1, args:[1], custom:622
+[I]02:19:44.686 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1, args:[1], custom:780
+[I]02:19:45.564 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1, args:[1], custom:806
+[I]02:19:48.345 > FSPGame::HandleClientCmd() ROUND_END, playerId = 1, cmd = cmd:1006, args:[0], custom:890
+[I]02:19:48.351 > FSPGame::SetFlag() player = 1, flag = m_RoundEndFlag
+[I]02:19:48.373 > FSPGame::SetGameState() >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[I]02:19:48.375 > FSPGame::SetGameState() ControlStart -> RoundEnd, param1 = 0, param2 = 0
+[I]02:19:48.376 > FSPGame::SetGameState() <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[I]02:19:48.378 > FSPPlayer::ClearRound() 
+[I]02:19:53.431 > FSPPlayer::SetAuth() 0
+[I]02:19:53.870 > FSPGame::HandleClientCmd() ROUND_BEGIN, playerId = 1, cmd = cmd:1001, args:[0], custom:892
+[I]02:19:53.873 > FSPGame::SetFlag() player = 1, flag = m_RoundBeginFlag
+[I]02:19:53.916 > FSPGame::SetGameState() >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[I]02:19:53.917 > FSPGame::SetGameState() RoundEnd -> RoundBegin, param1 = 0, param2 = 0
+[I]02:19:53.918 > FSPGame::SetGameState() <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[I]02:19:56.617 > FSPGame::HandleClientCmd() CONTROL_START, playerId = 1, cmd = cmd:1004, args:[0], custom:80
+[I]02:19:56.620 > FSPGame::SetFlag() player = 1, flag = m_ControlStartFlag
+[I]02:19:56.623 > FSPGame::SetGameState() >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[I]02:19:56.624 > FSPGame::SetGameState() RoundBegin -> ControlStart, param1 = 0, param2 = 0
+[I]02:19:56.624 > FSPGame::SetGameState() <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[I]02:19:58.706 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1, args:[1], custom:142
+[I]02:20:00.339 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1, args:[1], custom:193
+[I]02:20:01.333 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1, args:[1], custom:223
+[I]02:20:01.958 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1, args:[1], custom:241
+[I]02:20:02.582 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1, args:[1], custom:260
+[I]02:20:03.069 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1, args:[1], custom:275
+[I]02:20:03.524 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1, args:[1], custom:288
+[I]02:20:03.995 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1, args:[1], custom:303
+[I]02:20:04.748 > FSPGame::HandleClientCmd() ROUND_END, playerId = 1, cmd = cmd:1006, args:[0], custom:326
+[I]02:20:04.751 > FSPGame::SetFlag() player = 1, flag = m_RoundEndFlag
+[I]02:20:04.807 > FSPGame::SetGameState() >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[I]02:20:04.809 > FSPGame::SetGameState() ControlStart -> RoundEnd, param1 = 0, param2 = 0
+[I]02:20:04.812 > FSPGame::SetGameState() <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[I]02:20:04.812 > FSPPlayer::ClearRound() 
+[I]02:20:09.858 > FSPPlayer::SetAuth() 0
+[I]02:20:14.879 > FSPPlayer::SetAuth() 0
+[I]02:20:17.898 > FSPGame::HandleClientCmd() GAME_EXIT, playerId = 1, cmd = cmd:1005, args:[0], custom:328
+[I]02:20:18.007 > FSPPlayer::Release() 
+[I]02:20:18.008 > FSPSession::SetReceiveListener() 
+[I]02:20:18.010 > FSPGame::SetGameState() >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[I]02:20:18.010 > FSPGame::SetGameState() RoundEnd -> GameEnd, param1 = 1, param2 = 0
+[I]02:20:18.011 > FSPGame::SetGameState() <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<

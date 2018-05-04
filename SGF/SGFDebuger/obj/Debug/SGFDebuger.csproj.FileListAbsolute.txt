@@ -1,0 +1,12 @@
+E:\Project\SGF\Libs\SGFDebuger.dll
+E:\Project\SGF\Libs\SGFDebuger.pdb
+E:\Project\SGF\SGFDebuger\obj\Debug\SGFDebuger.csproj.CoreCompileInputs.cache
+E:\Project\SGF\SGFDebuger\obj\Debug\SGFDebuger.dll
+E:\Project\SGF\SGFDebuger\obj\Debug\SGFDebuger.pdb
+E:\Project\SGF\SGFDebuger\obj\Debug\SGFDebuger.csprojResolveAssemblyReference.cache
+F:\Project\gad\Recording\SGF\Libs\SGFDebuger.dll
+F:\Project\gad\Recording\SGF\Libs\SGFDebuger.pdb
+F:\Project\gad\Recording\SGF\SGFDebuger\obj\Debug\SGFDebuger.csprojResolveAssemblyReference.cache
+F:\Project\gad\Recording\SGF\SGFDebuger\obj\Debug\SGFDebuger.csproj.CoreCompileInputs.cache
+F:\Project\gad\Recording\SGF\SGFDebuger\obj\Debug\SGFDebuger.dll
+F:\Project\gad\Recording\SGF\SGFDebuger\obj\Debug\SGFDebuger.pdb

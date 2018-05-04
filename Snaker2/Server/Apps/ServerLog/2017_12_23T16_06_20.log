@@ -1,0 +1,51 @@
+[I]16:06:20.778 ================================================================================
+[I]16:06:20.820                                    SGFDebuger                                   
+[I]16:06:20.820 --------------------------------------------------------------------------------
+[I]16:06:20.820 Time:	16:06:20.776 
+[I]16:06:20.820 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/ServerLog/
+[I]16:06:20.821 ================================================================================
+[I]16:06:20.822 > Program::InitDebuger() 
+[I]16:06:24.599 > ServerManager::StartServer() 1
+[I]16:06:24.601 > ServerConfig::ReadConfig() 
+[I]16:06:24.615 > ZoneServer[1,4540]::Create() 
+[I]16:06:24.625 > ZoneServer[1,4540]::Start() 
+[I]16:06:24.630 > NetManager::Init() port:4540
+[I]16:06:24.632 > Gateway::Init() port:4540
+[I]16:06:24.635 > Gateway::Start() 
+[I]16:06:24.726 > IPCConfig::ReadConfig() 
+[I]16:06:24.738 > NetManager::AddListener() cmd:1, listener:OnlineManager.OnLoginReq
+[I]16:06:24.738 > NetManager::AddListener() cmd:3, listener:OnlineManager.OnHeartBeatReq
+[I]16:06:24.739 > RPCManagerBase::RegisterListener() OnlineManager
+[I]16:06:24.741 > MainLoop::Run() 
+[I]16:06:31.399 > ZoneServer::OnInputKey() F1
+[W]16:06:31.408 > Gateway::Dump() 
+Gateway Sessions (0):
+
+[W]16:06:31.408 > NetManager::Dump() 
+Net Listeners (2):
+	<cmd:1, msg:LoginReq, 	listener:OnlineManager.OnLoginReq>
+	<cmd:3, msg:HeartBeatReq, 	listener:OnlineManager.OnHeartBeatReq>
+
+[W]16:06:31.410 > RPCManagerBase::Dump() 
+RPC Cached Methods (0):
+
+[I]16:06:52.769 > ZoneServer::OnInputKey() F2
+[W]16:06:52.770 > OnlineManager::Dump() 
+User (0):
+
+[I]16:06:56.549 > ZoneServer::OnInputKey() F3
+[I]16:07:01.727 > ZoneServer::OnInputKey() F4
+[W]16:07:01.727 > Gateway::Dump() 
+Gateway Sessions (0):
+
+[W]16:07:01.728 > NetManager::Dump() 
+Net Listeners (2):
+	<cmd:1, msg:LoginReq, 	listener:OnlineManager.OnLoginReq>
+	<cmd:3, msg:HeartBeatReq, 	listener:OnlineManager.OnHeartBeatReq>
+
+[W]16:07:01.728 > RPCManagerBase::Dump() 
+RPC Cached Methods (0):
+
+[W]16:07:01.729 > OnlineManager::Dump() 
+User (0):
+

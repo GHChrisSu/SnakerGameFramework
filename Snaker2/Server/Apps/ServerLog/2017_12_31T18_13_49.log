@@ -1,0 +1,43 @@
+[I]18:13:49.026 ================================================================================
+[I]18:13:49.036                                    SGFDebuger                                   
+[I]18:13:49.038 --------------------------------------------------------------------------------
+[I]18:13:49.038 Time:	18:13:49.023 
+[I]18:13:49.038 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/ServerLog/
+[I]18:13:49.039 ================================================================================
+[I]18:13:49.042 > Program::InitDebuger() 
+[I]18:13:49.057 > ServerManager::StartServer() 1
+[I]18:13:49.061 > ServerConfig::ReadConfig() 
+[I]18:13:49.088 > ZoneServer[1,4540]::Create() 
+[I]18:13:49.095 > ZoneServer[1,4540]::Start() 
+[I]18:13:49.103 > NetManager::Init() port:4540
+[I]18:13:49.106 > Gateway::Init() port:4540
+[I]18:13:49.109 > Gateway::Start() 
+[I]18:13:49.155 > IPCConfig::ReadConfig() 
+[I]18:13:49.164 > NetManager::AddListener() cmd:1, listener:OnlineManager.OnLoginReq
+[I]18:13:49.165 > NetManager::AddListener() cmd:3, listener:OnlineManager.OnHeartBeatReq
+[I]18:13:49.167 > RPCManagerBase::RegisterListener() OnlineManager
+[I]18:13:49.168 > RPCManagerBase::RegisterListener() RoomManager
+[I]18:13:49.168 > RPCManagerBase::RegisterListener() RoomManager
+[I]18:13:49.170 > MainLoop::Run() 
+[I]18:24:08.623 > OnlineManager::OnLoginReq() session:1, index:1, name:a
+[I]18:24:08.626 > NetManager::Send() index:1, cmd:2
+[I]18:24:09.107 > NetManager::Send() index:2, cmd:4
+[I]18:24:14.102 > NetManager::Send() index:3, cmd:4
+[I]18:24:19.105 > NetManager::Send() index:4, cmd:4
+[I]18:24:24.109 > NetManager::Send() index:5, cmd:4
+[I]18:24:29.121 > NetManager::Send() index:6, cmd:4
+[I]18:24:34.127 > NetManager::Send() index:7, cmd:4
+[I]18:24:39.130 > NetManager::Send() index:8, cmd:4
+[I]18:24:44.134 > NetManager::Send() index:9, cmd:4
+[I]18:24:49.140 > NetManager::Send() index:10, cmd:4
+[I]18:24:54.143 > NetManager::Send() index:11, cmd:4
+[I]18:24:59.147 > NetManager::Send() index:12, cmd:4
+[I]18:25:04.151 > NetManager::Send() index:13, cmd:4
+[I]18:25:09.155 > NetManager::Send() index:14, cmd:4
+[I]18:25:14.159 > NetManager::Send() index:15, cmd:4
+[I]18:25:19.163 > NetManager::Send() index:16, cmd:4
+[I]18:25:24.177 > NetManager::Send() index:17, cmd:4
+[I]18:25:29.214 > NetManager::Send() index:18, cmd:4
+[I]18:25:34.219 > NetManager::Send() index:19, cmd:4
+[I]18:25:39.230 > NetManager::Send() index:20, cmd:4
+[I]18:25:44.264 > NetManager::Send() index:21, cmd:4

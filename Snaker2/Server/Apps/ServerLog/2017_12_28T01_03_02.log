@@ -1,0 +1,1062 @@
+[I]01:03:02.114 ================================================================================
+[I]01:03:02.121                                    SGFDebuger                                   
+[I]01:03:02.122 --------------------------------------------------------------------------------
+[I]01:03:02.122 Time:	01:03:02.111 
+[I]01:03:02.122 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/ServerLog/
+[I]01:03:02.122 ================================================================================
+[I]01:03:02.124 > Program::InitDebuger() 
+[I]01:03:02.134 > ServerManager::StartServer() 2
+[I]01:03:02.135 > ServerConfig::ReadConfig() 
+[I]01:03:02.144 > GameServer[2,4541]::Create() 
+[I]01:03:02.149 > GameServer[2,4541]::Start() 
+[I]01:03:02.151 > FSPManager::Init() port:4541
+[I]01:03:02.152 > FSPGateway::Init() port:4541
+[I]01:03:02.154 > FSPGateway::Start() 
+[I]01:03:02.174 > IPCConfig::ReadConfig() 
+[I]01:03:02.177 > RPCManagerBase::RegisterListener() GameManager
+[I]01:03:02.179 > MainLoop::Run() 
+[I]01:03:32.585 > GameServer::OnInputKey() F3
+[I]01:03:33.688 > GameServer::OnInputKey() F2
+[I]01:03:34.081 > GameServer::OnInputKey() F1
+[W]01:03:34.083 > FSPGateway::Dump() 
+FSPGateway Sessions (0):
+
+[W]01:03:34.085 > FSPManager::Dump() 
+FSPParam:
+	host:127.0.0.1:4541
+	serverFrameInterval:66
+	clientFrameRateMultiple:2
+	serverTimeout:15000
+	maxFrameId:1800
+GameList:
+
+[I]01:03:52.139 > IPCManager::HandleMessage() [1]-> StartGame([System.Byte[]])
+[I]01:03:52.148 > FSPManager::CreateGame() gameId:1, auth:0
+[I]01:03:52.153 > FSPGame::Create() 
+[I]01:03:52.154 > FSPGame::SetGameState() >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[I]01:03:52.155 > FSPGame::SetGameState() None -> Create, param1 = 0, param2 = 0
+[I]01:03:52.156 > FSPGame::SetGameState() <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[I]01:03:52.160 > FSPManager::AddPlayer() gameId:1, players:[1]
+[I]01:03:52.162 > FSPGateway::CreateSession() 
+[I]01:03:52.164 > FSPSession::.ctor() 
+[I]01:03:52.171 > FSPGame::AddPlayer() playerId:1
+[I]01:03:52.174 > FSPPlayer::Create() id:1, authId:0, sid:1
+[I]01:03:52.175 > FSPSession::SetReceiveListener() 
+[I]01:03:52.195 > IPCManager::Return() ->[1] OnStartGame([SGF.Network.FSPLite.FSPParam, Snaker.GlobalData.Data.GamesServerStartParam])
+[W]01:03:52.307 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:03:52.517 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:03:52.819 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:03:53.224 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:03:53.729 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:03:54.171 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:03:54.336 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:03:54.387 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:03:54.690 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:03:55.044 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:03:55.094 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:03:55.599 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:03:55.853 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:03:56.207 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:03:56.762 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:03:56.914 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:03:57.187 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:03:57.304 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:03:57.388 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:03:57.506 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:03:57.690 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:03:57.724 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:03:57.775 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:03:57.808 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:03:58.095 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:03:58.213 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:03:58.600 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:03:58.633 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:03:58.718 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:03:58.886 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:03:59.207 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:03:59.324 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:03:59.430 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:03:59.644 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:03:59.914 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:03:59.949 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:00.032 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:00.100 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:00.352 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:00.723 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:00.757 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:00.841 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:00.858 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:01.414 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:01.464 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:01.633 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:01.750 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:01.970 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:02.172 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:02.341 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:02.544 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:02.644 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:02.763 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:02.829 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:02.845 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:02.981 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:03.250 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:03.284 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:03.756 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:03.873 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:03.890 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:04.329 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:04.362 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:04.699 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:04.902 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:04.969 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:05.072 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:05.086 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:05.272 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:05.576 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:05.696 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:05.879 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:05.897 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:05.931 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:05.980 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:06.014 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:06.199 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:06.216 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:06.283 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:06.401 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:06.485 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:06.603 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:06.723 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:06.788 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:06.923 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:07.091 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:07.109 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:07.227 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:07.312 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:07.379 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:07.513 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:07.580 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:07.631 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:07.699 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:07.715 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:07.800 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:07.820 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:07.884 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:08.035 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:08.136 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:08.221 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:08.288 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:08.338 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:08.423 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:08.541 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:08.609 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:08.677 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:08.726 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:08.743 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:08.794 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:08.878 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:08.911 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:09.181 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:09.215 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:09.232 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:09.249 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:09.334 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:09.401 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:09.435 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:09.452 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:09.518 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:09.536 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:09.585 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:09.855 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:09.956 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:10.041 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:10.091 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:10.108 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:10.125 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:10.141 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:10.259 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:10.529 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:10.563 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:10.697 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:10.816 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:10.850 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:10.917 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:10.933 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:11.153 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:11.170 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:11.338 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:11.371 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:11.405 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:11.439 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:11.473 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:11.641 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:11.760 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:11.827 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:12.180 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:12.214 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:12.265 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:12.281 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:12.400 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:12.517 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:12.602 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:12.635 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:12.771 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:12.838 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:12.856 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:12.905 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:13.074 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:13.124 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:13.242 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:13.292 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:13.309 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:13.343 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:13.478 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:13.814 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:13.882 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:13.949 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:14.135 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:14.168 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:14.320 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:14.371 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:14.404 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:14.421 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:14.439 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:14.507 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:14.775 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:14.792 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:15.095 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:15.129 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:15.162 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:15.247 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:15.449 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:15.583 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:15.618 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:15.820 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:15.938 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:15.971 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:16.208 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:16.224 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:16.342 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:16.409 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:16.460 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:16.477 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:16.578 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:16.847 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:16.932 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:17.083 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:17.235 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:17.353 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:17.438 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:17.642 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:17.658 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:17.678 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:17.710 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:17.760 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:17.811 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:17.860 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:17.879 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:17.945 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:18.180 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:18.231 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:18.250 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:18.332 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:18.349 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:18.450 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:18.484 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:18.585 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:18.686 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:18.737 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:18.753 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:18.854 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:18.972 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:19.090 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:19.158 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:19.174 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:19.311 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:19.394 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:19.461 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:19.478 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:19.562 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:19.663 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:19.698 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:19.832 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:19.967 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:20.169 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:20.186 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:20.270 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:20.337 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:20.388 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:20.405 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:20.455 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:20.476 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:20.489 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:20.674 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:20.692 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:20.910 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:20.978 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:20.994 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:21.011 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:21.031 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:21.213 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:21.231 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:21.382 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:21.399 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:21.432 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:21.500 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:21.533 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:21.786 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:21.871 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:21.888 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:21.904 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:21.938 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:22.039 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:22.123 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:22.191 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:22.276 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:22.376 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:22.396 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:22.443 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:22.461 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:22.511 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:22.545 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:22.596 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:22.612 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:22.662 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:22.696 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:22.784 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:22.816 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:22.899 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:22.917 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:22.968 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:23.001 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:23.050 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:23.135 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:23.218 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:23.303 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:23.320 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:23.357 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:23.370 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:23.387 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:23.573 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:23.707 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:23.758 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:23.825 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:23.842 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:23.875 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:23.977 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:24.011 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:24.027 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:24.095 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:24.212 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:24.246 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:24.280 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:24.415 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:24.432 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:24.483 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:24.499 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:24.568 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:24.718 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:24.785 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:24.802 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:24.821 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:24.853 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:24.887 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:24.938 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:24.971 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:25.139 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:25.174 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:25.190 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:25.224 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:25.375 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:25.392 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:25.460 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:25.477 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:25.493 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:25.527 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:25.678 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:25.746 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:25.779 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:25.948 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:25.998 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:26.032 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:26.083 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:26.100 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:26.319 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:26.337 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:26.403 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:26.487 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:26.538 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:26.588 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:26.723 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:26.774 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:26.791 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:26.841 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:26.858 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:26.908 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:27.060 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:27.110 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:27.195 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:27.245 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:27.262 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:27.346 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:27.380 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:27.506 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:27.590 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:27.691 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:27.708 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:27.742 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:27.759 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:27.810 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:27.860 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:27.910 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:27.945 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:28.012 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:28.180 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:28.214 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:28.248 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:28.264 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:28.332 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:28.384 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:28.416 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:28.585 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:28.719 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:28.753 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:28.805 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:28.821 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:28.837 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:28.854 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:28.889 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:28.921 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:28.972 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:29.009 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:29.024 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:29.224 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:29.292 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:29.359 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:29.393 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:29.460 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:29.511 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:29.528 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:29.545 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:29.578 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:29.629 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:29.696 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:29.764 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:29.797 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:29.865 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:29.882 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:29.932 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:30.016 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:30.117 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:30.185 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:30.219 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:30.235 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:30.269 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:30.404 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:30.421 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:30.439 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:30.523 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:30.574 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:30.641 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:30.960 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:30.994 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:31.045 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:31.062 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:31.112 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:31.146 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:31.297 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:31.449 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:31.500 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:31.533 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:31.550 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:31.752 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:31.803 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:31.870 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:31.887 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:31.921 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:31.954 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:32.023 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:32.072 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:32.106 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:32.376 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:32.426 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:32.460 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:32.493 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:32.511 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:32.529 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:32.561 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:32.646 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:32.730 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:32.763 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:32.831 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:32.915 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:32.966 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:32.999 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:33.032 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:33.049 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:33.167 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:33.302 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:33.353 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:33.437 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:33.454 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:33.471 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:33.572 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:33.842 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:33.875 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:33.944 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:34.011 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:34.078 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:34.111 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:34.280 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:34.380 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:34.431 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:34.482 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:34.549 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:34.566 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:34.633 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:34.650 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:34.802 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:34.819 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:34.920 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:34.937 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:34.953 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:35.039 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:35.088 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:35.139 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:35.213 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:35.257 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:35.290 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:35.375 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:35.392 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:35.476 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:35.561 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:35.595 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:35.696 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:36.575 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:36.575 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:36.576 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:36.577 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:36.578 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:36.579 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:36.579 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:36.580 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:36.580 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:36.580 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:36.581 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:36.605 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:36.706 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:36.790 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:36.807 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:36.975 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:36.992 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:37.212 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:37.280 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:37.346 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:37.363 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:37.447 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:37.481 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:37.548 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:37.568 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:37.616 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:37.649 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:37.734 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:37.767 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:37.785 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:37.835 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:37.885 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:37.902 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:37.986 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:38.020 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:38.071 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:38.121 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:38.155 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:38.273 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:38.475 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:38.694 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:38.710 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:38.728 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:38.812 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:38.896 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:38.949 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:38.981 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:39.098 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[W]01:04:39.292 > FSPGateway::DoReceiveInThread() 无效的包! sid:1
+[I]01:04:50.865 > IPCManager::HandleMessage() [1]-> StartGame([System.Byte[]])
+[I]01:04:50.868 > FSPManager::CreateGame() gameId:2, auth:0
+[I]01:04:50.869 > FSPGame::Create() 
+[I]01:04:50.870 > FSPGame::SetGameState() >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[I]01:04:50.871 > FSPGame::SetGameState() None -> Create, param1 = 0, param2 = 0
+[I]01:04:50.871 > FSPGame::SetGameState() <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[I]01:04:50.872 > FSPManager::AddPlayer() gameId:2, players:[1]
+[I]01:04:50.872 > FSPGateway::CreateSession() 
+[I]01:04:50.873 > FSPSession::.ctor() 
+[I]01:04:50.874 > FSPGame::AddPlayer() playerId:1
+[I]01:04:50.874 > FSPPlayer::Create() id:1, authId:0, sid:2
+[I]01:04:50.878 > FSPSession::SetReceiveListener() 
+[I]01:04:50.881 > IPCManager::Return() ->[1] OnStartGame([SGF.Network.FSPLite.FSPParam, Snaker.GlobalData.Data.GamesServerStartParam])
+[I]01:04:51.001 > FSPPlayer::SetAuth() 0
+[I]01:04:53.089 > FSPGame::HandleClientCmd() GAME_BEGIN, playerId = 1, cmd = cmd:1000, args:[0], custom:0
+[I]01:04:53.092 > FSPGame::SetFlag() player = 1, flag = m_GameBeginFlag
+[I]01:04:55.444 > FSPGame::HandleClientCmd() ROUND_BEGIN, playerId = 1, cmd = cmd:1001, args:[0], custom:0
+[I]01:04:55.446 > FSPGame::SetFlag() player = 1, flag = m_RoundBeginFlag
+[I]01:04:55.981 > FSPPlayer::SetAuth() 0
+[I]01:04:57.890 > FSPGame::HandleClientCmd() CONTROL_START, playerId = 1, cmd = cmd:1004, args:[0], custom:0
+[I]01:04:57.890 > FSPGame::SetFlag() player = 1, flag = m_ControlStartFlag
+[I]01:05:01.019 > FSPPlayer::SetAuth() 0
+[I]01:05:03.968 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1, args:[1], custom:0
+[I]01:05:04.929 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1, args:[1], custom:0
+[I]01:05:05.467 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1, args:[1], custom:0
+[I]01:05:06.041 > FSPPlayer::SetAuth() 0
+[I]01:05:06.046 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1, args:[1], custom:0
+[I]01:05:06.646 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1, args:[1], custom:0
+[I]01:05:08.770 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1, args:[1], custom:0
+[I]01:05:09.899 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1, args:[1], custom:0
+[I]01:05:11.077 > FSPPlayer::SetAuth() 0
+[I]01:05:13.529 > GameServer::OnInputKey() F1
+[W]01:05:13.530 > FSPGateway::Dump() 
+FSPGateway Sessions (1):
+	[2] Active:True, Ping:0, EndPoint:127.0.0.1:56392
+
+[W]01:05:13.531 > FSPManager::Dump() 
+FSPParam:
+	host:127.0.0.1:4541
+	serverFrameInterval:66
+	clientFrameRateMultiple:2
+	serverTimeout:15000
+	maxFrameId:1800
+GameList:
+
+[I]01:05:16.099 > FSPPlayer::SetAuth() 0
+[I]01:05:17.329 > GameServer::OnInputKey() F1
+[W]01:05:17.330 > FSPGateway::Dump() 
+FSPGateway Sessions (1):
+	[2] Active:True, Ping:0, EndPoint:127.0.0.1:56393
+
+[W]01:05:17.331 > FSPManager::Dump() 
+FSPParam:
+	host:127.0.0.1:4541
+	serverFrameInterval:66
+	clientFrameRateMultiple:2
+	serverTimeout:15000
+	maxFrameId:1800
+GameList:
+
+[I]01:05:20.119 > GameServer::OnInputKey() F1
+[W]01:05:20.120 > FSPGateway::Dump() 
+FSPGateway Sessions (1):
+	[2] Active:True, Ping:0, EndPoint:127.0.0.1:56393
+
+[W]01:05:20.120 > FSPManager::Dump() 
+FSPParam:
+	host:127.0.0.1:4541
+	serverFrameInterval:66
+	clientFrameRateMultiple:2
+	serverTimeout:15000
+	maxFrameId:1800
+GameList:
+
+[I]01:05:20.762 > GameServer::OnInputKey() F1
+[W]01:05:20.764 > FSPGateway::Dump() 
+FSPGateway Sessions (1):
+	[2] Active:True, Ping:0, EndPoint:127.0.0.1:56393
+
+[W]01:05:20.764 > FSPManager::Dump() 
+FSPParam:
+	host:127.0.0.1:4541
+	serverFrameInterval:66
+	clientFrameRateMultiple:2
+	serverTimeout:15000
+	maxFrameId:1800
+GameList:
+
+[I]01:05:21.104 > GameServer::OnInputKey() F1
+[W]01:05:21.106 > FSPGateway::Dump() 
+FSPGateway Sessions (1):
+	[2] Active:True, Ping:0, EndPoint:127.0.0.1:56393
+
+[W]01:05:21.106 > FSPManager::Dump() 
+FSPParam:
+	host:127.0.0.1:4541
+	serverFrameInterval:66
+	clientFrameRateMultiple:2
+	serverTimeout:15000
+	maxFrameId:1800
+GameList:
+
+[I]01:05:21.120 > FSPPlayer::SetAuth() 0
+[I]01:05:26.158 > FSPPlayer::SetAuth() 0
+[I]01:05:28.488 > GameServer::OnInputKey() F1
+[W]01:05:28.488 > FSPGateway::Dump() 
+FSPGateway Sessions (1):
+	[2] Active:True, Ping:0, EndPoint:127.0.0.1:56395
+
+[W]01:05:28.489 > FSPManager::Dump() 
+FSPParam:
+	host:127.0.0.1:4541
+	serverFrameInterval:66
+	clientFrameRateMultiple:2
+	serverTimeout:15000
+	maxFrameId:1800
+GameList:
+
+[I]01:05:29.255 > GameServer::OnInputKey() F1
+[W]01:05:29.256 > FSPGateway::Dump() 
+FSPGateway Sessions (1):
+	[2] Active:True, Ping:0, EndPoint:127.0.0.1:56395
+
+[W]01:05:29.257 > FSPManager::Dump() 
+FSPParam:
+	host:127.0.0.1:4541
+	serverFrameInterval:66
+	clientFrameRateMultiple:2
+	serverTimeout:15000
+	maxFrameId:1800
+GameList:
+
+[I]01:05:29.767 > GameServer::OnInputKey() F1
+[W]01:05:29.769 > FSPGateway::Dump() 
+FSPGateway Sessions (1):
+	[2] Active:True, Ping:0, EndPoint:127.0.0.1:56395
+
+[W]01:05:29.770 > FSPManager::Dump() 
+FSPParam:
+	host:127.0.0.1:4541
+	serverFrameInterval:66
+	clientFrameRateMultiple:2
+	serverTimeout:15000
+	maxFrameId:1800
+GameList:
+
+[I]01:05:30.136 > GameServer::OnInputKey() F1
+[W]01:05:30.138 > FSPGateway::Dump() 
+FSPGateway Sessions (1):
+	[2] Active:True, Ping:0, EndPoint:127.0.0.1:56395
+
+[W]01:05:30.139 > FSPManager::Dump() 
+FSPParam:
+	host:127.0.0.1:4541
+	serverFrameInterval:66
+	clientFrameRateMultiple:2
+	serverTimeout:15000
+	maxFrameId:1800
+GameList:
+
+[I]01:05:30.384 > GameServer::OnInputKey() F1
+[W]01:05:30.386 > FSPGateway::Dump() 
+FSPGateway Sessions (1):
+	[2] Active:True, Ping:0, EndPoint:127.0.0.1:56395
+
+[W]01:05:30.387 > FSPManager::Dump() 
+FSPParam:
+	host:127.0.0.1:4541
+	serverFrameInterval:66
+	clientFrameRateMultiple:2
+	serverTimeout:15000
+	maxFrameId:1800
+GameList:
+
+[I]01:05:30.591 > GameServer::OnInputKey() F1
+[W]01:05:30.592 > FSPGateway::Dump() 
+FSPGateway Sessions (1):
+	[2] Active:True, Ping:0, EndPoint:127.0.0.1:56395
+
+[W]01:05:30.593 > FSPManager::Dump() 
+FSPParam:
+	host:127.0.0.1:4541
+	serverFrameInterval:66
+	clientFrameRateMultiple:2
+	serverTimeout:15000
+	maxFrameId:1800
+GameList:
+
+[I]01:05:30.800 > GameServer::OnInputKey() F1
+[W]01:05:30.800 > FSPGateway::Dump() 
+FSPGateway Sessions (1):
+	[2] Active:True, Ping:0, EndPoint:127.0.0.1:56395
+
+[W]01:05:30.809 > FSPManager::Dump() 
+FSPParam:
+	host:127.0.0.1:4541
+	serverFrameInterval:66
+	clientFrameRateMultiple:2
+	serverTimeout:15000
+	maxFrameId:1800
+GameList:
+
+[I]01:05:31.056 > GameServer::OnInputKey() F1
+[W]01:05:31.056 > FSPGateway::Dump() 
+FSPGateway Sessions (1):
+	[2] Active:True, Ping:0, EndPoint:127.0.0.1:56395
+
+[W]01:05:31.057 > FSPManager::Dump() 
+FSPParam:
+	host:127.0.0.1:4541
+	serverFrameInterval:66
+	clientFrameRateMultiple:2
+	serverTimeout:15000
+	maxFrameId:1800
+GameList:
+
+[I]01:05:31.179 > FSPPlayer::SetAuth() 0
+[I]01:05:31.336 > GameServer::OnInputKey() F1
+[W]01:05:31.337 > FSPGateway::Dump() 
+FSPGateway Sessions (1):
+	[2] Active:True, Ping:0, EndPoint:127.0.0.1:56396
+
+[W]01:05:31.337 > FSPManager::Dump() 
+FSPParam:
+	host:127.0.0.1:4541
+	serverFrameInterval:66
+	clientFrameRateMultiple:2
+	serverTimeout:15000
+	maxFrameId:1800
+GameList:
+
+[I]01:05:31.815 > GameServer::OnInputKey() F1
+[W]01:05:31.816 > FSPGateway::Dump() 
+FSPGateway Sessions (1):
+	[2] Active:True, Ping:0, EndPoint:127.0.0.1:56396
+
+[W]01:05:31.817 > FSPManager::Dump() 
+FSPParam:
+	host:127.0.0.1:4541
+	serverFrameInterval:66
+	clientFrameRateMultiple:2
+	serverTimeout:15000
+	maxFrameId:1800
+GameList:
+
+[I]01:05:32.233 > GameServer::OnInputKey() F1
+[W]01:05:32.233 > FSPGateway::Dump() 
+FSPGateway Sessions (1):
+	[2] Active:True, Ping:0, EndPoint:127.0.0.1:56396
+
+[W]01:05:32.234 > FSPManager::Dump() 
+FSPParam:
+	host:127.0.0.1:4541
+	serverFrameInterval:66
+	clientFrameRateMultiple:2
+	serverTimeout:15000
+	maxFrameId:1800
+GameList:
+
+[I]01:05:32.472 > GameServer::OnInputKey() F1
+[W]01:05:32.473 > FSPGateway::Dump() 
+FSPGateway Sessions (1):
+	[2] Active:True, Ping:0, EndPoint:127.0.0.1:56396
+
+[W]01:05:32.473 > FSPManager::Dump() 
+FSPParam:
+	host:127.0.0.1:4541
+	serverFrameInterval:66
+	clientFrameRateMultiple:2
+	serverTimeout:15000
+	maxFrameId:1800
+GameList:
+
+[I]01:05:32.680 > GameServer::OnInputKey() F1
+[W]01:05:32.682 > FSPGateway::Dump() 
+FSPGateway Sessions (1):
+	[2] Active:True, Ping:0, EndPoint:127.0.0.1:56396
+
+[W]01:05:32.682 > FSPManager::Dump() 
+FSPParam:
+	host:127.0.0.1:4541
+	serverFrameInterval:66
+	clientFrameRateMultiple:2
+	serverTimeout:15000
+	maxFrameId:1800
+GameList:
+
+[I]01:05:32.831 > GameServer::OnInputKey() F1
+[W]01:05:32.832 > FSPGateway::Dump() 
+FSPGateway Sessions (1):
+	[2] Active:True, Ping:0, EndPoint:127.0.0.1:56396
+
+[W]01:05:32.832 > FSPManager::Dump() 
+FSPParam:
+	host:127.0.0.1:4541
+	serverFrameInterval:66
+	clientFrameRateMultiple:2
+	serverTimeout:15000
+	maxFrameId:1800
+GameList:
+
+[I]01:05:36.200 > FSPPlayer::SetAuth() 0
+[I]01:05:40.999 > GameServer::OnInputKey() F1
+[W]01:05:41.000 > FSPGateway::Dump() 
+FSPGateway Sessions (1):
+	[2] Active:True, Ping:0, EndPoint:127.0.0.1:56397
+
+[W]01:05:41.001 > FSPManager::Dump() 
+FSPParam:
+	host:127.0.0.1:4541
+	serverFrameInterval:66
+	clientFrameRateMultiple:2
+	serverTimeout:15000
+	maxFrameId:1800
+GameList:
+
+[I]01:05:41.220 > FSPPlayer::SetAuth() 0
+[I]01:05:46.242 > FSPPlayer::SetAuth() 0
+[I]01:05:48.352 > GameServer::OnInputKey() F1
+[W]01:05:48.354 > FSPGateway::Dump() 
+FSPGateway Sessions (1):
+	[2] Active:True, Ping:0, EndPoint:127.0.0.1:56400
+
+[W]01:05:48.355 > FSPManager::Dump() 
+FSPParam:
+	host:127.0.0.1:4541
+	serverFrameInterval:66
+	clientFrameRateMultiple:2
+	serverTimeout:15000
+	maxFrameId:1800
+GameList:
+
+[I]01:05:50.471 > GameServer::OnInputKey() F1
+[W]01:05:50.471 > FSPGateway::Dump() 
+FSPGateway Sessions (1):
+	[2] Active:True, Ping:0, EndPoint:127.0.0.1:56400
+
+[W]01:05:50.473 > FSPManager::Dump() 
+FSPParam:
+	host:127.0.0.1:4541
+	serverFrameInterval:66
+	clientFrameRateMultiple:2
+	serverTimeout:15000
+	maxFrameId:1800
+GameList:
+
+[I]01:05:51.232 > GameServer::OnInputKey() F1
+[W]01:05:51.233 > FSPGateway::Dump() 
+FSPGateway Sessions (1):
+	[2] Active:True, Ping:0, EndPoint:127.0.0.1:56400
+
+[W]01:05:51.233 > FSPManager::Dump() 
+FSPParam:
+	host:127.0.0.1:4541
+	serverFrameInterval:66
+	clientFrameRateMultiple:2
+	serverTimeout:15000
+	maxFrameId:1800
+GameList:
+
+[I]01:05:51.270 > FSPPlayer::SetAuth() 0
+[I]01:05:53.625 > GameServer::OnInputKey() F1
+[W]01:05:53.626 > FSPGateway::Dump() 
+FSPGateway Sessions (1):
+	[2] Active:True, Ping:0, EndPoint:127.0.0.1:56402
+
+[W]01:05:53.628 > FSPManager::Dump() 
+FSPParam:
+	host:127.0.0.1:4541
+	serverFrameInterval:66
+	clientFrameRateMultiple:2
+	serverTimeout:15000
+	maxFrameId:1800
+GameList:
+
+[I]01:06:01.167 > GameServer::OnInputKey() F1
+[W]01:06:01.168 > FSPGateway::Dump() 
+FSPGateway Sessions (1):
+	[2] Active:True, Ping:0, EndPoint:127.0.0.1:56402
+
+[W]01:06:01.169 > FSPManager::Dump() 
+FSPParam:
+	host:127.0.0.1:4541
+	serverFrameInterval:66
+	clientFrameRateMultiple:2
+	serverTimeout:15000
+	maxFrameId:1800
+GameList:
+
+[I]01:06:02.305 > GameServer::OnInputKey() F1
+[W]01:06:02.306 > FSPGateway::Dump() 
+FSPGateway Sessions (0):
+
+[W]01:06:02.306 > FSPManager::Dump() 
+FSPParam:
+	host:127.0.0.1:4541
+	serverFrameInterval:66
+	clientFrameRateMultiple:2
+	serverTimeout:15000
+	maxFrameId:1800
+GameList:
+
+[I]01:06:03.144 > GameServer::OnInputKey() F1
+[W]01:06:03.144 > FSPGateway::Dump() 
+FSPGateway Sessions (0):
+
+[W]01:06:03.146 > FSPManager::Dump() 
+FSPParam:
+	host:127.0.0.1:4541
+	serverFrameInterval:66
+	clientFrameRateMultiple:2
+	serverTimeout:15000
+	maxFrameId:1800
+GameList:
+
+[I]01:06:03.551 > GameServer::OnInputKey() F1
+[W]01:06:03.551 > FSPGateway::Dump() 
+FSPGateway Sessions (0):
+
+[W]01:06:03.552 > FSPManager::Dump() 
+FSPParam:
+	host:127.0.0.1:4541
+	serverFrameInterval:66
+	clientFrameRateMultiple:2
+	serverTimeout:15000
+	maxFrameId:1800
+GameList:
+
+[I]01:06:03.855 > GameServer::OnInputKey() F1
+[W]01:06:03.856 > FSPGateway::Dump() 
+FSPGateway Sessions (0):
+
+[W]01:06:03.857 > FSPManager::Dump() 
+FSPParam:
+	host:127.0.0.1:4541
+	serverFrameInterval:66
+	clientFrameRateMultiple:2
+	serverTimeout:15000
+	maxFrameId:1800
+GameList:
+
+[I]01:06:04.080 > GameServer::OnInputKey() F1
+[W]01:06:04.081 > FSPGateway::Dump() 
+FSPGateway Sessions (0):
+
+[W]01:06:04.082 > FSPManager::Dump() 
+FSPParam:
+	host:127.0.0.1:4541
+	serverFrameInterval:66
+	clientFrameRateMultiple:2
+	serverTimeout:15000
+	maxFrameId:1800
+GameList:
+
+[I]01:06:04.256 > GameServer::OnInputKey() F1
+[W]01:06:04.256 > FSPGateway::Dump() 
+FSPGateway Sessions (0):
+
+[W]01:06:04.258 > FSPManager::Dump() 
+FSPParam:
+	host:127.0.0.1:4541
+	serverFrameInterval:66
+	clientFrameRateMultiple:2
+	serverTimeout:15000
+	maxFrameId:1800
+GameList:
+
+[I]01:06:04.408 > GameServer::OnInputKey() F1
+[W]01:06:04.410 > FSPGateway::Dump() 
+FSPGateway Sessions (0):
+
+[W]01:06:04.411 > FSPManager::Dump() 
+FSPParam:
+	host:127.0.0.1:4541
+	serverFrameInterval:66
+	clientFrameRateMultiple:2
+	serverTimeout:15000
+	maxFrameId:1800
+GameList:
+

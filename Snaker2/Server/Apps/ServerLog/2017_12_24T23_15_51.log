@@ -1,0 +1,19 @@
+[I]23:15:51.412 ================================================================================
+[I]23:15:51.416                                    SGFDebuger                                   
+[I]23:15:51.417 --------------------------------------------------------------------------------
+[I]23:15:51.417 Time:	23:15:51.409 
+[I]23:15:51.418 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/ServerLog/
+[I]23:15:51.418 ================================================================================
+[I]23:15:51.420 > Program::InitDebuger() 
+[I]23:15:51.430 > ServerManager::StartServer() 2
+[I]23:15:51.433 > ServerConfig::ReadConfig() 
+[I]23:15:51.450 > GameServer[2,4541]::Create() 
+[I]23:15:51.456 > GameServer[2,4541]::Start() 
+[I]23:15:51.458 > FSPManager::Init() port:4541
+[I]23:15:51.460 > FSPGateway::Init() port:4541
+[I]23:15:51.461 > FSPGateway::Start() 
+[I]23:15:51.490 > IPCConfig::ReadConfig() 
+[I]23:15:51.499 > RPCManagerBase::RegisterListener() GameManager
+[I]23:15:51.501 > MainLoop::Run() 
+[I]23:16:09.524 > IPCManager::HandleMessage() [1]-> StartGame([1, 0, [8, 0]])
+[W]23:16:09.527 > IPCManager::HandleMessage() 参数数量不一致！

@@ -1,0 +1,96 @@
+[I]20:05:23.292 ================================================================================
+[I]20:05:23.296                                    SGFDebuger                                   
+[I]20:05:23.296 --------------------------------------------------------------------------------
+[I]20:05:23.296 Time:	20:05:23.291 
+[I]20:05:23.296 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/ServerLog/
+[I]20:05:23.296 ================================================================================
+[I]20:05:23.297 > Program::InitDebuger() 
+[I]20:05:23.308 > ServerManager::StartServer() 2
+[I]20:05:23.311 > ServerConfig::ReadConfig() 
+[I]20:05:23.338 > GameServer[2,4541]::Create() 
+[I]20:05:23.342 > GameServer[2,4541]::Start() 
+[I]20:05:23.349 > FSPManager::Init() port:4541
+[I]20:05:23.352 > FSPGateway::Init() port:4541
+[I]20:05:23.357 > FSPGateway::Start() 
+[I]20:05:23.407 > IPCConfig::ReadConfig() 
+[I]20:05:23.428 > RPCManagerBase::RegisterListener() GameManager
+[I]20:05:23.429 > MainLoop::Run() 
+[I]20:06:49.390 > IPCManager::HandleMessage() [1]-> StartGame([System.Byte[]])
+[I]20:06:49.403 > FSPManager::CreateGame() gameId:1, auth:0
+[I]20:06:49.405 > FSPGame::Create() 
+[I]20:06:49.408 > FSPGame::SetGameState() >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[I]20:06:49.410 > FSPGame::SetGameState() None -> Create, param1 = 0, param2 = 0
+[I]20:06:49.410 > FSPGame::SetGameState() <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[I]20:06:49.425 > FSPManager::AddPlayer() gameId:1, players:[1]
+[I]20:06:49.427 > FSPGateway::CreateSession() 
+[I]20:06:49.430 > FSPSession::.ctor() 
+[I]20:06:49.434 > FSPGame::AddPlayer() playerId:1
+[I]20:06:49.436 > FSPPlayer::Create() id:1, authId:0, sid:1
+[I]20:06:49.436 > FSPSession::SetReceiveListener() 
+[I]20:06:49.463 > IPCManager::Return() ->[1] OnStartGame([SGF.Network.FSPLite.FSPParam, Snaker.GlobalData.Data.GamesServerStartParam])
+[I]20:06:49.632 > FSPPlayer::SetAuth() 0
+[I]20:06:54.610 > FSPPlayer::SetAuth() 0
+[I]20:06:59.630 > FSPPlayer::SetAuth() 0
+[I]20:07:04.666 > FSPPlayer::SetAuth() 0
+[I]20:08:43.285 > GameServer::OnInputKey() F1
+[I]20:08:43.286 > FSPPlayer::SetAuth() 0
+[I]20:08:43.292 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1008, args:[0], custom:0
+[I]20:08:43.293 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1008, args:[0], custom:0
+[I]20:08:43.293 > FSPGame::HandleClientCmd() GAME_BEGIN, playerId = 1, cmd = cmd:1000, args:[0], custom:0
+[I]20:08:43.293 > FSPGame::SetFlag() player = 1, flag = m_GameBeginFlag
+[I]20:08:43.294 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1008, args:[0], custom:0
+[I]20:08:43.295 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1008, args:[0], custom:0
+[I]20:08:43.296 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1008, args:[0], custom:0
+[I]20:08:43.298 > FSPGame::HandleClientCmd() GAME_BEGIN, playerId = 1, cmd = cmd:1000, args:[0], custom:0
+[I]20:08:43.300 > FSPGame::SetFlag() player = 1, flag = m_GameBeginFlag
+[I]20:08:43.302 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1008, args:[0], custom:0
+[I]20:08:43.305 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1008, args:[0], custom:0
+[I]20:08:43.308 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1008, args:[0], custom:0
+[I]20:08:43.309 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1008, args:[0], custom:0
+[W]20:08:43.310 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 189
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 174
+[I]20:08:43.316 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1008, args:[0], custom:0
+[I]20:08:43.327 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1008, args:[0], custom:0
+[I]20:08:43.330 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1008, args:[0], custom:0
+[I]20:08:43.332 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1008, args:[0], custom:0
+[I]20:08:43.339 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1008, args:[0], custom:0
+[I]20:08:43.341 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1008, args:[0], custom:0
+[I]20:08:43.345 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1008, args:[0], custom:0
+[I]20:08:43.349 > FSPGame::HandleClientCmd() playerId = 1, cmd = cmd:1008, args:[0], custom:0
+[I]20:08:43.356 > FSPGame::SetGameState() >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[I]20:08:43.358 > FSPGame::SetGameState() Create -> GameBegin, param1 = 0, param2 = 0
+[I]20:08:43.359 > FSPGame::SetGameState() <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[I]20:08:44.612 > GameServer::OnInputKey() F2
+[I]20:08:47.693 > GameServer::OnInputKey() F3
+[I]20:08:48.425 > FSPPlayer::SetAuth() 0
+[I]20:08:48.568 > GameServer::OnInputKey() F4
+[I]20:08:50.261 > GameServer::OnInputKey() F2
+[I]20:08:50.661 > GameServer::OnInputKey() F1
+[I]20:08:51.564 > GameServer::OnInputKey() F3
+[I]20:08:51.948 > GameServer::OnInputKey() F4
+[I]20:08:53.462 > FSPPlayer::SetAuth() 0
+[I]20:08:53.628 > GameServer::OnInputKey() F2
+[I]20:08:54.063 > GameServer::OnInputKey() F3
+[I]20:08:54.630 > GameServer::OnInputKey() F2
+[I]20:08:58.493 > FSPPlayer::SetAuth() 0
+[W]20:09:07.313 > FSPGateway::Thread_Recv() 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 SGF.Network.FSPLite.Server.FSPGateway.DoReceiveInThread() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 189
+   在 SGF.Network.FSPLite.Server.FSPGateway.Thread_Recv() 位置 F:\Project\gad\Recording\SGF\SGFCore\Network\FSPLite\Server\FSPGateway.cs:行号 174
+[I]20:09:07.317 > GameServer::OnInputKey() F1
+[W]20:09:07.318 > FSPGame::HandleClientCmd() 当前Player未鉴权，无法处理该Cmd：1000
+[W]20:09:07.328 > FSPGame::HandleClientCmd() 当前Player未鉴权，无法处理该Cmd：1001
+[I]20:09:07.331 > FSPPlayer::SetAuth() 0
+[I]20:09:08.236 > GameServer::OnInputKey() F2
+[I]20:09:08.539 > FSPPlayer::SetAuth() 0
+[I]20:09:10.484 > GameServer::OnInputKey() F3
+[I]20:09:11.021 > GameServer::OnInputKey() F4
+[I]20:09:12.700 > GameServer::OnInputKey() F2
+[I]20:09:12.997 > GameServer::OnInputKey() F1
+[I]20:09:13.551 > GameServer::OnInputKey() F3
+[I]20:09:13.566 > FSPPlayer::SetAuth() 0
+[I]20:09:13.909 > GameServer::OnInputKey() F4

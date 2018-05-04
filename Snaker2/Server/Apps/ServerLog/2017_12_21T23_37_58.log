@@ -1,0 +1,29 @@
+[I]23:37:58.849 ================================================================================
+[I]23:37:58.857                                    SGFDebuger                                   
+[I]23:37:58.857 --------------------------------------------------------------------------------
+[I]23:37:58.857 Time:	23:37:58.842 
+[I]23:37:58.858 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/ServerLog/
+[I]23:37:58.858 ================================================================================
+[I]23:37:58.860 > Program::InitDebuger() 
+[I]23:37:58.871 > ServerManager::StartServer() 3
+[I]23:37:58.873 > ServerConfig::ReadConfig() 
+[I]23:37:58.887 > Server3[3,4542]::Create() 
+[I]23:37:58.889 > Server3[3,4542]::Start() 
+[I]23:37:58.892 > IPCConfig::ReadConfig() 
+[I]23:37:58.937 > RPCManagerBase::RegisterListener() Server3
+[I]23:37:58.938 > MainLoop::Run() 
+[I]23:38:03.204 > IPCManager::HandleMessage() [2]-> Func3([789, 我是参数2])
+[E]23:38:03.236 > IPCManager::HandleMessage() RPC调用出错：调用的目标发生了异常。
+   在 System.RuntimeMethodHandle._InvokeMethodFast(Object target, Object[] arguments, SignatureStruct& sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture, Boolean skipVisibilityChecks)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 SGF.IPCWork.IPCManager.HandleMessage(IPCMessage msg) 位置 F:\Project\gad\Recording\SGF\SGFCore\IPCWork\IPCManager.cs:行号 229
+   在 SGF.Debuger.LogError(String format, Object[] args)
+   在 SGF.IPCWork.IPCManager.HandleMessage(IPCMessage msg)
+   在 SGF.IPCWork.IPCManager.DoReceiveInMain()
+   在 SGF.IPCWork.IPCManager.Tick()
+   在 Snaker2.Battle.Server3.Server3.Tick()
+   在 SGF.Server.ServerManager.Tick()
+   在 SGF.Server.MainLoop.Run()
+   在 Snaker2.Battle.Program.Main(String[] args)
+

@@ -1,0 +1,22 @@
+[I]23:31:29.530 ================================================================================
+[I]23:31:29.565                                    SGFDebuger                                   
+[I]23:31:29.565 --------------------------------------------------------------------------------
+[I]23:31:29.565 Time:	23:31:29.528 
+[I]23:31:29.566 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/ServerLog/
+[I]23:31:29.566 ================================================================================
+[I]23:31:29.568 > Program::InitDebuger() 
+[I]23:31:29.659 > ServerManager::StartServer() 1
+[I]23:31:29.662 > ServerConfig::ReadConfig() 
+[I]23:31:29.678 > Server1[1,4540]::Create() 
+[I]23:31:29.679 > Server1[1,4540]::Start() 
+[I]23:31:29.681 > IPCConfig::ReadConfig() 
+[I]23:31:29.686 > RPCManagerBase::RegisterListener() Server1
+[I]23:31:29.729 > ServerManager::StartServer() 2
+[I]23:31:29.772 > Server2[2,4541]::Create() 
+[I]23:31:29.773 > Server2[2,4541]::Start() 
+[I]23:31:29.774 > RPCManagerBase::RegisterListener() Server2
+[I]23:31:29.779 > MainLoop::Run() 
+[I]23:31:29.788 > IPCManager::Invoke() ->[2] Func2([我是参数1, 123456])
+[I]23:31:30.017 > IPUtils::GetHostEndPoint() UdpSocket.GetHostEndPoint() Dns GetHostAddresses:
+[I]23:31:30.026 > IPUtils::GetHostEndPoint() [0] ::1, InterNetworkV6
+[I]23:31:30.027 > IPUtils::GetHostEndPoint() [1] 127.0.0.1, InterNetwork

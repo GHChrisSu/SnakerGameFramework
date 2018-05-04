@@ -1,0 +1,22 @@
+[I]20:32:57.519 ================================================================================
+[I]20:32:57.523                                    SGFDebuger                                   
+[I]20:32:57.524 --------------------------------------------------------------------------------
+[I]20:32:57.524 Time:	20:32:57.518 
+[I]20:32:57.524 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/ServerLog/
+[I]20:32:57.524 ================================================================================
+[I]20:32:57.526 > Program::InitDebuger() 
+[I]20:32:57.537 > ServerManager::StartServer() 2
+[I]20:32:57.540 > ServerConfig::ReadConfig() 
+[I]20:32:57.558 > GameServer[2,4541]::Create() 
+[I]20:32:57.562 > GameServer[2,4541]::Start() 
+[I]20:32:57.568 > FSPManager::Init() port:4541
+[I]20:32:57.571 > FSPGateway::Init() port:4541
+[I]20:32:57.573 > FSPGateway::Start() 
+[I]20:32:57.597 > IPCConfig::ReadConfig() 
+[I]20:33:01.157 > RPCManagerBase::RegisterListener() GameManager
+[I]20:33:01.159 > MainLoop::Run() 
+[I]20:33:01.162 > GameServer::OnInputKey() F1
+[W]20:33:01.164 > FSPGateway::Dump() 
+FSPGateway Sessions (0):
+
+[W]20:33:01.165 > FSPManager::Dump() FSPParam:host:, ip:0, serverFrameInterval:66, clientFrameRateMultiple:2, serverTimeout:15000, maxFrameId:1800

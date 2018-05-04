@@ -1,0 +1,22 @@
+[I]00:48:37.292 ================================================================================
+[I]00:48:37.315                                    SGFDebuger                                   
+[I]00:48:37.315 --------------------------------------------------------------------------------
+[I]00:48:37.315 Time:	00:48:37.291 
+[I]00:48:37.316 Path:	F:\Project\gad\Recording\Snaker2\Server\Apps\/ServerLog/
+[I]00:48:37.316 ================================================================================
+[I]00:48:37.318 > Program::InitDebuger() 
+[I]00:48:37.383 > ServerManager::StartServer() 2
+[I]00:48:37.389 > ServerConfig::ReadConfig() 
+[I]00:48:37.410 > GameServer[2,4541]::Create() 
+[I]00:48:37.413 > GameServer[2,4541]::Start() 
+[I]00:48:51.146 > FSPManager::Init() port:4541
+[I]00:48:51.148 > FSPGateway::Init() port:4541
+[I]00:48:51.151 > FSPGateway::Start() 
+[I]00:48:51.167 > IPCConfig::ReadConfig() 
+[I]00:48:51.176 > RPCManagerBase::RegisterListener() GameManager
+[I]00:48:51.177 > MainLoop::Run() 
+[I]00:48:59.118 > IPCManager::HandleMessage() [1]-> StartGame([System.Byte[]])
+[I]00:49:07.566 > FSPGame::Create() 
+[I]00:49:07.568 > FSPGame::SetGameState() >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[I]00:49:07.568 > FSPGame::SetGameState() None -> Create, param1 = 0, param2 = 0
+[I]00:49:07.569 > FSPGame::SetGameState() <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
